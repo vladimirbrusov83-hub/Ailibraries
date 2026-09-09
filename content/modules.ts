@@ -646,6 +646,7 @@ None of these three documents changes the core judgment this module has argued f
       "Teaching AI evaluation to students and patrons",
       "Building a personal AI evaluation checklist",
       "RACBAC and the right to refuse: ACRL's framing for declining AI adoption",
+      "ARL's counter-position: informed refusal versus wholesale avoidance",
     ],
     objectives: [
       "Apply at least three verification strategies to AI generated text",
@@ -657,8 +658,9 @@ None of these three documents changes the core judgment this module has argued f
       "Describe the difference between fact checking an AI generated claim and verifying a citation",
       "Apply a calibrated trust framework to distinguish lower risk from higher risk AI outputs",
       "Apply the RACBAC framework to an AI generated output, and explain why declining to use AI for a given task is itself an expression of AI literacy",
+      "Distinguish informed refusal of AI for a specific task from wholesale avoidance, and defend the distinction professionally",
     ],
-    estimatedMinutes: 25,
+    estimatedMinutes: 29,
     status: "published",
     isGap: false,
     description:
@@ -789,6 +791,18 @@ For example, a librarian evaluating an AI generated literature overview for a Li
 
 What neither RACBAC nor any other framework can do is make the underlying decision: whether a given AI output, however carefully evaluated, is good enough to use for a specific purpose, or whether the task would be better served without AI at all. That determination, informed by the framework but not made by it, remains the librarian's professional judgment, exercised anew for every task, every time.`,
         },
+        {
+          heading: "Where the profession disagrees: refusal and its limits",
+          body: `The right to refuse described in the previous section is ACRL's framing, and it is not the only position the profession has taken. In its March 2026 workshop report with the Coalition for Networked Information, the Association of Research Libraries proposes a strategy on AI limitation and refusal that affirms one half of ACRL's framing and then draws a line the ACRL document does not. ARL affirms that limiting or declining AI use is sound professional practice in culturally sensitive collections, in interactions with vulnerable populations, and in contexts where human judgment is non-negotiable. It then states that wholesale refusal to engage with AI tools as part of one's professional role is inconsistent with the responsibilities of an information-based profession in the current environment, and that the profession's obligation is not uncritical adoption but informed, principled, and accountable engagement.
+
+Practitioners should sit with that tension rather than resolve it too quickly, because both associations are describing something real. ACRL is protecting the individual worker's judgment against an institutional pressure to adopt, which is a pressure most library workers can feel in their own buildings. ARL is describing a professional obligation to understand a technology that is now shaping how patrons find and evaluate information, whether or not any individual librarian uses it. Read carefully, the two positions turn out to be less opposed than they first appear: neither association is arguing for adoption as a default, and neither is arguing that a librarian must personally use generative AI in daily work.
+
+The distinction that reconciles them is between informed refusal and uninformed avoidance. Informed refusal is what this entire module has been building toward. A librarian who has worked through what a model does, applied RACBAC to its output, identified the specific failure modes that make it unsuitable for a given task, and concluded that AI should not be used for it, has exercised professional judgment at full strength. That refusal is evidence of AI literacy, exactly as ACRL says. Uninformed avoidance is different in kind rather than in degree: it is declining to learn what the technology does, which leaves the practitioner unable to answer a patron's question about it, unable to evaluate the vendor feature that arrived in the discovery layer, and unable to participate in the institutional conversation about how it will be governed. For example, a librarian who has never used a generative AI tool cannot meaningfully advise a student who has been using one for two years, and cannot recognize the failure modes in what that student brings to the reference desk.
+
+Such a distinction has a practical consequence for how a library treats a colleague who objects. Some of the objections librarians raise are principled ones about environmental cost, labor, copyright, and the extraction of value from work that was never offered for that purpose, and those objections are addressed elsewhere in this curriculum precisely because they are substantive. A library that treats a principled objection as a communication problem to be managed will handle it worse than one that treats it as a legitimate value question worth engaging. Additionally, ARL's own field scan notes that refusal is now a documented and discussed position in the profession rather than an outlier, which is a reason to argue with it seriously rather than to dismiss it.
+
+In my own practice the useful test is a narrow one. Can I explain, to a colleague who disagrees with me, why this particular tool is unsuitable for this particular task, in terms drawn from what the tool actually does rather than from a general position about AI? If I can, the refusal is professional judgment and I should hold it. If I cannot, what I have is a preference, and the honest response is to go and learn enough to convert it into a judgment or to abandon it. That test does not tell any librarian what to conclude, and it is not meant to. It only insists that the conclusion be reached rather than assumed, which is the same standard this profession applies to every other source it evaluates.`,
+        },
       ],
       practitionerNote:
         "Keeping a printed AI evaluation checklist visible at the reference desk serves as a consistent reminder to apply it, not only when a response seems suspicious. The most dangerous AI outputs are often the ones that seem most authoritative, and the checklist is most valuable precisely in those moments when nothing seems wrong. When introducing colleagues new to AI to this practice, sharing the checklist as a practical tool is more effective than explaining the reasoning first; the reasoning becomes clearer through use. The single question that proves most useful to add to any checklist is: 'What would the primary source be for this specific claim, and have I looked at it?' For library professionals, that question is already second nature for evaluating student research; applying it to AI output is a professional skill transfer, not a new skill.",
@@ -802,6 +816,7 @@ What neither RACBAC nor any other framework can do is make the underlying decisi
         "A written personal evaluation checklist converts a professional disposition into a reliable, repeatable procedure.",
         "ACRL's October 2025 competencies affirm a right to refuse: adoption of AI is neither necessary nor beneficial in all cases, and declining to use AI for a task is itself an expression of AI literacy, not a failure of it.",
         "RACBAC (Relevance, Accuracy, Coverage, Bias, Authority, Currency), from the Critical AI Literacy Framework (International Journal of Librarianship, 2025), adapts the CRAAP test for evaluating AI generated output and is a useful starting point for a personal checklist.",
+        "ACRL affirms a right to refuse AI adoption; ARL affirms refusal in specific contexts while calling wholesale disengagement inconsistent with an information profession's responsibilities. The distinction that reconciles them is informed refusal, reached by evaluating what a tool actually does, versus uninformed avoidance, which leaves the practitioner unable to advise patrons or govern the tools arriving anyway.",
       ],
     },
   },
@@ -824,6 +839,7 @@ What neither RACBAC nor any other framework can do is make the underlying decisi
       "Emerging AI native research tools (Connected Papers, Elicit, Consensus)",
       "Platform embedded AI: Primo, Summon, JSTOR, EBSCO, Ebook Central, Scopus, and Deep Research",
       "AI detection tools: what ACRL says about their accuracy and limits",
+      "Funder and journal AI disclosure: NIH, tri-agency guidance, and confidentiality in peer review",
     ],
     objectives: [
       "Use AI to draft, refine, and expand a database search strategy",
@@ -831,8 +847,9 @@ What neither RACBAC nor any other framework can do is make the underlying decisi
       "Describe at least three AI native research tools and when to recommend them",
       "Explain to a patron the appropriate and inappropriate uses of AI in their research process",
       "Develop a research support workflow that integrates AI at appropriate points",
+      "Distinguish AI disclosure in proposal development from confidentiality in peer review, and direct researchers to current funder guidance",
     ],
-    estimatedMinutes: 25,
+    estimatedMinutes: 29,
     status: "published",
     isGap: false,
     description:
@@ -942,6 +959,20 @@ Additionally, the reference consultation workflow itself can be updated to integ
 
 Faculty conversations increasingly raise a related but distinct question: whether AI detection tools can identify whether a student's writing was AI generated. ACRL's Knowledge and Understanding competency addresses this directly, noting that AI detection tools are not completely accurate and can be circumvented. In order to advise faculty responsibly on this point, librarians should be prepared to say plainly that a detection tool's report is not evidence in the way a verified citation is evidence: false positives flag legitimate student writing as AI generated, false negatives miss AI generated text that has been lightly edited, and paraphrasing tools designed specifically to evade detection are widely available. For example, a faculty member who receives a high "AI probability" score from a detection tool and treats that score as proof of an academic integrity violation is relying on a tool with the same fundamental unreliability this module has described in AI generated content itself, just pointed in the opposite direction. The library's role in this conversation is not to validate or dismiss detection tools but to bring the same calibrated skepticism to them that this curriculum applies to AI output generally: useful as one input among several, never sufficient on its own, and never a substitute for the human judgment, a conversation with the student, an examination of their process and drafts, that an academic integrity determination actually requires.`,
         },
+        {
+          heading: "Disclosure requirements in grant proposals and peer review",
+          body: `Research support has acquired a compliance dimension over the past year that did not exist when most library AI guidance was written. In July 2025 the United States National Institutes of Health issued a notice addressing originality and the use of AI in research applications, and later that same month the Government of Canada published tri-agency guidance on the use of generative artificial intelligence in the development and review of research proposals. The March 2026 ARL and CNI workshop report treats this as a distinct strategy for libraries: develop and maintain authoritative guidance on funder and journal AI disclosure requirements, and embed that guidance into the workflows where researchers actually encounter it.
+
+The reason this belongs in a library module rather than only in a research office is that the question arrives at the library first. A faculty member preparing a proposal asks the subject librarian whether the literature review can be drafted with AI assistance and whether that has to be declared. A graduate student asks whether running a draft through a language model counts as the kind of assistance requiring disclosure. These are information questions, asked of the person the researcher already trusts with information questions, and answering them with a shrug sends the researcher to a search engine for an answer that may be a year out of date and written for a different country's funding system.
+
+The single most consequential distinction to convey is between using AI to develop your own proposal and using AI while reviewing someone else's. The first is a disclosure question, and the requirements vary by funder, by program, and by the specific role AI played. The second is a confidentiality question, and it is considerably sharper. A proposal or manuscript under peer review is confidential material belonging to someone else. Pasting it into a commercial AI tool transmits it to a third party the author never agreed to, however helpful the resulting summary is to the reviewer. For example, a faculty member who uploads a manuscript under review in order to summarize it before writing comments has disclosed unpublished research to a vendor, and both the Canadian tri-agency guidance and the NIH notice address this category of use directly. Such a breach is not undone by deleting the conversation afterward.
+
+In order to be useful here, the library does not need to become an authority on federal research policy. It needs to maintain a current, honest, clearly dated summary of what the major funders relevant to its institution require, with links to the primary notices, and it needs to say plainly where guidance is unsettled rather than filling the gap with a guess. For example, a subject guide entry that gives the date of the NIH notice, the date of the tri-agency guidance, links both, separates proposal development from peer review, and notes that individual journals set their own disclosure policies is more useful than a longer document that flattens all of this into a single rule.
+
+Furthermore, the same work extends into research integrity instruction. ARL's companion strategy places library expertise inside Responsible Conduct of Research training and graduate onboarding, where AI disclosure norms, provenance documentation, and citation of AI contributions can be taught as standard practice rather than as an exception handled at submission time. Additionally, this material connects directly to the documentation habits covered in Module 04, because a researcher who has kept a record of which parts of a draft were AI-assisted can answer a disclosure question accurately, while one who has not is reconstructing from memory under deadline.
+
+The boundary here is worth stating clearly. The library's role is to know what the requirements are, to keep that knowledge current, and to ensure researchers encounter it before submission rather than after a problem. The decision about what a specific researcher discloses on a specific proposal belongs to that researcher and to their research office, and a librarian who issues a definitive compliance ruling on someone else's grant has stepped outside both their expertise and their institutional authority.`,
+        },
       ],
       practitionerNote:
         "One structural change that proves effective is adding a source check as a standard opening step in any consultation where a patron mentions AI use. When a student says they used AI to find sources, asking to see their list and looking up one citation together takes approximately five minutes and almost always reveals at least one fabricated or inaccurate citation. That single step accomplishes more instruction than any amount of prior explanation. It also establishes, early in the consultation, that the librarian's role is not to warn the student about AI but to work alongside them as a research partner. In order to implement something similar without restructuring every consultation workflow, simply adding one opening question to the standard consultation intake makes a measurable difference: 'Have you used any AI tools so far in this project?' The answer shapes the rest of the interaction more usefully than almost any other piece of information, and it signals to patrons that AI related questions are expected and welcome in the library, not treated as a confession.",
@@ -954,6 +985,7 @@ Faculty conversations increasingly raise a related but distinct question: whethe
         "AI detection tools are not completely accurate and can be circumvented, per ACRL's Knowledge and Understanding competency; treat detection scores as one input for academic integrity conversations, never as proof on their own.",
         "A workflow map (AI for topic development and search strategy, databases for retrieval, librarian judgment for source evaluation) is the most practical instructional tool for communicating appropriate AI use in the research process.",
         "The librarian's instruction role has expanded: teaching research AI literacy through workflow instruction, live citation demonstration, and verification as a professional norm is now a core component of single shot sessions and reference consultations.",
+        "Funders now set explicit expectations for AI use: NIH issued a notice on originality in applications in July 2025 and Canada published tri-agency guidance the same month. Disclosure governs your own proposal; confidentiality governs someone else's manuscript, and uploading work under peer review to a commercial AI tool discloses it to a third party the author never agreed to.",
       ],
     },
   },
@@ -1241,6 +1273,7 @@ In order to communicate the workflow's design and quality standards to administr
       "Electronic resource management and AI tools",
       "GA platform tools: Specto, the AI Metadata Assistant for Alma, and the Ex Libris Academic AI platform",
       "AI assisted de-duplication: what the OCLC WorldCat test demonstrates",
+      "Collections as AI training data: consent, contracts, and the bots already crawling your repository",
     ],
     objectives: [
       "Identify AI features in your current discovery layer and how to configure them",
@@ -1250,8 +1283,9 @@ In order to communicate the workflow's design and quality standards to administr
       "Understand the limitations of AI in discovery contexts",
       "Evaluate newly generally available platform AI tools, including Specto and the AI Metadata Assistant for Alma, for adoption at your institution",
       "Explain what AI assisted de-duplication can and cannot resolve in a shared catalog or local digital collection",
+      "Identify which collections should be excluded from AI training use and explain why legacy digitization contracts require review",
     ],
-    estimatedMinutes: 20,
+    estimatedMinutes: 24,
     status: "published",
     isGap: false,
     description:
@@ -1343,6 +1377,20 @@ The pilot phase applies AI assistance to a small, bounded scope such as one coll
 
 The documentation step is where sustainable workflow development most often breaks down. A workflow that works for one person and has never been written down is not an institutional workflow; it is a personal practice that disappears when the person changes roles or institutions. In order to build a workflow that persists and can be handed off, the documentation should capture the prompt or prompt template used, the quality review criteria applied, the record keeping conventions for flagging AI assisted records, and the conditions under which the workflow requires escalation to additional professional review. Such documentation is the difference between AI adoption that builds institutional capacity and AI adoption that builds individual efficiency, and for digital collections programs managing long term collections, institutional capacity is the appropriate goal. Furthermore, sharing workflow documentation with peer institutions through professional networks such as the Digital Library Federation, the Society of American Archivists, and OCLC communities, contributes to the shared professional knowledge base that makes adoption easier for institutions earlier in the process.`,
         },
+        {
+          heading: "Your collections as training data, and the bots already taking them",
+          body: `This module has treated AI as something the library applies to its collections. The March 2026 ARL and CNI workshop report raises the question from the other direction: the library's collections are themselves training material, and in many cases they are already being consumed as such without anyone in the library having decided anything. Research libraries hold digitized texts, archives, oral histories, and curated corpora that commercial AI systems cannot replicate, which the report identifies as a distinctive institutional asset. Assets attract attention, and this question has arrived faster than most libraries have built the frameworks to answer it.
+
+The first task is a review of what the library has already agreed to. Many institutions signed digitization agreements with third-party partners years before generative AI existed, and those contracts were not written with model training in mind. ARL recommends reviewing every agreement with a company or organization that has digitized material from the collection, in order to establish what those agreements actually permit with respect to AI training. For example, a mass digitization contract from 2011 may grant a partner broad reuse rights in language that nobody at the time understood to cover training a language model, and the library will not know whether it does until someone reads it with that question in mind. Such a review is unglamorous and is the kind of work that surfaces obligations before they become disputes.
+
+The second task is deciding what should be excluded, which is a values judgment rather than a legal one. ARL's guidance is explicit that libraries should identify collections that should not be used for AI training due to cultural and social obligations or contractual agreements, and the report notes that explicit decision frameworks for these exclusions remain among the clearest gaps in current practice. For example, Indigenous materials held under community protocols, oral histories recorded with narrator agreements that specified particular uses, and archives of vulnerable populations all raise questions that a general openness policy does not answer. The consent that was given for preservation and access was not consent for computational ingestion, and treating the two as equivalent because both are technically permitted by a license would be a failure of the stewardship the material was accepted under.
+
+The third task is the affirmative one, and libraries are further along here than the previous two suggest. Harvard Library has released a corpus of roughly one million digitized public domain books explicitly designed to support model training, paired with use policies and access-by-request protocols that balance openness against responsible reuse. Cornell University Library has published a primer on open bibliographic metadata that works through licensing choices and which fields or records are appropriate to share, and ARL recommends considering CC0 licensing for library-created metadata where appropriate. Such projects establish that libraries can participate in this space on their own terms, with provenance and attribution present in the record rather than stripped out downstream.
+
+Furthermore, there is an operational reality that arrives whether or not the library has made any of these decisions. AI training crawlers have been hitting library and cultural heritage sites at volumes heavy enough to cause slowdowns and outages, a pattern documented across the sector through 2025. This is not a policy question in the moment it happens; it is a systems administrator watching a repository fall over. ARL's response is a collective one, calling for shared technical standards, advocacy for responsible crawling practices by AI developers, and engagement with standards bodies to establish norms that protect open infrastructure without requiring libraries to abandon openness as their default posture. For a practitioner, the immediate implication is narrower: know whether your repository and digital collections platform are being crawled, know who in your institution would notice, and know what the library's position is before the question is decided for it by an outage.
+
+Additionally, the decisions in this section are not the systems librarian's alone. Which collections may be used, under what conditions, and with what attribution are questions about the library's relationship to the communities whose material it holds, and they require the people who negotiated those relationships to be in the room. The technical capacity to make a collection machine-readable says nothing about whether it should be made so, and that distinction is the one this module asks practitioners to hold.`,
+        },
       ],
       practitionerNote:
         "The accessibility application is what demonstrates most clearly that AI belongs in digital collections workflows, not as a productivity enhancement but as a genuine service expansion. An oral history collection with over sixty recordings and no transcripts represents exactly the kind of accessibility debt that has accumulated for years because manual transcription is financially out of reach. Running the first ten interviews through Whisper and reviewing the output takes an afternoon. The transcripts are not perfect: there will be proper noun errors, some regional vocabulary the model does not recognize, and a few passages that need significant correction. But they are usable after review, and they are better than no transcript. What this illustrates is not merely efficiency, though the efficiency is real. It is that the barrier between 'this collection exists' and 'this collection is accessible' has dropped low enough to actually cross. That is a different category of value than saving time on a task that was already being done.",
@@ -1356,6 +1404,7 @@ The documentation step is where sustainable workflow development most often brea
         "Specto and the AI Metadata Assistant for Alma, both part of Ex Libris's broader Academic AI platform, are now generally available; for institutions running Ex Libris products, the relevant step is no longer awareness but a local pilot evaluating these tools against real collection data.",
         "OCLC's February 2025 test of AI assisted de-duplication on roughly 500,000 WorldCat record pairs of print English-language books showed AI can reliably flag candidate duplicates at scale, but the harder cases, distinct editions, printings, and multi-volume sets, still require a cataloger's review before any merge, a pattern that applies equally to de-duplication in local digital collections and institutional repositories.",
         "A sustainable AI enhanced digital collections workflow requires three phases in sequence: an audit identifying the highest priority gaps, a pilot on a bounded scope that generates realistic quality and time estimates, and documented processes that build institutional capacity rather than individual efficiency.",
+        "Library collections are training material, and much of that consumption is already happening: review legacy digitization contracts written before generative AI existed, identify collections that cultural or contractual obligations place off limits, and know whether AI crawlers are already hitting your repository. Harvard's public domain corpus and Cornell's open metadata primer show libraries participating on their own terms.",
       ],
     },
   },
@@ -1490,6 +1539,7 @@ The final maintenance practice is version noting for significant revisions. When
       "Patron-facing and privacy considerations specific to vendor AI search tools",
       "ALA's vendor data-review checklist: the six data-handling questions to ask before buying",
       "A decision framework for adopting, piloting, or declining a vendor AI feature",
+      "Vendor AI features that arrive without a purchase decision: inventory, testing, and opt-out criteria",
     ],
     objectives: [
       "Distinguish where AI genuinely assists collection development from where vendor marketing overstates it",
@@ -1498,8 +1548,9 @@ The final maintenance practice is version noting for significant revisions. When
       "Distinguish bundled AI features from paid add-ons when evaluating cost and value",
       "Apply a published evaluation rubric to a vendor AI product against your specific student population",
       "Decide whether to adopt, pilot, or decline a vendor AI feature using a defensible framework",
+      "Inventory the AI features already active in subscribed platforms and define in advance the criteria for disabling one",
     ],
-    estimatedMinutes: 25,
+    estimatedMinutes: 29,
     status: "published",
     isGap: false,
     description:
@@ -1579,6 +1630,20 @@ The practical decision resolves into three outcomes, and naming them explicitly 
 
 The final element of the framework is continuous monitoring rather than a one-time verdict, because everything in this space dates quickly. The Ithaka S+R Generative AI Product Tracker, public and continuously updated since 2024, maintains a living table of these products with their purchasing models, features, and limitations, and it is more reliable as a current reference than any feature list a librarian could memorize. For example, a selector who bookmarks the tracker and re-checks it each term will catch a bundled tool moving to paid pricing, or a new privacy disclosure, far sooner than one relying on vendor outreach. Such ongoing attention should be paired with a verify-before-teaching habit, re-confirming pricing, privacy clauses, and feature scope each term, since a claim that was accurate last semester may not be accurate now. In order to keep this from becoming overwhelming, the discipline is to evaluate only the tools your library actually encounters, apply the same four-screen rubric every time, and document the decision. Such a disciplined, repeatable process is what allows a library to keep pace with a flood of vendor AI products, and the judgment about which products earn a place in the collection and the budget remains, at every step, the responsibility of the librarians who know their patrons and their resources best.`,
         },
+        {
+          heading: "The AI features you did not buy",
+          body: `Every framework in this module so far assumes the library is making a decision: evaluating a product, weighing a cost, choosing to adopt, pilot, or decline. A substantial and growing share of the AI a library actually runs never passed through that decision at all. It arrived inside a database the library already subscribed to, switched on by the vendor as an enhancement, in a renewal cycle where nobody was asked. The March 2026 ARL and CNI workshop report identifies governance of vendor-embedded AI features as the least developed area in research library practice despite being the most immediate operational reality for most libraries, and adds a strategy in response: treat vendor AI features as a governed surface rather than a default benefit.
+
+Stony Brook University Libraries states the problem plainly in its own published AI statement, acknowledging that many of the tools the library subscribes to now include AI features that arrived without a procurement decision. That is the most useful sentence any library has published on this subject, because it names a condition most libraries are in and few have said out loud. The vendor evaluation framework earlier in this module applies cleanly to a product the library is considering buying. It does not apply, on its own, to a feature that appeared inside a platform the library licensed three years ago for entirely different reasons.
+
+The practical response has three parts, and the first is an inventory. In order to govern these features the library must first know which of them exist, which means going through the subscribed databases and discovery layers one at a time and recording what AI functionality is present in each, whether it is on by default, whether it can be turned off, and whether the library was notified before it appeared. For example, a mid-sized academic library working through this exercise will typically find AI summarization, natural language query translation, or an embedded research assistant in several platforms it never evaluated for those capabilities. Such an inventory is unglamorous, takes a few hours spread across a term, and converts an unknown surface into a known one.
+
+The second part is a preview and testing requirement. A feature that is on by default in a patron-facing discovery layer is, functionally, a service the library is offering, and it deserves the testing any new service would receive before being offered. In order to test it honestly the practitioner should run the queries the library's actual patrons run rather than the queries the vendor demonstration used, and should compare what the feature returns against what they would have recommended themselves. Additionally, ALA's six data-handling questions from earlier in this module apply to an embedded feature exactly as they apply to a purchased one. The fact that the library did not choose the feature does not reduce its responsibility for what that feature does with patron queries.
+
+The third part is a set of opt-out criteria decided in advance. The library should state, before it is under pressure to decide case by case, what would cause it to disable a vendor AI feature: functionality that misleads patrons about the scope of what was actually searched, privacy telemetry that sends patron queries somewhere the library cannot account for, or demonstrated bias in what the feature surfaces and suppresses. Furthermore, the library should establish whether disabling is technically possible for each feature, because in several current platforms it is not, and a feature that cannot be turned off is a fact worth knowing before renewal rather than after.
+
+This work has a collective dimension that individual evaluation does not reach. Colorado State University Libraries objected publicly to a publisher's AI contract language, engaged peer libraries and its university community in the argument, and the publisher revised the terms. The Library Copyright Alliance has issued statements and filed formal comments arguing against contractual restrictions that abridge fair use, and SPARC has convened libraries specifically to share what has worked in negotiating AI restrictions out of vendor agreements. Montana State University Libraries has published Viewfinder, a values-driven toolkit for deciding whether and how to adopt an AI tool at all. In order to make use of any of this, a practitioner does not need to lead a national campaign. Naming a specific clause to a vendor representative during a renewal conversation, knowing that peer institutions have successfully objected to similar language, is well within the reach of an ordinary subject or electronic resources librarian. What remains outside the vendor's reach is the library's judgment about whether a feature serves its patrons, and that judgment has to be exercised whether or not the library was consulted before the feature arrived.`,
+        },
       ],
       practitionerNote:
         "The moment this stopped being abstract for me was a vendor demonstration of an AI research assistant, where the sales representative typed a clean question about a well-documented topic and the tool produced a confident, nicely cited summary in seconds. It looked impressive in the room. Afterward I ran the questions my students actually bring to the desk, the messy ones about half-remembered assignment topics and narrow local subjects, and the tool returned five sources where the student needed a starting point that acknowledged its own gaps, and it surfaced articles we do not even subscribe to. Neither result was wrong, exactly, but neither matched what a first-generation student writing a first research paper actually needs. Running it through the Choice rubric, transparency and privacy were the screens that mattered most for my population, and the tool was stronger on the demonstration question than on any question a real student had ever asked me. That is the gap the demonstration is designed to hide, and the only way to see it is to test the tool on your own patrons rather than the vendor's example.",
@@ -1590,6 +1655,7 @@ The final element of the framework is continuous monitoring rather than a one-ti
         "Vendor privacy commitments vary and must be read clause by clause, with particular attention to tools that require an authenticated login and therefore tie research queries to an identified patron, and no independent privacy audit of these products yet exists.",
         "ALA's guidance provides a concrete vendor data-review checklist to build into procurement: whether AI is on by default and can be disabled, whether it collects prompts and reference interactions, whether data trains the model, where data is stored and who can access it, retention and deletion mechanisms, and audit and exit rights; a vendor's inability to answer is itself a finding.",
         "A repeatable decision framework, anchored in the Choice four-screen rubric and the ACRL AI Competencies, resolves each product into adopt, pilot, or decline, paired with continuous monitoring through the Ithaka S+R tracker and a verify-before-teaching habit.",
+        "A growing share of library AI arrives switched on inside platforms the library already subscribes to, with no procurement decision; ARL calls governance of these embedded features the least developed area in practice despite being the most immediate. Inventory what is active, test it against real patron queries, and decide opt-out criteria before you need them.",
       ],
     },
   },
@@ -1824,6 +1890,7 @@ Dakan and Feller describe the professional responsibility that applies at the po
       "Claude Projects as a light agentic tool",
       "Custom instructions and memory",
       "Real library use cases for agentic AI",
+      "Governing agents: authorization, auditability, and containment",
     ],
     objectives: [
       "Explain what an AI agent is and how it differs from a standard AI chatbot",
@@ -1831,8 +1898,9 @@ Dakan and Feller describe the professional responsibility that applies at the po
       "Identify at least two library workflows where agentic AI would reduce manual work",
       "Understand the risks of agentic AI and when human oversight is required",
       "Evaluate whether an agentic AI approach is appropriate for a specific library task",
+      "Define what an AI agent may access, must log, and may not act upon before deploying it in a library workflow",
     ],
-    estimatedMinutes: 15,
+    estimatedMinutes: 19,
     status: "published",
     isGap: false,
     description:
@@ -1896,6 +1964,20 @@ Collection development scanning is a second practical application. In order to r
 
 Assessment work is a third practical application with significant time return. For example, a practitioner with raw assessment data from a patron satisfaction survey can submit the responses to an agent and request a summary of the three most significant trends, a two-paragraph narrative suitable for the annual report, and a list of areas that warrant follow-up investigation. Such a summary does not replace the practitioner's interpretation of what the findings mean for the library's services; it compresses the initial synthesis from hours to minutes, leaving the practitioner's time available for the interpretive work that requires professional judgment. Additionally, instruction session follow-up drafts, collection use reports, and grant narrative sections describing library programs are all tasks where agentic AI can produce a competent draft from structured input, which the practitioner then reviews, corrects, and approves before use.`,
         },
+        {
+          heading: "Governing what an agent is allowed to do",
+          body: `Everything described in this module so far concerns what agentic AI can do. The governance question is different and more urgent: what an agent is permitted to do, on which systems, with which data, and without whose approval. The Association of Research Libraries and the Coalition for Networked Information addressed this directly in their March 2026 workshop report, *Strategic Implications of AI Futures for Research Libraries*, which names agentic AI arriving in library systems without the authorization frameworks to govern it as one of the clearest unfinished tasks in current practice. The report adds a strategy specifically for it: libraries should develop governance frameworks for agentic AI that define authorization, auditability, and containment before agents begin taking actions across library systems.
+
+The distinction that makes this urgent is the one this module opened with. A chatbot produces text that a practitioner reads and then decides what to do with, which means the human sits between the output and any consequence. An agent acts. When an agent updates a record, sends a message, or writes to a system, the consequence arrives before the review rather than after it, and the speed at which agentic systems execute steps means an error propagates through several subsequent steps before a person notices. For example, an agent given access to an integrated library system in order to correct a batch of malformed records will not pause at the first record it misreads; it will apply the same misreading to every record matching that pattern. Such a failure is not a hallucination in the sense described in Module 01. It is correct execution of an incorrect instruction, at scale, and it is a governance problem rather than a technical one.
+
+Authorization is the first of the three requirements and the most concrete. In order to authorize an agent, the library must state explicitly which systems the agent may reach, which of those it may only read, which it may write to, and which actions require human approval regardless of the agent's apparent confidence. For example: an agent supporting acquisitions may read the catalog and the vendor's title list, may write to a draft recommendation document, and may not place an order, modify a bibliographic record, or send correspondence to a vendor. Such a statement takes an afternoon to write and forecloses the class of incident that takes months to remediate. Additionally, the authorization should name the data categories the agent may not receive at all, which for library work means the prohibited patron data categories established in Module 04.
+
+Auditability is the second requirement and the one most often omitted. An agent that takes actions must leave a record of what it did, in what order, on the basis of what input, and that record must be legible to a practitioner who was not present when the actions occurred. In order to be useful, such a log has to be reviewed on a schedule rather than only after something has gone wrong. Furthermore, the library should be able to answer a plain question about any agentic output it has published or acted upon: which steps were taken by the system, and which were taken by a person. A library that cannot answer that question about its own workflows cannot make honest representations to its patrons, its administration, or its accreditors about how the work was produced.
+
+Containment is the third requirement, and it is the practical expression of the first two. Containment means the agent operates inside a boundary from which its errors cannot escape into production systems, patron records, or public-facing services without crossing a human approval point. For example, an agent working on metadata remediation should write its proposed changes to a staging file rather than directly to the catalog, with a practitioner approving the batch before it is loaded. Such an arrangement costs one review step and preserves the ability to reverse a bad run, which an agent writing directly into production does not.
+
+None of this requires that the library be running sophisticated agentic systems today. The ARL and CNI report is explicit that most of this work has not yet been done anywhere, and that governance frameworks are arriving after the tools rather than before them, which is the reverse of the order that would serve libraries well. A practitioner who writes down what an agent may access, what it must log, and where its output must stop before reaching production has done the substantive part of this work, and has done it before an incident forces the question. The professional judgment that decides where the human approval point belongs cannot be delegated to the system whose actions it is meant to constrain.`,
+        },
       ],
       practitionerNote:
         "A Claude Project configured for instruction design returns its setup time within the first week of use. The most significant change is not speed but consistency: sessions planned with access to previous lesson plans as templates start from a more substantive baseline than those planned without that context, and the quality of the starting draft improves the quality of the final session design.",
@@ -1906,6 +1988,7 @@ Assessment work is a third practical application with significant time return. F
         "Custom instructions are the highest-return investment in AI-assisted library work: thirty to forty-five minutes spent writing them once produces compounding time savings across every subsequent interaction.",
         "Memory features in current AI tools extend the value of custom instructions but must be treated as a convenience rather than a guarantee; important context should be verified as present before being relied upon for consequential work.",
         "In every practical agentic library application, the practitioner's review and judgment shape the final output; the agent handles synthesis and initial drafting, not the decisions that require professional accountability.",
+        "Agentic AI needs governance the profession has largely not built: authorization defining which systems an agent may read and write, auditability producing a reviewable record of what it did, and containment keeping its output behind a human approval point before it reaches production.",
       ],
     },
   },
@@ -2515,16 +2598,16 @@ export const moduleReviewDates: Record<number, string> = {
   2: "June 2026",
   3: "June 2026",
   4: "July 2026",
-  5: "July 2026",
-  6: "June 2026",
+  5: "September 2026",
+  6: "September 2026",
   7: "June 2026",
   8: "June 2026",
-  9: "July 2026",
+  9: "September 2026",
   10: "June 2026",
-  11: "July 2026",
+  11: "September 2026",
   12: "June 2026",
   13: "July 2026",
   14: "June 2026",
-  15: "June 2026",
+  15: "September 2026",
   16: "June 2026",
 };

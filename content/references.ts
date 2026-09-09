@@ -94,12 +94,32 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Association of College and Research Libraries. (2025, October). *AI competencies for academic library workers.* American Library Association.",
       url: "https://www.ala.org/acrl/standards/ai",
     },
+    {
+      text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
+      url: "https://doi.org/10.29242/report.futurescape2026",
+    },
+    {
+      text: "Fox, V. (2025, June 11). AI refusal in libraries: A starter guide. *ACRLog.*",
+      url: "https://acrlog.org/2025/06/11/ai-refusal-in-libraries-a-starter-guide/",
+    },
   ],
 
   6: [
     {
       text: "Association of College and Research Libraries. (2025, October). *AI competencies for academic library workers.* American Library Association.",
       url: "https://www.ala.org/acrl/standards/ai",
+    },
+    {
+      text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
+      url: "https://doi.org/10.29242/report.futurescape2026",
+    },
+    {
+      text: "National Institutes of Health. (2025, July 17). *Supporting fairness and originality in NIH research applications* (NOT-OD-25-132).",
+      url: "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html",
+    },
+    {
+      text: "Government of Canada. (2025, July 28). *The use of generative artificial intelligence in the development and review of research proposals.*",
+      url: "https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/use-generative-artificial-intelligence-development-and-review-research-proposals",
     },
   ],
 
@@ -149,6 +169,18 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://library.yale.edu",
       note: "Confirm direct URL for the Yale digital collections AI application.",
     },
+    {
+      text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
+      url: "https://doi.org/10.29242/report.futurescape2026",
+    },
+    {
+      text: "Warner, S., & Kovari, J. (2025, January 30). *Open bibliographic metadata: A primer.* Cornell University Library.",
+      url: "https://hdl.handle.net/1813/116675",
+    },
+    {
+      text: "Enis, M. (2025, July 21). AI bots swarm library, cultural heritage sites, causing slowdowns and crashes. *Library Journal.*",
+      url: "https://www.libraryjournal.com/story/ai-bots-swarm-library-cultural-heritage-sites-causing-slowdowns-and-crashes",
+    },
   ],
 
   10: [
@@ -189,6 +221,22 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Portillo, A., & Carson, P. (2025, January). Evaluating large language models for collection development. *Journal of the Medical Library Association, 113*(1).",
       url: "https://doi.org/10.5195/jmla.2025.2079",
     },
+    {
+      text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
+      url: "https://doi.org/10.29242/report.futurescape2026",
+    },
+    {
+      text: "Stony Brook University Libraries. (2025, December 3). *Artificial intelligence use at Stony Brook University Libraries* (v. 1.4).",
+      url: "https://library.stonybrook.edu/wp-content/uploads/2025/12/ArtificialIntelligenceUseatStonyBrookUniversi.html",
+    },
+    {
+      text: "Estlund, K. (2025, October 24). When publishers' fear of AI prohibits basic uses. *Colorado State University SOURCE.*",
+      url: "https://source.colostate.edu/guest-column-when-publishers-fear-of-ai-prohibits-basic-uses/",
+    },
+    {
+      text: "Library Copyright Alliance. (2025, October). *Statement on copyright and generative artificial intelligence.*",
+      url: "https://www.librarycopyrightalliance.org/documents/principles/copyright-ai/statement-on-copyright-and-generative-artificial-intelligence/",
+    },
   ],
 
   12: [
@@ -217,6 +265,10 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Association of College and Research Libraries. (2025, October). *AI competencies for academic library workers.* American Library Association.",
       url: "https://www.ala.org/acrl/standards/ai",
+    },
+    {
+      text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
+      url: "https://doi.org/10.29242/report.futurescape2026",
     },
   ],
 

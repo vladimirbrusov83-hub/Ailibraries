@@ -133,6 +133,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Why this exists: 2026 evidence ───────────────────────────────── */}
+      <section className="bg-white border-b border-stone-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-3">
+              Why this exists
+            </h2>
+            <p className="text-stone-500 text-base max-w-2xl mx-auto">
+              Library users have moved faster than library instruction. The 2026 sector data shows the gap is not willingness - it is structured support.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div className="rounded-xl border border-stone-200 p-5">
+              <p className="text-3xl font-bold text-stone-900">31%</p>
+              <p className="text-sm text-stone-600 leading-relaxed mt-2">
+                of students start a research project in a general AI assistant such as ChatGPT, Claude, or Gemini. Just 10% start at the library website. <span className="font-semibold text-stone-900">1% ask a librarian.</span>
+              </p>
+              <p className="text-xs text-stone-400 mt-3">
+                Clarivate user experience research, 2026
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-stone-200 p-5">
+              <p className="text-3xl font-bold text-stone-900">3.2<span className="text-lg font-semibold text-stone-400"> / 5</span></p>
+              <p className="text-sm text-stone-600 leading-relaxed mt-2">
+                Average librarian confidence in AI concepts and terminology - unchanged since 2025. A third of libraries are still at the exploration and evaluation stage.
+              </p>
+              <p className="text-xs text-stone-400 mt-3">
+                Pulse of the Library 2026 (n = 1,876)
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-stone-200 p-5">
+              <p className="text-3xl font-bold text-stone-900">30%</p>
+              <p className="text-sm text-stone-600 leading-relaxed mt-2">
+                of libraries report no institutional focus on AI literacy, and half of librarians are building these skills on their own.
+              </p>
+              <p className="text-xs text-stone-400 mt-3">
+                Pulse of the Library 2026 (n = 1,876)
+              </p>
+            </div>
+          </div>
+
+          <p className="text-center text-sm text-stone-500 mt-8 max-w-2xl mx-auto">
+            This curriculum is the structured support that most libraries do not yet provide - free, sequenced, and mapped to the ACRL competencies. Data from{" "}
+            <a
+              href="https://clarivate.com/pulse-of-the-library/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80 transition-opacity"
+              style={{ color: "#0F6E56" }}
+            >
+              Pulse of the Library 2026
+            </a>
+            , Clarivate.
+          </p>
+        </div>
+      </section>
+
       {/* ─── Choose your path ──────────────────────────────────────────────── */}
       <section className="py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">

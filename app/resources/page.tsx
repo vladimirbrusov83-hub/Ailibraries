@@ -118,10 +118,10 @@ const resourceSections = [
       {
         title: "Pulse of the Library Survey",
         org: "Clarivate",
-        date: "Annual - most recent: October 2025",
+        date: "Annual - most recent: 2026",
         url: "https://clarivate.com/pulse-of-the-library/",
         description:
-          "Annual global survey of library technology adoption. The authoritative benchmark data for AI adoption rates, training gaps, and institutional confidence. Key 2024 finding: 69% of academic libraries evaluating or implementing AI; 32% of librarians have no training available.",
+          "Annual global survey of library technology adoption, now in its third year. The authoritative benchmark data for AI adoption rates, training gaps, and institutional confidence. Key 2026 findings (n = 1,876): librarian confidence has stalled at 3.2 out of 5, unchanged from 2025; 33% of libraries remain at the exploration and evaluation stage and only 3% are in active implementation; 49% have no defined strategic position on AI; 30% report no institutional focus on AI literacy, and 50% of librarians learn AI on their own. Top concerns are now privacy and security (64%), misinformation (60%), and research and academic integrity (53%).",
         tag: "Data",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",

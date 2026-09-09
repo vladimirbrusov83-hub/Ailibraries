@@ -255,7 +255,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <p className="text-center text-sm text-stone-500 max-w-2xl mx-auto mb-6">
+          <p className="text-center text-sm text-stone-500 mb-6">
             Role shapes confidence. General librarians report the lowest confidence in AI of any role (3.14 out of 5), while systems librarians report the highest (3.59){" "}
             <span className="text-stone-400">- Pulse of the Library 2026</span>. Both paths here start from the same foundations, so the gap is a starting point, not a ceiling.
           </p>

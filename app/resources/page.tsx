@@ -41,7 +41,18 @@ const resourceSections = [
         date: "April 2024",
         url: "https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/",
         description:
-          "Seven guiding principles including the essential 'No Human, No AI' - consequential decisions must not be delegated entirely to AI. Required reading for anyone developing library AI policy.",
+          "Seven guiding principles including the essential 'No Human, No AI' - consequential decisions must not be delegated entirely to AI. Required reading for anyone developing library AI policy. Still the April 2024 edition with no revision issued; ARL's newer AI work appears below in the 2026 workshop report and quick poll.",
+        tag: "Essential",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
+      },
+      {
+        title: "Strategic Implications of AI Futures for Research Libraries",
+        org: "Karen Estlund & Cynthia Hudson Vitale \u00b7 ARL + CNI \u00b7 CC BY 4.0",
+        date: "March 2026",
+        url: "https://doi.org/10.29242/report.futurescape2026",
+        description:
+          "Scenario-planning report stress-testing library strategy against four divergent 2035 AI futures, with a year-later scan of what libraries have actually done. Its four near-term priorities: invest in the workforce now, leverage unique collections, lead on governance and ethics, and build partnerships. Names agentic AI governance, vendor-embedded AI features, and provenance tracking as the least developed areas in practice. Openly licensed and free to quote.",
         tag: "Essential",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",
@@ -122,6 +133,17 @@ const resourceSections = [
         url: "https://clarivate.com/pulse-of-the-library/",
         description:
           "Annual global survey of library technology adoption, now in its third year. The authoritative benchmark data for AI adoption rates, training gaps, and institutional confidence. Key 2026 findings (n = 1,876): librarian confidence has stalled at 3.2 out of 5, unchanged from 2025; 33% of libraries remain at the exploration and evaluation stage and only 3% are in active implementation; 49% have no defined strategic position on AI; 30% report no institutional focus on AI literacy, and 50% of librarians learn AI on their own. Top concerns are now privacy and security (64%), misinformation (60%), and research and academic integrity (53%).",
+        tag: "Data",
+        tagColor: "#57534e",
+        tagBg: "#f5f5f4",
+      },
+      {
+        title: "ARL AI Quick Poll",
+        org: "Association of Research Libraries",
+        date: "Fielded January 2026, published May 2026",
+        url: "https://www.arl.org/blog/tracking-the-ai-evolution-in-research-libraries-findings-from-arls-2026-ai-quick-poll/",
+        description:
+          "Snapshot of where ARL member libraries stand: implementation is outpacing governance, only a minority report formal enforced generative AI policies, and staff attitudes vary within teams rather than splitting into camps. Asked what support they need, leaders named governance templates, readiness assessment tools, culture-change support, and peer examples - not more AI tools. Read as directional only: 39 completed responses from 125 member libraries, and ARL itself flags likely selection bias.",
         tag: "Data",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",

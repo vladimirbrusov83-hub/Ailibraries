@@ -203,6 +203,10 @@ export default function HomePage() {
             <p className="text-stone-500 text-base max-w-xl mx-auto">
               The curriculum covers both paths. Pick the one that matches your work and we&apos;ll highlight your recommended modules across the curriculum - or browse everything.
             </p>
+            <p className="text-sm text-stone-500 max-w-2xl mx-auto mt-4 pt-4 border-t border-stone-100">
+              Role shapes confidence. General librarians report the lowest confidence in AI of any role (3.14 out of 5), while systems librarians report the highest (3.59){" "}
+              <span className="text-stone-400">- Pulse of the Library 2026</span>. Both paths here start from the same foundations, so the gap is a starting point, not a ceiling.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-5 mb-8">

@@ -178,6 +178,9 @@ export default function AboutPage() {
           . ALA&apos;s six core values - Public Good, Intellectual Freedom, Privacy, Sustainability, DEIA, and Labor - inform the modules addressing ethics, privacy, discovery, vendor evaluation, and library labor.
         </p>
         <p>
+          The 4D grounding is not this author&apos;s preference alone. Toronto Metropolitan University Libraries launched an AI Fluency badging program in November 2025 whose two core workshops are titled Artificial Intelligence: Delegation &amp; Description and Artificial Intelligence: Discernment and Diligence - the same framework, split across two workshops, delivered by an academic library with a credential attached. TMU describes the workshops as helping people learn to use generative AI tools effectively and thoughtfully, or to choose not to use them at all, which is the position this curriculum argues in its module on critical evaluation.
+        </p>
+        <p>
           Together, these frameworks connect practical AI skills with the professional values that should guide their use.
         </p>
         <p className="text-sm text-stone-400 italic">

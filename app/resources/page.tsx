@@ -58,6 +58,83 @@ const resourceSections = [
         tagBg: "#E1F5EE",
       },
       {
+        title: "UVA Archival AI Protocol (v1.1) + Adoption Kit",
+        org: "Leo S. Lo & University of Virginia Library · CC BY 4.0",
+        date: "2026",
+        url: "https://doi.org/10.18130/5dqf-9w86",
+        description:
+          "The one openly licensed framework in this list, and therefore the one any institution can adapt directly. Separates irreversible model training from retrieval-based access, which is the distinction that lets a library approve one request and decline another. Core rule: irreversible models do not get access unless item-level provenance and meaningful attribution can be demonstrated, and the institution retains contractually enforceable control to stop further use. Ships with an Adoption Kit (doi:10.18130/jbeg-a995), also CC BY 4.0.",
+        tag: "Open licence",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
+      },
+      {
+        title: "Statement of Shared Practice on AI Training Requests",
+        org: "University of Virginia Library (coordinating)",
+        date: "April 2026",
+        url: "https://library.virginia.edu/ai/shared-practice",
+        description:
+          "A voluntary twelve-month commitment for libraries, archives and museums responding to AI training requests for unique cultural collections. Signatories classify each request, evaluate digitization and AI use as separate agreements, require provenance, and apply a presumption against approval for broad commercial training. Launched with twelve founding institutions; signatories share an anonymized ledger of the requests peers are receiving. Where a librarian points when a training request actually arrives.",
+        tag: "Practice",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
+      },
+      {
+        title: "Stony Brook University Libraries AI Statement (v1.4)",
+        org: "Stony Brook University Libraries",
+        date: "December 2025",
+        url: "https://library.stonybrook.edu",
+        description:
+          "A published, versioned library AI policy - a worked example rather than a framework. Eight guiding principles led by 'no human, no AI', and, unusually, an explicit list of what the libraries do not use AI for: no tracking or evaluating individual patrons including search and borrowing history, no determining service eligibility or replacing professional expertise, no selling sensitive data, no training or fine-tuning on sensitive information. The negative list teaches more than the positive one. Search the Stony Brook Libraries site for the current version.",
+        tag: "Worked example",
+        tagColor: "#57534e",
+        tagBg: "#f5f5f4",
+      },
+      {
+        title: "Statement on Copyright and Generative AI (v4.0)",
+        org: "Library Copyright Alliance (ALA, ACRL, ARL)",
+        date: "October 2025",
+        url: "https://www.librarycopyrightalliance.org/",
+        description:
+          "Short position statement asserting that existing U.S. copyright law, including fair use, is adequate to the copyright and generative AI intersection and that no new legislation is required. Its practical use is as the counterweight to vendor licence terms: when a publisher's contract restricts uses that copyright law would permit, this is the document that says so.",
+        tag: "Reference",
+        tagColor: "#57534e",
+        tagBg: "#f5f5f4",
+      },
+      {
+        title: "AI Literacy for All: A Universal Framework",
+        org: "Leo S. Lo · CC BY-NC 4.0",
+        date: "2025 preprint",
+        url: "https://digitalrepository.unm.edu/ulls_fsp/213",
+        description:
+          "Five components - Technical Knowledge, Ethical Awareness, Critical Thinking, Practical Use, and Societal Impact - across four progressive levels, with rubrics. ARL pairs this with the ACRL competencies as a professional baseline. Worth reading against this site's own three-level structure.",
+        tag: "Framework",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
+      },
+      {
+        title: "The CARE Approach for Academic Librarians",
+        org: "Leo S. Lo · Journal of Academic Librarianship 52(1), 103186",
+        date: "January 2026",
+        url: "https://doi.org/10.1016/j.acalib.2025.103186",
+        description:
+          "Classify, Assess, Review, Enhance: a method for the reference interaction that begins with a patron holding an AI answer rather than a question. Built on an answer typography sorting AI answers into four kinds - factual, interpretive, constructive, and strategic - on the principle that each one fails differently. Subscription required; request through interlibrary loan if your institution lacks access.",
+        tag: "Paywalled",
+        tagColor: "#854F0B",
+        tagBg: "#FDF2DC",
+      },
+      {
+        title: "From Prompt to Agentic AI: The PASTAS Checklist",
+        org: "Leo S. Lo · portal: Libraries and the Academy 26(3)",
+        date: "2026",
+        url: "https://doi.org/10.1353/pla.2026.a994552",
+        description:
+          "Six components for designing and governing an AI agent: Purpose and Audience, Authority, Structure and Style, Tools and Access, Accountability and Safeguards, and Signals and Review. The nearest thing the profession has to a published agent-governance framework. Subscription required, though the six components are documented openly in UT Austin Libraries' AI guide.",
+        tag: "Paywalled",
+        tagColor: "#854F0B",
+        tagBg: "#FDF2DC",
+      },
+      {
         title: "ACRL Framework for Information Literacy",
         org: "Association of College and Research Libraries",
         date: "2016 (still current)",
@@ -83,6 +160,17 @@ const resourceSections = [
         description:
           "A free 12-lesson course built around the 4D Framework for human-AI collaboration: Delegation, Description, Discernment, and Diligence. Tool-agnostic and designed to remain useful as AI evolves - not a list of prompts that will be outdated next month. The three-mode model (Automation, Augmentation, Agency) and the product/process/performance layers from this course are referenced throughout this curriculum. Full course with exercises and certificate at Anthropic Academy; video-only access via the YouTube playlist.",
         tag: "Free",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
+      },
+      {
+        title: "AI Fluency Badging Program",
+        org: "Toronto Metropolitan University Libraries",
+        date: "November 2025",
+        url: "https://library.torontomu.ca/",
+        description:
+          "An academic library that credentialed the same 4D Framework this curriculum is built on. Two core workshops - Artificial Intelligence: Delegation & Description, and Artificial Intelligence: Discernment and Diligence - with a badge attached. Described as building a robust, tool-agnostic skill set rather than a step-by-step guide, and framed to help participants use generative AI thoughtfully or choose not to use it at all. Evidence that the 4D grounding is professional practice, not one author's preference.",
+        tag: "Peer program",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",
       },
@@ -147,6 +235,24 @@ const resourceSections = [
         tag: "Data",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",
+      },
+    ],
+  },
+  {
+    id: "tools-assessment",
+    title: "Tools: Assessment & Policy",
+    description: "For evaluating AI tools and working through the decisions as a department",
+    resources: [
+      {
+        title: "Viewfinder (v1.0)",
+        org: "Montana State University Libraries and partners · IMLS-funded · CC BY 4.0",
+        date: "2025",
+        url: "https://doi.org/10.17605/OSF.IO/RE2X7",
+        description:
+          "Not a checklist. A structured thirty-minute reflection exercise: choose an AI scenario, identify the three values that most concern you, then draw a stakeholder card at random representing a perspective different from your own, identify that stakeholder's three most pressing values, and work through the prompts. The random-stakeholder step is what makes it usable as a staff development activity rather than an individual evaluation tool. Interactive web tool plus a printable PDF, and openly licensed.",
+        tag: "Open licence",
+        tagColor: "#0F6E56",
+        tagBg: "#E1F5EE",
       },
     ],
   },

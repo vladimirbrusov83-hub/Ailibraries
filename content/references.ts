@@ -79,6 +79,23 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "U.S. Copyright Office. (2025, January 29). *Copyright and artificial intelligence, Part 2: Copyrightability.*",
       url: "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
     },
+    {
+      text: "American Library Association. (2026, June). *Guidance on the use of artificial intelligence in libraries* (CD#44.2, Final).",
+      url: "https://www.ala.org/sites/default/files/2026-06/ALA%20CD%2044.2%20AI%20Guidance%20Document%20-%20Final.pdf",
+      note: "Final adopted text. Cite this rather than the general guidance landing page.",
+    },
+    {
+      text: "Stony Brook University Libraries. (2025, December 3). *Artificial intelligence statement* (Version 1.4).",
+      note: "Verify the current URL before this module is next reviewed; the statement is versioned and moves.",
+    },
+    {
+      text: "*Bartz v. Anthropic PBC,* No. 3:24-cv-05417 (N.D. Cal. June 23, 2025; final settlement approval July 20, 2026).",
+      note: "Legal citation follows Bluebook convention. The settlement resolves the parties' dispute and sets no binding precedent.",
+    },
+    {
+      text: "Ohio State University Libraries. (2026, March 20). *Fair use and artificial intelligence: 2026 update.*",
+      url: "https://library.osu.edu/site/copyright/2026/03/20/fair-use-and-artificial-intelligence-2026-update/",
+    },
   ],
 
   5: [
@@ -132,6 +149,16 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Association of College and Research Libraries. (2025, October). *AI competencies for academic library workers.* American Library Association.",
       url: "https://www.ala.org/acrl/standards/ai",
     },
+    {
+      text: "Lo, L. S. (2026). The CARE approach for academic librarians. *The Journal of Academic Librarianship, 52*(1), 103186.",
+      url: "https://doi.org/10.1016/j.acalib.2025.103186",
+      note: "Subscription required. The four CARE steps and the answer typography's four answer types are drawn from the published abstract and the author's own description of the framework.",
+    },
+    {
+      text: "Iowa Academic Library Alliance. (2025). *Artificial intelligence.*",
+      url: "https://iala.libguides.com/alliance/ai",
+      note: "Aggregates AI guidance and syllabus statements from Iowa community colleges, including Des Moines Area Community College and Kirkwood Community College.",
+    },
   ],
 
   8: [
@@ -180,6 +207,24 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Enis, M. (2025, July 21). AI bots swarm library, cultural heritage sites, causing slowdowns and crashes. *Library Journal.*",
       url: "https://www.libraryjournal.com/story/ai-bots-swarm-library-cultural-heritage-sites-causing-slowdowns-and-crashes",
+    },
+    {
+      text: "Lo, L. S., & University of Virginia Library. (2026). *UVA archival AI protocol* (Version 1.1).",
+      url: "https://doi.org/10.18130/5dqf-9w86",
+      note: "CC BY 4.0. Published with an accompanying Adoption Kit (https://doi.org/10.18130/jbeg-a995).",
+    },
+    {
+      text: "University of Virginia Library. (2026, April 3). *Statement of shared practice on AI training requests and unique cultural collections.*",
+      url: "https://library.virginia.edu/ai/shared-practice",
+      note: "Signatory counts differ across sources. Cite the UVA signatories page for the current authoritative list.",
+    },
+    {
+      text: "Institutional Data Initiative. (2025, June). *Institutional Books 1.0* [Data set]. Harvard Law School Library Innovation Lab.",
+      note: "983,004 volumes, 394 million pages, approximately 242 billion tokens, 254 languages. Released on Hugging Face.",
+    },
+    {
+      text: "Knibbs, K. (2024, December 12). Harvard is releasing a massive free AI training dataset funded by OpenAI and Microsoft. *WIRED.*",
+      url: "https://www.wired.com/story/harvard-ai-training-dataset-openai-microsoft/",
     },
   ],
 
@@ -237,6 +282,30 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Library Copyright Alliance. (2025, October). *Statement on copyright and generative artificial intelligence.*",
       url: "https://www.librarycopyrightalliance.org/documents/principles/copyright-ai/statement-on-copyright-and-generative-artificial-intelligence/",
     },
+    {
+      text: "Ex Libris. (2026). *Getting started with Primo Research Assistant.* Clarivate.",
+      url: "https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant",
+      note: "Vendor documentation describes the vendor's own controls; it is not an independent evaluation of the feature.",
+    },
+    {
+      text: "JSTOR. (2026). *JSTOR AI research tool: Managing institutional access.* ITHAKA.",
+      url: "https://support.jstor.org/hc/en-us/articles/30315886380695",
+      note: "Vendor documentation.",
+    },
+    {
+      text: "Elsevier. (2026). *What is Scopus AI?*",
+      url: "https://www.elsevier.support/scopus/answer/what-is-scopus-ai",
+      note: "Vendor documentation.",
+    },
+    {
+      text: "Tay, A. (2024, September 15). Primo Research Assistant launches: A first look. *Aaron Tay's Musings about Librarianship.*",
+      url: "https://aarontay.substack.com/p/primo-research-assistant-launches-first",
+      note: "Independent practitioner analysis; source of the caveat that hiding the interface link did not disable the underlying endpoint at launch.",
+    },
+    {
+      text: "Estlund, K. (2025, October 24). *Guest column on CAS/SciFinder licence terms* [Guest column].",
+      note: "Editor's note added November 10, 2025 confirms revised CAS contract language and a November 2025 agreement. Verify the publication venue and URL before this module is next reviewed.",
+    },
   ],
 
   12: [
@@ -251,6 +320,14 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Clarivate. (2025). *Pulse of the library 2025.*",
       url: "https://clarivate.com/pulse-of-the-library/",
+    },
+    {
+      text: "Lo, L. S. (2024). Evaluating AI literacy in academic libraries. *College & Research Libraries, 85*(5).",
+      note: "Winner of the 2025 CALA Jing Liao Award for Best Research.",
+    },
+    {
+      text: "California colleges spend millions on faulty AI systems. (2026, March). *CalMatters.*",
+      url: "https://calmatters.org/education/higher-education/college-beat/2026/03/college-ai-chatbot/",
     },
   ],
 
@@ -269,6 +346,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
       url: "https://doi.org/10.29242/report.futurescape2026",
+    },
+    {
+      text: "Lo, L. S. (2026). From prompt to agentic AI: The PASTAS checklist for context engineering. *portal: Libraries and the Academy, 26*(3), 403-415.",
+      url: "https://doi.org/10.1353/pla.2026.a994552",
+      note: "Subscription required. The six PASTAS components are documented in the University of Texas at Austin Libraries AI guide (https://guides.lib.utexas.edu/AI/prompt-engineering) and by the author.",
     },
   ],
 
@@ -345,6 +427,16 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Clarivate. (2025). *Pulse of the library 2025.*",
       url: "https://clarivate.com/pulse-of-the-library/",
+    },
+    {
+      text: "American Library Association. (2026, June). *Guidance on the use of artificial intelligence in libraries* (CD#44.2, Final).",
+      url: "https://www.ala.org/sites/default/files/2026-06/ALA%20CD%2044.2%20AI%20Guidance%20Document%20-%20Final.pdf",
+      note: "Final adopted text. Cite this rather than the general guidance landing page.",
+    },
+    {
+      text: "It takes a village. (2024). *Information Technology and Libraries.* University of Delaware.",
+      url: "https://ital.corejournals.org/index.php/ital/article/view/17243",
+      note: "Peer-reviewed account of the hidden staff labor behind a library chatbot pilot.",
     },
   ],
 };

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact-form";
+import SiteQrCode from "@/components/site-qr-code";
 
 export const metadata: Metadata = {
   title: "Contact - AI for Academic Libraries",
@@ -17,6 +18,7 @@ export default function ContactPage() {
         </p>
         <ContactForm />
       </div>
+      <SiteQrCode />
     </div>
   );
 }

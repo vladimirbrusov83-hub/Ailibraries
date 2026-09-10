@@ -85,8 +85,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "Final adopted text. Cite this rather than the general guidance landing page.",
     },
     {
-      text: "Stony Brook University Libraries. (2025, December 3). *Artificial intelligence statement* (Version 1.4).",
-      note: "Verify the current URL before this module is next reviewed; the statement is versioned and moves.",
+      text: "Stony Brook University Libraries. (2025, December 3). *Artificial intelligence use at Stony Brook University Libraries* (Version 1.4).",
+      url: "https://library.stonybrook.edu/wp-content/uploads/2025/12/ArtificialIntelligenceUseatStonyBrookUniversi.html",
     },
     {
       text: "*Bartz v. Anthropic PBC,* No. 3:24-cv-05417 (N.D. Cal. June 23, 2025; final settlement approval July 20, 2026).",
@@ -303,8 +303,9 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "Independent practitioner analysis; source of the caveat that hiding the interface link did not disable the underlying endpoint at launch.",
     },
     {
-      text: "Estlund, K. (2025, October 24). *Guest column on CAS/SciFinder licence terms* [Guest column].",
-      note: "Editor's note added November 10, 2025 confirms revised CAS contract language and a November 2025 agreement. Verify the publication venue and URL before this module is next reviewed.",
+      text: "Estlund, K. (2025, October 24). Guest column: When publishers' fear of AI prohibits basic uses. *SOURCE,* Colorado State University.",
+      url: "https://source.colostate.edu/guest-column-when-publishers-fear-of-ai-prohibits-basic-uses/",
+      note: "Editor's note added November 10, 2025 confirms revised CAS contract language and a November 2025 agreement.",
     },
   ],
 

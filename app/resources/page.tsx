@@ -83,9 +83,9 @@ const resourceSections = [
         title: "Stony Brook University Libraries AI Statement (v1.4)",
         org: "Stony Brook University Libraries",
         date: "December 2025",
-        url: "https://library.stonybrook.edu",
+        url: "https://library.stonybrook.edu/wp-content/uploads/2025/12/ArtificialIntelligenceUseatStonyBrookUniversi.html",
         description:
-          "A published, versioned library AI policy - a worked example rather than a framework. Eight guiding principles led by 'no human, no AI', and, unusually, an explicit list of what the libraries do not use AI for: no tracking or evaluating individual patrons including search and borrowing history, no determining service eligibility or replacing professional expertise, no selling sensitive data, no training or fine-tuning on sensitive information. The negative list teaches more than the positive one. Search the Stony Brook Libraries site for the current version.",
+          "A published, versioned library AI policy - a worked example rather than a framework. Eight guiding principles led by 'no human, no AI', and, unusually, an explicit list of what the libraries do not use AI for: no tracking or evaluating individual patrons including search and borrowing history, no determining service eligibility or replacing professional expertise, no selling sensitive data, no training or fine-tuning on sensitive information. The negative list teaches more than the positive one, because a commitment about what a library will not do can actually be checked.",
         tag: "Worked example",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",
@@ -167,7 +167,7 @@ const resourceSections = [
         title: "AI Fluency Badging Program",
         org: "Toronto Metropolitan University Libraries",
         date: "November 2025",
-        url: "https://library.torontomu.ca/",
+        url: "https://library.torontomu.ca/blog/2025/11/tmu-libraries-launch-ai-fluency-badging-workshops-to-help-students-strengthen-their-ability-to-transparently-use-ai/",
         description:
           "An academic library that credentialed the same 4D Framework this curriculum is built on. Two core workshops - Artificial Intelligence: Delegation & Description, and Artificial Intelligence: Discernment and Diligence - with a badge attached. Described as building a robust, tool-agnostic skill set rather than a step-by-step guide, and framed to help participants use generative AI thoughtfully or choose not to use it at all. Evidence that the 4D grounding is professional practice, not one author's preference.",
         tag: "Peer program",

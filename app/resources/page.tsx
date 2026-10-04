@@ -207,7 +207,7 @@ const resourceSections = [
         title: "AIRUS: AI in Reference & User Services Interest Group",
         org: "ALA / RUSA",
         date: null,
-        url: "https://www.ala.org/rusa/sections/brass/brasspubs/rusq/rusqissues/rusqindex",
+        url: "https://www.ala.org/rusa/rusa-interest-groups",
         description:
           "The professional interest group specifically for AI in reference and user services. Programming, discussions, and community for practitioners doing this work.",
         tag: "Community",
@@ -329,7 +329,7 @@ const resourceSections = [
         date: null,
         url: "https://chatgpt.com",
         description:
-          "Most widely used. GPT-4o is capable for most library tasks. Largest user base means the most tutorials, community examples, and third-party guidance available. Free tier rate-limited; paid tier ($20/mo) gives access to more capable models.",
+          "Most widely used. The default model is capable for most library tasks. Largest user base means the most tutorials, community examples, and third-party guidance available. Free tier rate-limited; paid tier ($20/mo) gives more access to the slower, more capable Thinking mode.",
         tag: "Free + Paid",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",
@@ -358,7 +358,7 @@ const resourceSections = [
         date: null,
         url: "https://lovable.dev",
         description:
-          "AI app builder for non-programmers. Describe what you want in plain language; Lovable builds a working web app. Good starting point for library tool-building. Used in Module 14.",
+          "AI app builder for non-programmers. Describe what you want in plain language; Lovable builds a working web app. Good starting point for library tool-building. Used in Module 16.",
         tag: "Level 3",
         tagColor: "#854F0B",
         tagBg: "#FAEEDA",

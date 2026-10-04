@@ -260,7 +260,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Maiberg, E. (2025, February 4). AI-generated slop is already in your public library. *404 Media.*",
-      url: "https://www.404media.co/ai-generated-slop-is-already-in-your-public-library/",
+      url: "https://www.404media.co/ai-generated-slop-is-already-in-your-public-library-3/",
     },
     {
       text: "Portillo, A., & Carson, P. (2025, January). Evaluating large language models for collection development. *Journal of the Medical Library Association, 113*(1).",
@@ -373,8 +373,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://exlibrisgroup.com/products/alma-library-services-platform/",
     },
     {
-      text: "Ex Libris. (2025). *LibOW: Low-code automation for Alma.* Clarivate.",
-      url: "https://exlibrisgroup.com/blog/what-is-libow/",
+      text: "Ex Libris. (2025). *Library Open Workflows (LibOW): Automated library workflows for Alma.* Clarivate.",
+      url: "https://exlibrisgroup.com/library-open-workflows/",
     },
   ],
 
@@ -384,8 +384,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/acrl/standards/ai",
     },
     {
-      text: "ALA TechSource. (n.d.). *Library technology reports.* American Library Association.",
-      url: "https://www.ala.org/pubs/periodicals/ltr",
+      text: "ALA TechSource. (n.d.). *Library technology reports* [Archive]. American Library Association.",
+      url: "https://journals.ala.org/ltr",
     },
     {
       text: "Association of Research Libraries. (n.d.). *ALA Core: Library and information technology association.* American Library Association.",
@@ -411,8 +411,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/acrl/standards/ai",
     },
     {
-      text: "Association of Research Libraries. (2024). *ARL guiding principles for artificial intelligence.*",
-      url: "https://www.arl.org/resources/arl-guiding-principles-for-artificial-intelligence/",
+      text: "Association of Research Libraries. (2024). *Research libraries guiding principles for artificial intelligence.*",
+      url: "https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/",
     },
     {
       text: "Perrigo, B. (2023, January 18). OpenAI used Kenyan workers on less than $2 per hour to make ChatGPT less toxic. *Time.*",

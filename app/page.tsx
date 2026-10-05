@@ -44,6 +44,27 @@ const level3Modules = modules.filter((m) => m.level === "advanced").slice(0, 3);
 export default function HomePage() {
   return (
     <>
+      {/* ─── Course announcement ───────────────────────────────────────────── */}
+      <section
+        className="text-white"
+        style={{ background: "linear-gradient(135deg, #0F6E56 0%, #185FA5 55%, #854F0B 100%)" }}
+      >
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p className="text-sm sm:text-base leading-snug">
+            <span className="inline-block px-2 py-0.5 mr-2 rounded-full bg-yellow-300 text-stone-900 text-xs font-bold uppercase tracking-wide align-middle">
+              Coming soon
+            </span>
+            <span className="font-semibold">The Course:</span> quizzes, a final exam and a verifiable certificate - free.
+          </p>
+          <Link
+            href="/course"
+            className="flex-shrink-0 bg-white text-stone-900 font-bold px-5 py-2 rounded-xl text-sm shadow-sm hover:bg-yellow-100 transition-colors"
+          >
+            Enroll →
+          </Link>
+        </div>
+      </section>
+
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-white pt-14 pb-16 sm:pt-20 sm:pb-24 border-b border-stone-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -87,6 +108,16 @@ export default function HomePage() {
               className="btn-outline border-stone-300 text-stone-700 hover:border-stone-400 font-medium px-6 py-3 rounded-xl text-base"
             >
               Browse the full curriculum
+            </Link>
+            <Link
+              href="/course"
+              className="btn-primary text-white font-semibold px-6 py-3 rounded-xl text-base shadow-md"
+              style={{ background: "linear-gradient(135deg, #0F6E56 0%, #185FA5 55%, #854F0B 100%)" }}
+            >
+              Enroll in the course
+              <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wide bg-yellow-300 text-stone-900 px-1.5 py-0.5 rounded-full">
+                Soon
+              </span>
             </Link>
           </div>
 

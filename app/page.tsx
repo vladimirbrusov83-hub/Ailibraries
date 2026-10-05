@@ -3,6 +3,7 @@ import Link from "next/link";
 import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 import ContactForm from "@/components/contact-form";
+import { COURSE_ANNOUNCED } from "@/lib/course";
 
 export const metadata: Metadata = {
   title: "AI for Academic Libraries",
@@ -45,6 +46,7 @@ export default function HomePage() {
   return (
     <>
       {/* ─── Course announcement ───────────────────────────────────────────── */}
+      {COURSE_ANNOUNCED && (
       <section
         className="text-white"
         style={{ background: "linear-gradient(135deg, #0F6E56 0%, #185FA5 55%, #854F0B 100%)" }}
@@ -64,6 +66,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+      )}
 
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}
       <section className="bg-white pt-14 pb-16 sm:pt-20 sm:pb-24 border-b border-stone-100">
@@ -109,6 +112,7 @@ export default function HomePage() {
             >
               Browse the full curriculum
             </Link>
+            {COURSE_ANNOUNCED && (
             <Link
               href="/course"
               className="btn-primary text-white font-semibold px-6 py-3 rounded-xl text-base shadow-md"
@@ -119,6 +123,7 @@ export default function HomePage() {
                 Soon
               </span>
             </Link>
+            )}
           </div>
 
           <p className="text-xs text-stone-400 mt-4">

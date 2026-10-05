@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { COURSE_ANNOUNCED } from "@/lib/course";
 
 export const metadata: Metadata = {
   title: "The Course (Coming Soon) - AI for Academic Libraries",
@@ -64,6 +66,7 @@ const levels = [
 ];
 
 export default function CoursePage() {
+  if (!COURSE_ANNOUNCED) notFound();
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}

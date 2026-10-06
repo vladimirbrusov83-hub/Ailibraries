@@ -137,10 +137,10 @@ const resourceSections = [
       {
         title: "ACRL Framework for Information Literacy",
         org: "Association of College and Research Libraries",
-        date: "2016 (still current)",
+        date: "Revised September 2026",
         url: "https://www.ala.org/acrl/standards/ilframework",
         description:
-          "Not AI-specific, but directly applicable to AI literacy instruction. The six frames provide an existing vocabulary for teaching critical evaluation of AI output.",
+          "Revised in September 2026 to address AI directly. The same six frames now include AI-related practices, such as disclosing AI use, recognizing that generative AI is not inherently authoritative, and weighing the environmental cost of AI-generated information. A ready vocabulary for teaching critical evaluation of AI output.",
         tag: "Reference",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",

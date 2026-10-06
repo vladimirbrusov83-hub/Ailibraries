@@ -104,7 +104,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/tools/standards-and-guidelines/guidance-use-artificial-intelligence-libraries",
     },
     {
-      text: "Association of College and Research Libraries. (2016). *Framework for information literacy for higher education.* American Library Association.",
+      text: "Association of College and Research Libraries. (2026). *Framework for information literacy for higher education* (Rev. ed.; original work adopted 2016). American Library Association.",
       url: "https://www.ala.org/acrl/standards/ilframework",
     },
     {
@@ -142,7 +142,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
 
   7: [
     {
-      text: "Association of College and Research Libraries. (2016). *Framework for information literacy for higher education.* American Library Association.",
+      text: "Association of College and Research Libraries. (2026). *Framework for information literacy for higher education* (Rev. ed.; original work adopted 2016). American Library Association.",
       url: "https://www.ala.org/acrl/standards/ilframework",
     },
     {

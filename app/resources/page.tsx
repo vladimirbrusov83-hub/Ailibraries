@@ -405,10 +405,10 @@ export default function ResourcesPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
       {/* Header */}
       <header className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
+        <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-stone-900 mb-4">
           Resources
         </h1>
-        <p className="text-lg text-stone-600 leading-relaxed max-w-xl">
+        <p className="rv w2 text-lg text-stone-600 leading-relaxed max-w-xl">
           Curated resources - official frameworks, ongoing communities, and practical tools for library AI work. No affiliate links. No sponsored content.
         </p>
       </header>
@@ -416,21 +416,22 @@ export default function ResourcesPage() {
       {/* Sections */}
       {resourceSections.map((section) => (
         <section key={section.id} className="mb-14">
-          <div className="mb-6">
-            <h2 className="text-xl font-bold text-stone-900 mb-1">
+          <div className="rv mb-6">
+            <h2 className="eyebrow-line text-xl font-bold tracking-[-0.02em] text-stone-900 mb-1">
               {section.title}
             </h2>
             <p className="text-sm text-stone-500">{section.description}</p>
           </div>
 
           <div className="space-y-4">
-            {section.resources.map((resource) => (
+            {section.resources.map((resource, i) => (
+              <div key={resource.title} className={`rv w${(i % 3) + 2}`}>
               <a
-                key={resource.title}
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block card card-hover group"
+                className="res-card block card group"
+                style={{ "--lvl": resource.tagColor } as React.CSSProperties}
               >
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1 min-w-0">
@@ -458,7 +459,7 @@ export default function ResourcesPage() {
                   </div>
                   <div className="flex-shrink-0 mt-0.5">
                     <svg
-                      className="w-4 h-4 text-stone-300 group-hover:text-stone-500 transition-colors"
+                      className="res-ext w-4 h-4 text-stone-300 group-hover:text-stone-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -474,13 +475,14 @@ export default function ResourcesPage() {
                   </div>
                 </div>
               </a>
+              </div>
             ))}
           </div>
         </section>
       ))}
 
       {/* Suggest a resource */}
-      <div className="rounded-xl border border-stone-200 bg-stone-50 p-6 text-center">
+      <div className="rv card-soft rounded-xl border border-stone-200 bg-stone-50 p-6 text-center">
         <h2 className="font-semibold text-stone-900 mb-2">
           Know a resource that should be here?
         </h2>
@@ -489,10 +491,10 @@ export default function ResourcesPage() {
         </p>
         <Link
           href="/contact"
-          className="inline-flex items-center gap-1.5 text-sm font-medium"
+          className="arrow-nudge inline-flex items-center gap-1.5 text-sm font-medium"
           style={{ color: "#0F6E56" }}
         >
-          Contact us to suggest resources →
+          Contact us to suggest resources <span>→</span>
         </Link>
       </div>
     </div>

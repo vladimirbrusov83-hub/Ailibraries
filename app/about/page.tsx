@@ -63,17 +63,17 @@ export default function AboutPage() {
       />
       {/* Header */}
       <header className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
+        <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-stone-900 mb-4">
           About this portal
         </h1>
-        <p className="text-lg text-stone-600 leading-relaxed">
+        <p className="rv w2 text-lg text-stone-600 leading-relaxed">
           Built from everyday library experience - at the desk, not from a distance.
         </p>
       </header>
 
       {/* Main story */}
       <article className="prose-library mb-12">
-        <div className="not-prose mb-8 flex flex-col sm:flex-row sm:items-start gap-6">
+        <div className="rv w3 not-prose mb-8 flex flex-col sm:flex-row sm:items-start gap-6">
           <div className="shrink-0">
             <h2 className="text-2xl font-semibold leading-tight text-stone-900 m-0 mb-4">
               Who I am
@@ -84,7 +84,7 @@ export default function AboutPage() {
               alt="Yulia Brusova"
               width={176}
               height={176}
-              className="w-40 sm:w-44 h-auto rounded-2xl shadow-sm"
+              className="photo-soft w-40 sm:w-44 h-auto rounded-2xl"
             />
           </div>
           <div className="flex-1 min-w-0 sm:pt-[2.875rem]">
@@ -102,16 +102,16 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-        <p>
+        <p className="rv">
           I&apos;m Yulia Brusova, a library associate at St. Louis Community College. My day-to-day work at the circulation desk keeps me in direct contact with students and with the everyday workflows that AI tools are meant to support.
         </p>
-        <p>
+        <p className="rv">
           I started using AI seriously in 2024 - first out of curiosity, then out of a growing conviction that these tools matter for library work. I also practice vibe coding: using natural-language prompts to build functional tools without traditional programming. That hands-on experience changed how I think about AI - not as something to observe from a distance, but as something to build with, test, question, and understand from the inside.
         </p>
-        <p>
+        <p className="rv">
           That experience led me to create this practitioner-first resource. It is grounded in real library work, candid about what AI can and cannot do, and aligned with the professional frameworks developed for this moment. My goal is to help library workers develop a critical, practical, and well-calibrated relationship with AI - one that strengthens the work they already care about.
         </p>
-        <p>
+        <p className="rv">
           You can find me on{" "}
           <a
             href="https://www.linkedin.com/in/yulia-brusova-24804641/"
@@ -124,27 +124,27 @@ export default function AboutPage() {
           .
         </p>
 
-        <h2>Why this curriculum</h2>
-        <p>
+        <h2 className="rv">Why this curriculum</h2>
+        <p className="rv">
           The ACRL published its AI Competencies for Academic Library Workers in October 2025. It provides an important framework for understanding what library workers need to know, but a competency framework is not the same as a curriculum: it identifies the destination without necessarily showing how to get there.
         </p>
-        <p>
+        <p className="rv">
           The Pulse of the Library survey (Clarivate, 2026), which analyzed responses from more than 1,800 librarians worldwide, found that confidence in AI concepts and terminology has stalled at an average of 3.2 out of 5, unchanged from the previous year. Thirty percent of libraries report no institutional focus on AI literacy at all, and half of librarians are building these skills independently, without dedicated time or formal training. Meanwhile, Clarivate&apos;s parallel user experience research found that 31% of students now begin a research project in a general AI assistant such as ChatGPT, Claude, or Gemini, while only 1% ask a librarian. This portal was created to help address that gap through structured, accessible, and professionally relevant learning.
         </p>
-        <p>
+        <p className="rv">
           The curriculum moves from foundational AI literacy to practical library applications and advanced topics such as workflow automation, agentic AI, vibe coding, and library-systems integration. These advanced modules are written specifically for library practitioners, including those without programming backgrounds.
         </p>
 
-        <h2>A practitioner&apos;s perspective</h2>
-        <p>
+        <h2 className="rv">A practitioner&apos;s perspective</h2>
+        <p className="rv">
           I write from experience, not abstraction. When I refer to the circulation desk, I mean a real environment with students asking real questions and staff managing real workflows. When I describe a process, I have used it - or something close to it - in practice.
         </p>
-        <p>
+        <p className="rv">
           That also means being honest about failure. AI can fabricate citations, produce confidently incorrect answers, reproduce bias, and create more work when applied poorly. These limitations are not reasons to ignore AI; they are reasons to learn how to use it critically, responsibly, and with appropriate human oversight.
         </p>
 
-        <h2>ACRL alignment</h2>
-        <p>
+        <h2 className="rv">ACRL alignment</h2>
+        <p className="rv">
           Every module is mapped at the sub-competency level to the{" "}
           <a
             href="https://www.ala.org/acrl/standards/ai"
@@ -156,7 +156,7 @@ export default function AboutPage() {
           </a>
           , not merely to its broad categories.
         </p>
-        <p>
+        <p className="rv">
           The curriculum also draws on the{" "}
           <a
             href="https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/"
@@ -177,35 +177,35 @@ export default function AboutPage() {
           </a>
           . ALA&apos;s six core values - Public Good, Intellectual Freedom, Privacy, Sustainability, DEIA, and Labor - inform the modules addressing ethics, privacy, discovery, vendor evaluation, and library labor.
         </p>
-        <p>
+        <p className="rv">
           The 4D grounding is not this author&apos;s preference alone. Toronto Metropolitan University Libraries launched an AI Fluency badging program in November 2025 whose two core workshops are titled Artificial Intelligence: Delegation &amp; Description and Artificial Intelligence: Discernment and Diligence - the same framework, split across two workshops, delivered by an academic library with a credential attached. TMU describes the workshops as helping people learn to use generative AI tools effectively and thoughtfully, or to choose not to use them at all, which is the position this curriculum argues in its module on critical evaluation.
         </p>
-        <p>
+        <p className="rv">
           Together, these frameworks connect practical AI skills with the professional values that should guide their use.
         </p>
-        <p className="text-sm text-stone-400 italic">
+        <p className="rv text-sm text-stone-400 italic">
           Modules and content are subject to change and ongoing updates as the AI landscape evolves.
         </p>
 
-        <h2>Who this portal is for</h2>
-        <p>
+        <h2 className="rv">Who this portal is for</h2>
+        <p className="rv">
           This portal is designed primarily for academic library workers in community colleges, liberal arts colleges, and research universities. Its examples and workflows address areas such as circulation, reference, instruction, research support, metadata, digital collections, discovery, and library systems.
         </p>
-        <p>
+        <p className="rv">
           Library professionals in public, school, and other settings may also find parts of the curriculum useful, particularly the foundational modules, although the primary context remains academic librarianship.
         </p>
 
-        <h2>What&apos;s next</h2>
-        <p>
+        <h2 className="rv">What&apos;s next</h2>
+        <p className="rv">
           All 18 modules are now available, including the complete advanced track on workflow automation, agentic AI, vibe coding, systems integration, and AI strategy, as well as an applied module on AI, labor, and the library worker.
         </p>
-        <p>
+        <p className="rv">
           Because AI tools, policies, and professional guidance continue to change, the curriculum is reviewed and updated over time. If you have a question, correction, or suggestion, please use the contact form.
         </p>
       </article>
 
       {/* Affiliation note */}
-      <div className="rounded-xl border border-stone-200 bg-stone-50 p-5 mb-10">
+      <div className="rv card-soft rounded-xl border border-stone-200 bg-stone-50 p-5 mb-10">
         <p className="text-sm text-stone-600 leading-relaxed">
           <strong className="text-stone-800">No vendor relationships.</strong>{" "}
           No affiliate links. No sponsored content. Tool mentions reflect genuine evaluation for library use - the same evaluation I&apos;d apply professionally.
@@ -213,23 +213,23 @@ export default function AboutPage() {
       </div>
 
       {/* CTAs */}
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="rv flex flex-col sm:flex-row gap-4">
         <Link
           href="/level/foundations"
-          className="flex-1 text-center px-5 py-3 rounded-xl font-semibold text-white text-sm"
+          className="btn-lift btn-green flex-1 text-center px-5 py-3 rounded-xl font-semibold text-white text-sm"
           style={{ backgroundColor: "#0F6E56" }}
         >
           Start with Level 1: Foundations
         </Link>
         <Link
           href="/curriculum"
-          className="flex-1 text-center px-5 py-3 rounded-xl font-medium border border-stone-300 text-stone-700 hover:border-stone-400 text-sm bg-white"
+          className="btn-lift btn-ghost flex-1 text-center px-5 py-3 rounded-xl font-medium border border-stone-300 text-stone-700 hover:border-stone-400 text-sm bg-white"
         >
           Browse the full curriculum
         </Link>
         <Link
           href="/contact"
-          className="flex-1 text-center px-5 py-3 rounded-xl font-medium border border-stone-300 text-stone-700 hover:border-stone-400 text-sm bg-white"
+          className="btn-lift btn-ghost flex-1 text-center px-5 py-3 rounded-xl font-medium border border-stone-300 text-stone-700 hover:border-stone-400 text-sm bg-white"
         >
           Contact us
         </Link>

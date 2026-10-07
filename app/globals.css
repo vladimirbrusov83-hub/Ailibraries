@@ -243,6 +243,17 @@ select.field-refined { -webkit-appearance: none; appearance: none; padding-right
 .update-more[open] .update-more-list > li:nth-child(3) { animation-delay: .12s; }
 .update-more[open] .update-more-list > li:nth-child(n+4) { animation-delay: .18s; }
 .update-dot-new { animation: pill-ring 2.2s ease-out infinite; }
+.pager-card { position: relative; overflow: hidden; box-shadow: var(--lift); transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.pager-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--c); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease); }
+.pager-next::before { transform-origin: right; }
+.pager-card:hover { transform: translateY(-3px); box-shadow: var(--lift-h); border-color: color-mix(in srgb, var(--c) 40%, transparent) !important; }
+.pager-card:hover::before { transform: scaleX(1); }
+.pager-arrow { transition: transform .3s var(--ease), background-color .25s, color .25s, box-shadow .3s; }
+.pager-card:not(.pager-next):hover .pager-arrow { transform: translateX(-3px); background-color: var(--c); color: #fff; }
+.pager-next .pager-arrow { box-shadow: 0 6px 14px -6px var(--c); }
+.pager-next:hover .pager-arrow { transform: translateX(3px); }
+.pager-next .pager-arrow svg { animation: pager-nudge 2.4s var(--ease) 1.2s infinite; }
+@keyframes pager-nudge { 0%, 70%, 100% { transform: none; } 80% { transform: translateX(3px); } 90% { transform: translateX(0); } }
 .refs-card summary svg { transition: transform .3s var(--ease); }
 
 @media (prefers-reduced-motion: reduce) {
@@ -251,6 +262,8 @@ select.field-refined { -webkit-appearance: none; appearance: none; padding-right
   .lift:hover, .btn-lift:hover, a:hover > .mc-refined, .foot-link:hover, .btn-soft:hover, .btn-complete:hover, .related-card:hover, .res-card:hover, .photo-soft:hover, .review-chip:hover { transform: none; }
   .update-dot-new { animation: none; }
   .role-thumb { transition: none; }
+  .pager-next .pager-arrow svg { animation: none; }
+  .pager-card:hover { transform: none; }
 }
 
 @media print {

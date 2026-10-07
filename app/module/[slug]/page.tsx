@@ -476,18 +476,26 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         </a>
       </div>
 
-      <div className="mt-8 pt-8 border-t border-stone-200 flex justify-between gap-4">
+      <nav className="rv mt-8 pt-8 border-t border-stone-200 grid grid-cols-1 sm:grid-cols-2 gap-3" aria-label="Module navigation">
         {mod.id > 1 && (() => {
           const prev = modules.find((m) => m.id === mod.id - 1);
           return prev ? (
             <Link
               href={prev.status === "coming-soon" ? `/level/${prev.level}` : `/module/${prev.slug}`}
-              className="flex items-center gap-2 text-sm text-stone-500 hover:text-stone-800 transition-colors group"
+              className="pager-card group flex items-center gap-3 p-4 rounded-xl border border-stone-200 bg-white"
+              style={{ "--c": levelAccent[prev.level] } as React.CSSProperties}
             >
-              <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <span className="truncate max-w-[140px] sm:max-w-none">{prev.title}</span>
+              <span className="pager-arrow flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center bg-stone-100 text-stone-500" aria-hidden="true">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </span>
+              <span className="min-w-0">
+                <span className="block text-xs font-medium text-stone-400">
+                  Previous · Module {String(prev.id).padStart(2, "0")}
+                </span>
+                <span className="block text-sm font-semibold text-stone-800 leading-snug">{prev.title}</span>
+              </span>
             </Link>
           ) : null;
         })()}
@@ -497,17 +505,24 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           return next ? (
             <Link
               href={next.status === "coming-soon" ? `/newsletter` : `/module/${next.slug}`}
-              className="flex items-center gap-2 text-sm font-medium transition-colors group ml-auto"
-              style={{ color: accent }}
+              className="pager-card pager-next group flex items-center justify-end gap-3 p-4 rounded-xl border text-right sm:col-start-2"
+              style={{ "--c": levelAccent[next.level], borderColor: `${levelAccent[next.level]}40`, backgroundColor: `${levelAccent[next.level]}0a` } as React.CSSProperties}
             >
-              <span className="truncate max-w-[140px] sm:max-w-none">{next.title}</span>
-              <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <span className="min-w-0">
+                <span className="block text-xs font-medium" style={{ color: levelAccent[next.level] }}>
+                  Next · Module {String(next.id).padStart(2, "0")}
+                </span>
+                <span className="block text-sm font-semibold text-stone-900 leading-snug">{next.title}</span>
+              </span>
+              <span className="pager-arrow flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: levelAccent[next.level] }} aria-hidden="true">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
           ) : null;
         })()}
-      </div>
+      </nav>
     </div>
     </>
   );

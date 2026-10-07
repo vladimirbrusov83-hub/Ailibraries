@@ -82,7 +82,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "American Library Association. (2026, June). *Guidance on the use of artificial intelligence in libraries* (CD#44.2, Final).",
       url: "https://www.ala.org/sites/default/files/2026-06/ALA%20CD%2044.2%20AI%20Guidance%20Document%20-%20Final.pdf",
-      note: "Final adopted text. Cite this rather than the general guidance landing page.",
+      note: "Final text adopted by ALA Council at the June 2026 Annual Conference.",
     },
     {
       text: "Stony Brook University Libraries. (2025, December 3). *Artificial intelligence use at Stony Brook University Libraries* (Version 1.4).",
@@ -135,8 +135,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-132.html",
     },
     {
-      text: "Government of Canada. (2025, July 28). *The use of generative artificial intelligence in the development and review of research proposals.*",
-      url: "https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/use-generative-artificial-intelligence-development-and-review-research-proposals",
+      text: "Canadian Institutes of Health Research, Natural Sciences and Engineering Research Council of Canada, & Social Sciences and Humanities Research Council of Canada. (2024, November 13). *Guidance on the use of artificial intelligence in the development and review of research grant proposals.* Government of Canada.",
+      url: "https://www.science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/guidance-use-artificial-intelligence-development-and-review-research-grant-proposals",
     },
   ],
 
@@ -168,8 +168,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "OCLC. (2025, December). *AI-assisted cataloging in WorldShare Record Manager and Connexion.*",
-      url: "https://www.oclc.org/en/worldshare-record-manager.html",
-      note: "Confirm exact release note URL when updating the site.",
+      url: "https://www.oclc.org/en/news/releases/2025/20251208-ai-recordmanager-connexion.html",
     },
   ],
 
@@ -188,13 +187,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Harvard Library. (2024). *Harvard Library Collections Explorer.* Harvard University.",
-      url: "https://library.harvard.edu",
-      note: "Confirm direct URL for the Collections Explorer.",
+      url: "https://library.harvard.edu/services-tools/collections-explorer",
     },
     {
       text: "Yale University Library. (2024). *Digital collections AI application* [Prototype]. Yale University.",
-      url: "https://library.yale.edu",
-      note: "Confirm direct URL for the Yale digital collections AI application.",
+      url: "https://library.yale.edu/news/yale-library-developing-ai-application-could-transform-research-digitized-collections",
     },
     {
       text: "Estlund, K., & Hudson Vitale, C. (2026, March). *Strategic implications of AI futures for research libraries: Workshop report.* Association of Research Libraries & Coalition for Networked Information.",
@@ -216,7 +213,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "University of Virginia Library. (2026, April 3). *Statement of shared practice on AI training requests and unique cultural collections.*",
       url: "https://library.virginia.edu/ai/shared-practice",
-      note: "Signatory counts differ across sources. Cite the UVA signatories page for the current authoritative list.",
+      note: "A voluntary twelve-month commitment; the UVA page lists current signatories.",
     },
     {
       text: "Institutional Data Initiative. (2025, June). *Institutional Books 1.0* [Data set]. Harvard Law School Library Innovation Lab.",
@@ -246,17 +243,17 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Choice. (2024, November). *Evaluating generative AI resources: Separating the tools from the toys.* Association of College and Research Libraries.",
-      url: "https://www.choice360.org/tools/evaluating-generative-ai-resources-separating-the-tools-from-the-toys/",
-      note: "Includes a downloadable transparency/efficiency/critical-thinking/privacy rubric. Confirm exact URL when updating the site.",
+      url: "https://www.choice360.org/libtech-insight/evaluating-generative-ai-resources-separating-the-tools-from-the-toys/",
+      note: "Includes a downloadable transparency/efficiency/critical-thinking/privacy rubric.",
     },
     {
       text: "Clarivate. (2025). *Pulse of the library 2025.*",
       url: "https://clarivate.com/pulse-of-the-library/",
     },
     {
-      text: "Ithaka S+R. (2024–2025). *Generative AI product tracker.*",
+      text: "Ithaka S+R. (2024–present). *Generative AI product tracker.*",
       url: "https://sr.ithaka.org/our-work/generative-ai-product-tracker/",
-      note: "Continuously updated; confirm current URL when updating the site.",
+      note: "Continuously updated.",
     },
     {
       text: "Maiberg, E. (2025, February 4). AI-generated slop is already in your public library. *404 Media.*",
@@ -363,7 +360,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Michalak, R., Dawes, T. A., & Wallace, A. (2026, May). Envisioning AI's role in libraries: Perspectives from an LIS student, a library director, and a university librarian. *College & Research Libraries News, 87*(5).",
       url: "https://crln.acrl.org/index.php/crlnews/article/view/27321",
-      note: "Note: Module text attributes separate passages to \"Ava Wallace\" and \"Trevor A. Dawes\" individually. Both passages originate from this co-authored article; in-text attributions should be updated to cite all three authors or use (Michalak et al., 2026).",
+      note: "Written as a dialogue; the module quotes each author's own perspective.",
     },
   ],
 
@@ -432,7 +429,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "American Library Association. (2026, June). *Guidance on the use of artificial intelligence in libraries* (CD#44.2, Final).",
       url: "https://www.ala.org/sites/default/files/2026-06/ALA%20CD%2044.2%20AI%20Guidance%20Document%20-%20Final.pdf",
-      note: "Final adopted text. Cite this rather than the general guidance landing page.",
+      note: "Final text adopted by ALA Council at the June 2026 Annual Conference.",
     },
     {
       text: "It takes a village. (2024). *Information Technology and Libraries.* University of Delaware.",

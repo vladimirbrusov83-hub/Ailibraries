@@ -2616,9 +2616,9 @@ export const moduleReviewDates: Record<number, string> = {
   2: "June 2026",
   3: "October 2026",
   4: "October 2026",
-  5: "September 2026",
+  5: "October 2026",
   6: "September 2026",
-  7: "September 2026",
+  7: "October 2026",
   8: "June 2026",
   9: "September 2026",
   10: "June 2026",
@@ -2631,3 +2631,50 @@ export const moduleReviewDates: Record<number, string> = {
   17: "June 2026",
   18: "June 2026",
 };
+
+// Content update log shown in the "Kept current" section on the homepage.
+// Newest first. Add an entry whenever module content changes; `modules` are module ids.
+export type SiteUpdate = {
+  date: string; // YYYY-MM-DD
+  title: string;
+  summary: string;
+  modules: number[];
+};
+
+export const siteUpdates: SiteUpdate[] = [
+  {
+    date: "2026-10-06",
+    title: "Revised ACRL Framework for Information Literacy",
+    summary:
+      "Modules 05 and 07 now reflect the AI language in the revised Framework (September 2, 2026), with direct quotations and updated references.",
+    modules: [5, 7],
+  },
+  {
+    date: "2026-10-04",
+    title: "Accuracy audit",
+    summary:
+      "Current AI tool facts and consumer-plan data terms in Module 03, corrected pricing in Module 16, a fixed cross-reference in Module 04, five broken reference links replaced, and all module PDFs regenerated.",
+    modules: [3, 4, 16],
+  },
+  {
+    date: "2026-09-09",
+    title: "September source audit",
+    summary:
+      "Corrections and additions across seven modules, including ALA's adopted AI guidance (CD#44.2), Bartz v. Anthropic, admin controls for vendor AI in discovery tools, and new references.",
+    modules: [4, 7, 9, 11, 12, 13, 15],
+  },
+  {
+    date: "2026-09-09",
+    title: "ARL/CNI Futurescape 2026 report",
+    summary:
+      "New sections on agentic AI governance, vendor AI that arrives without a procurement decision, funder AI disclosure rules, informed refusal, and collections as training data.",
+    modules: [5, 6, 9, 11, 15],
+  },
+  {
+    date: "2026-07-13",
+    title: "ALA AI guidance alignment",
+    summary:
+      "Four modules strengthened with ALA's AI guidance, a new section on the environmental cost of AI in Module 01, and AI, labor & the library worker added as Module 13.",
+    modules: [1, 13],
+  },
+];

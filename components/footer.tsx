@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { siteUpdates } from "@/content/modules";
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const [ly, lm, ld] = siteUpdates[0].date.split("-").map(Number);
+const lastUpdated = `${MONTHS[lm - 1]} ${ld}, ${ly}`;
 
 export default function Footer() {
   return (
@@ -129,7 +134,9 @@ export default function Footer() {
             .
           </p>
           <p className="text-xs text-stone-400">
-            © 2026 Iuliia Brusova.{" "}
+            Content last updated{" "}
+            <Link href="/#updates">{lastUpdated}</Link>
+            {" · "}© 2026 Iuliia Brusova.{" "}
             <a
               href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
               target="_blank"

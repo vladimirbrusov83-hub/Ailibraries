@@ -3,6 +3,7 @@ import Link from "next/link";
 import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 import ContactForm from "@/components/contact-form";
+import RecentUpdates from "@/components/recent-updates";
 import { COURSE_ANNOUNCED } from "@/lib/course";
 
 export const metadata: Metadata = {
@@ -459,7 +460,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── About the author ──────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24 border-t border-stone-100 bg-stone-50">
+      <section className="py-[72px] sm:py-24 border-t border-stone-100 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="rv tri-rule text-2xl sm:text-[28px] sm:leading-[34px] font-bold tracking-[-0.03em] text-balance text-stone-900 mb-4">
             Taught by someone who actually works in a library
@@ -479,6 +480,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <RecentUpdates />
 
       {/* ─── Contact CTA ─────────────────────────────────────────────────── */}
       <section className="py-[72px] sm:py-24">

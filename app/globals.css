@@ -197,10 +197,25 @@ a:hover > .mc-refined::before { transform: scaleX(1); }
 .foot-fine a { text-decoration-color: #d6d3d1; text-underline-offset: 3px; transition: color .2s, text-decoration-color .2s, text-underline-offset .25s var(--ease); }
 .foot-fine a:hover { color: #0F6E56; text-decoration-color: #0F6E56; text-underline-offset: 5px; }
 
+/* Module pages */
+.btn-soft { --c: #0F6E56; background-color: #fff; box-shadow: 0 1px 2px rgba(28,25,23,.05); transition: transform .25s var(--ease), box-shadow .25s, background-color .2s, border-color .2s; }
+.btn-soft:hover { transform: translateY(-2px); background-color: color-mix(in srgb, var(--c) 6%, #fff); border-color: color-mix(in srgb, var(--c) 45%, transparent) !important; box-shadow: 0 10px 20px -12px var(--c); }
+.btn-soft svg { transition: transform .25s var(--ease); }
+.btn-soft:hover svg { transform: translateY(1px) scale(1.08); }
+.btn-complete { box-shadow: 0 1px 2px rgba(28,25,23,.05), 0 8px 20px -12px var(--c); transition: transform .25s var(--ease), box-shadow .25s, background-color .2s, color .2s, border-color .2s; }
+.btn-complete:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(28,25,23,.05), 0 14px 26px -12px var(--c); }
+.btn-complete:active { transform: translateY(0) scale(.98); }
+.card-soft { box-shadow: var(--lift); border-radius: 14px; }
+.related-card { position: relative; overflow: hidden; border-radius: 12px; box-shadow: var(--lift); transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.related-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--lvl); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease); }
+.related-card:hover { transform: translateY(-4px); box-shadow: var(--lift-h); border-color: color-mix(in srgb, var(--lvl) 35%, transparent) !important; }
+.related-card:hover::before { transform: scaleX(1); }
+.refs-card summary svg { transition: transform .3s var(--ease); }
+
 @media (prefers-reduced-motion: reduce) {
   .js .rv { opacity: 1; transform: none; transition: none; }
   .nav-link, .nav-cta, .ann-shine::after, .pill-dot { animation: none; }
-  .lift:hover, .btn-lift:hover, a:hover > .mc-refined, .foot-link:hover { transform: none; }
+  .lift:hover, .btn-lift:hover, a:hover > .mc-refined, .foot-link:hover, .btn-soft:hover, .btn-complete:hover, .related-card:hover { transform: none; }
 }
 
 @media print {

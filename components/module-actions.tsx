@@ -30,14 +30,14 @@ export default function ModuleActions({
     }
   }
 
-  const buttonStyle = { borderColor: `${accent}40`, color: accent };
+  const buttonStyle = { borderColor: `${accent}40`, color: accent, "--c": accent } as React.CSSProperties;
 
   return (
     <>
       <button
         type="button"
         onClick={() => window.print()}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-opacity hover:opacity-80"
+        className="btn-soft inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold"
         style={buttonStyle}
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -48,7 +48,7 @@ export default function ModuleActions({
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-opacity hover:opacity-80"
+        className="btn-soft inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold"
         style={buttonStyle}
       >
         {copied ? (

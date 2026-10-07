@@ -11,18 +11,22 @@ export default function CompleteButton({
 }) {
   const { isComplete, toggle } = useProgress();
   const done = isComplete(slug);
+  const buttonStyle = {
+    ...(done
+      ? { backgroundColor: accent, borderColor: accent, color: "#fff" }
+      : { backgroundColor: "#fff", borderColor: `${accent}55`, color: accent }),
+    "--c": accent,
+  } as unknown as React.CSSProperties;
 
   return (
-    <div className="mt-12 flex flex-col items-center gap-2">
+    <div className="rv mt-12 flex flex-col items-center gap-2">
       <button
         type="button"
         onClick={() => toggle(slug)}
         aria-pressed={done}
-        className="inline-flex items-center gap-2.5 rounded-full border px-6 py-3 text-sm font-semibold transition-colors"
+        className="btn-complete inline-flex items-center gap-2.5 rounded-full border px-6 py-3 text-sm font-semibold"
         style={
-          done
-            ? { backgroundColor: accent, borderColor: accent, color: "#fff" }
-            : { backgroundColor: "#fff", borderColor: `${accent}55`, color: accent }
+buttonStyle
         }
       >
         <span

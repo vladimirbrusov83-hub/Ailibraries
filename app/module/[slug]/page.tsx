@@ -160,11 +160,11 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             <AudienceBadge audience={mod.audience} />
             {mod.isGap && <GapBadge />}
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-3">{mod.title}</h1>
+          <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-balance text-stone-900 mb-3">{mod.title}</h1>
           <p className="text-lg text-stone-600 leading-relaxed">{mod.description}</p>
         </div>
 
-        <div className="card mb-8">
+        <div className="rv w2 card card-soft mb-8">
           <h2 className="font-semibold text-stone-900 mb-4">
             What you&apos;ll be able to do after this module
           </h2>
@@ -185,7 +185,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         </div>
 
         <div
-          className="rounded-xl border p-6 mb-8 text-center"
+          className="rv card-soft rounded-xl border p-6 mb-8 text-center"
           style={{ borderColor: `${accent}40`, backgroundColor: `${accent}08` }}
         >
           <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: accent }}>
@@ -196,15 +196,15 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           ) : (
             <Link
               href="/contact"
-              className="inline-flex items-center gap-1.5 mt-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-opacity hover:opacity-90"
-              style={{ backgroundColor: accent }}
+              className="btn-level arrow-nudge inline-flex items-center gap-1.5 mt-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+              style={{ backgroundColor: accent, "--c": accent } as React.CSSProperties}
             >
-              Contact us →
+              Contact us <span>→</span>
             </Link>
           )}
         </div>
 
-        <div className="mt-8 p-4 rounded-lg bg-stone-50 border border-stone-200">
+        <div className="rv mt-8 p-4 rounded-lg bg-stone-50 border border-stone-200">
           <p className="text-xs font-medium text-stone-600 mb-2">
             ACRL AI Competencies covered in this module
           </p>
@@ -276,7 +276,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           <AudienceBadge audience={mod.audience} />
           {mod.isGap && <GapBadge />}
         </div>
-        <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-3">{mod.title}</h1>
+        <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-balance text-stone-900 mb-3">{mod.title}</h1>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-stone-400">
           <span>{mod.estimatedMinutes} min read</span>
           <span aria-hidden="true">·</span>
@@ -288,12 +288,12 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </>
           )}
         </div>
-        <div className="no-print flex flex-wrap items-center gap-3 mt-5">
+        <div className="rv w2 no-print flex flex-wrap items-center gap-3 mt-5">
           <a
             href={pdfHref}
             download
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-opacity hover:opacity-80"
-            style={{ borderColor: `${accent}40`, color: accent }}
+            className="btn-soft inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold"
+            style={{ borderColor: `${accent}40`, color: accent, "--c": accent } as React.CSSProperties}
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
@@ -305,7 +305,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
       </header>
 
       <div
-        className="rounded-xl p-6 mb-10 border"
+        className="rv w3 card-soft rounded-xl p-6 mb-10 border"
         style={{ borderColor: `${accent}30`, backgroundColor: `${accent}08` }}
       >
         <h2 className="text-sm font-semibold uppercase tracking-wide mb-4" style={{ color: accent }}>
@@ -348,7 +348,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
 
 
           {mod.content.summary && mod.content.summary.length > 0 && (
-            <div className="rounded-xl p-6 mt-10 border border-stone-200 bg-stone-50">
+            <div className="rv card-soft rounded-xl p-6 mt-10 border border-stone-200 bg-stone-50">
               <p className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-4">
                 Key takeaways
               </p>
@@ -368,7 +368,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           )}
 
           {moduleReferences[mod.id] && (
-            <details className="mt-8 group border border-stone-200 rounded-xl overflow-hidden">
+            <details className="rv refs-card card-soft mt-8 group border border-stone-200 rounded-xl overflow-hidden bg-white">
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none select-none text-sm font-medium text-stone-600 hover:bg-stone-50 transition-colors">
                 <span>References</span>
                 <svg
@@ -417,7 +417,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="mt-12 p-5 rounded-xl bg-stone-50 border border-stone-200">
+      <div className="rv card-soft mt-12 p-5 rounded-xl bg-stone-50 border border-stone-200">
         <h2 className="text-sm font-semibold text-stone-700 mb-3">ACRL AI Competencies covered</h2>
         <div className="flex flex-wrap gap-2 mb-3">
           {mod.acrlCompetencies.map((c) => (
@@ -441,13 +441,14 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
 
       {relatedModuleData.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-sm font-semibold text-stone-700 mb-4">Continue learning</h2>
+          <h2 className="rv text-sm font-semibold text-stone-700 mb-4">Continue learning</h2>
           <div className="grid sm:grid-cols-3 gap-3">
-            {relatedModuleData.map((related) => (
+            {relatedModuleData.map((related, i) => (
+              <div key={related.slug} className={`rv w${Math.min(i + 2, 4)}`}>
               <Link
-                key={related.slug}
                 href={related.status === "coming-soon" ? "/newsletter" : `/module/${related.slug}`}
-                className="block p-4 rounded-lg border border-stone-200 hover:border-stone-300 hover:shadow-sm transition-all"
+                className="related-card block h-full p-4 bg-white border border-stone-200"
+                style={{ "--lvl": levelAccent[related.level] } as React.CSSProperties}
               >
                 <p className="text-xs text-stone-400 mb-1">Module {String(related.id).padStart(2, "0")}</p>
                 <p className="text-sm font-medium text-stone-800 leading-snug">{related.title}</p>
@@ -455,6 +456,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                   <p className="text-xs text-stone-400 mt-1">Coming soon</p>
                 )}
               </Link>
+              </div>
             ))}
           </div>
         </div>

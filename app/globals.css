@@ -254,6 +254,9 @@ select.field-refined { -webkit-appearance: none; appearance: none; padding-right
 .pager-next:hover .pager-arrow { transform: translateX(3px); }
 .pager-next .pager-arrow svg { animation: pager-nudge 2.4s var(--ease) 1.2s infinite; }
 @keyframes pager-nudge { 0%, 70%, 100% { transform: none; } 80% { transform: translateX(3px); } 90% { transform: translateX(0); } }
+.meta-chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; border: 1px solid #e7e5e4; background: #fafaf9; color: #57534e; font-size: 13px; font-weight: 500; line-height: 1.3; }
+.meta-chip svg { flex-shrink: 0; opacity: .85; }
+.meta-chip-reviewed { font-weight: 600; }
 .refs-card summary svg { transition: transform .3s var(--ease); }
 
 @media (prefers-reduced-motion: reduce) {

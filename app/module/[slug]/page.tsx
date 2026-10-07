@@ -284,17 +284,17 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </svg>
             {mod.estimatedMinutes} min read
           </span>
-          <span className="meta-chip">
+          <span
+            className="meta-chip meta-chip-strong"
+            style={{ color: accent, backgroundColor: `${accent}10`, borderColor: `${accent}40` }}
+          >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5c1.75 0 3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18c-1.75 0-3.33.48-4.5 1.25" />
             </svg>
             Module {String(mod.id).padStart(2, "0")}
           </span>
           {reviewedDate && (
-            <span
-              className="meta-chip meta-chip-reviewed"
-              style={{ color: accent, backgroundColor: `${accent}10`, borderColor: `${accent}40` }}
-            >
+            <span className="meta-chip">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>

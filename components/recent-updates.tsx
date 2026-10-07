@@ -28,6 +28,44 @@ export default function RecentUpdates() {
   const recent = published.filter((m) => moduleReviewDates[m.id] && monthIndex(moduleReviewDates[m.id]) >= cutoff).length;
   const slugFor = (id: number) => modules.find((m) => m.id === id);
 
+  const renderEntry = (u: (typeof siteUpdates)[number], i: number, reveal: boolean) => (
+    <li key={`${u.date}-${u.title}`} className={`${reveal ? `rv w${Math.min(i + 2, 4)} ` : ""}relative pl-8 pb-7 last:pb-0`}>
+      <span
+        className={`absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-[3px] bg-white ${i === 0 ? "update-dot-new" : ""}`}
+        style={{ borderColor: i === 0 ? "#0F6E56" : "#d6d3d1" }}
+        aria-hidden="true"
+      />
+      <p className="text-xs font-medium text-stone-400 tabular-nums">
+        <time dateTime={u.date}>{formatDate(u.date)}</time>
+        {i === 0 && (
+          <span className="ml-2 align-middle inline-block px-1.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide" style={{ backgroundColor: "#E1F5EE", color: "#0F6E56" }}>
+            Latest
+          </span>
+        )}
+      </p>
+      <h3 className="mt-1 text-base font-semibold text-stone-900 leading-snug">{u.title}</h3>
+      <p className="mt-1.5 text-sm text-stone-600 leading-relaxed">{u.summary}</p>
+      <div className="mt-2.5 flex flex-wrap gap-1.5">
+        {u.modules.map((id) => {
+          const m = slugFor(id);
+          if (!m) return null;
+          const tint = levelTint[m.level];
+          return (
+            <Link
+              key={id}
+              href={`/module/${m.slug}`}
+              title={m.title}
+              className="review-chip px-2 py-0.5 rounded-md text-xs font-semibold tabular-nums"
+              style={{ backgroundColor: tint.t, color: tint.c, "--c": tint.c } as React.CSSProperties}
+            >
+              Module {String(id).padStart(2, "0")}
+            </Link>
+          );
+        })}
+      </div>
+    </li>
+  );
+
   return (
     <section id="updates" className="py-[72px] sm:py-24 bg-stone-50 border-y border-stone-100 scroll-mt-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -64,45 +102,25 @@ export default function RecentUpdates() {
           </div>
 
           {/* Change log */}
-          <ol className="rv w3 update-log relative">
-            {siteUpdates.slice(0, 4).map((u, i) => (
-              <li key={`${u.date}-${u.title}`} className={`rv w${Math.min(i + 2, 4)} relative pl-8 pb-7 last:pb-0`}>
-                <span
-                  className={`absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-[3px] bg-white ${i === 0 ? "update-dot-new" : ""}`}
-                  style={{ borderColor: i === 0 ? "#0F6E56" : "#d6d3d1" }}
-                  aria-hidden="true"
-                />
-                <p className="text-xs font-medium text-stone-400 tabular-nums">
-                  <time dateTime={u.date}>{formatDate(u.date)}</time>
-                  {i === 0 && (
-                    <span className="ml-2 align-middle inline-block px-1.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide" style={{ backgroundColor: "#E1F5EE", color: "#0F6E56" }}>
-                      Latest
-                    </span>
-                  )}
-                </p>
-                <h3 className="mt-1 text-base font-semibold text-stone-900 leading-snug">{u.title}</h3>
-                <p className="mt-1.5 text-sm text-stone-600 leading-relaxed">{u.summary}</p>
-                <div className="mt-2.5 flex flex-wrap gap-1.5">
-                  {u.modules.map((id) => {
-                    const m = slugFor(id);
-                    if (!m) return null;
-                    const tint = levelTint[m.level];
-                    return (
-                      <Link
-                        key={id}
-                        href={`/module/${m.slug}`}
-                        title={m.title}
-                        className="review-chip px-2 py-0.5 rounded-md text-xs font-semibold tabular-nums"
-                        style={{ backgroundColor: tint.t, color: tint.c, "--c": tint.c } as React.CSSProperties}
-                      >
-                        Module {String(id).padStart(2, "0")}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </li>
-            ))}
-          </ol>
+          <div>
+            <ol className="rv w3 update-log relative">
+              {siteUpdates.slice(0, 2).map((u, i) => renderEntry(u, i, true))}
+            </ol>
+            {siteUpdates.length > 2 && (
+              <details className="update-more group mt-7">
+                <summary className="update-more-btn inline-flex items-center gap-2 ml-8 px-3.5 py-2 rounded-lg border border-stone-200 bg-white text-sm font-medium text-stone-600 cursor-pointer list-none select-none">
+                  <span className="group-open:hidden">Show {siteUpdates.length - 2} earlier updates</span>
+                  <span className="hidden group-open:inline">Hide earlier updates</span>
+                  <svg className="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <ol className="update-log update-more-list relative mt-7">
+                  {siteUpdates.slice(2).map((u, i) => renderEntry(u, i + 2, false))}
+                </ol>
+              </details>
+            )}
+          </div>
         </div>
       </div>
     </section>

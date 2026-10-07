@@ -45,7 +45,7 @@ export default function RecentUpdates() {
 
         <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-6 lg:gap-10 items-start">
           {/* Status + review grid */}
-          <div className="rv w2 rounded-[14px] border border-stone-200 bg-white p-6 shadow-[0_1px_2px_rgba(28,25,23,0.04),0_8px_24px_-12px_rgba(28,25,23,0.12)]">
+          <div className="rv w2 lg:sticky lg:top-24 rounded-[14px] border border-stone-200 bg-white p-6 shadow-[0_1px_2px_rgba(28,25,23,0.04),0_8px_24px_-12px_rgba(28,25,23,0.12)]">
             <div className="flex items-center gap-2 text-xs font-semibold" style={{ color: "#0F6E56" }}>
               <span className="pill-dot w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden="true" />
               Up to date
@@ -58,30 +58,7 @@ export default function RecentUpdates() {
               <span className="font-semibold text-stone-800">{recent} of {published.length}</span> modules reviewed since {cutoffLabel}
             </p>
 
-            <p className="mt-6 mb-2.5 text-xs font-medium uppercase tracking-wide text-stone-400">Last review, by module</p>
-            <ul className="grid grid-cols-6 gap-1.5">
-              {published.map((m) => {
-                const tint = levelTint[m.level];
-                const label = moduleReviewDates[m.id] ?? "";
-                const fresh = label && monthIndex(label) >= cutoff;
-                return (
-                  <li key={m.id}>
-                    <Link
-                      href={`/module/${m.slug}`}
-                      title={`Module ${String(m.id).padStart(2, "0")}: ${m.title} - reviewed ${label}`}
-                      className="review-chip flex flex-col items-center rounded-lg py-1.5"
-                      style={{ backgroundColor: tint.t, color: tint.c, "--c": tint.c } as React.CSSProperties}
-                    >
-                      <span className="text-xs font-bold tabular-nums">{String(m.id).padStart(2, "0")}</span>
-                      <span className={`text-[10px] leading-tight ${fresh ? "font-semibold" : "opacity-60"}`}>
-                        {label.slice(0, 3)}
-                      </span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="mt-3 text-xs text-stone-400 leading-relaxed">
+            <p className="mt-5 pt-4 border-t border-stone-100 text-xs text-stone-400 leading-relaxed">
               Each module page also shows its review date under the title.
             </p>
           </div>

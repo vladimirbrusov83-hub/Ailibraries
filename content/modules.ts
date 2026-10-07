@@ -2651,10 +2651,10 @@ export const siteUpdates: SiteUpdate[] = [
   },
   {
     date: "2026-10-04",
-    title: "Accuracy audit",
+    title: "AI tools and pricing refreshed",
     summary:
-      "Current AI tool facts and consumer-plan data terms in Module 03, corrected pricing in Module 16, a fixed cross-reference in Module 04, five broken reference links replaced, and all module PDFs regenerated.",
-    modules: [3, 4, 16],
+      "Module 03 now describes the current AI assistants and what their consumer plans do with your data, and Module 16 lists current pricing for the vibe coding tools it uses.",
+    modules: [3, 16],
   },
   {
     date: "2026-09-09",

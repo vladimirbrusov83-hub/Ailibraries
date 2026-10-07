@@ -83,7 +83,7 @@ export default function RecentUpdates() {
 
         <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-6 lg:gap-10 items-start">
           {/* Status + review grid */}
-          <div className="rv w2 lg:sticky lg:top-24 rounded-[14px] border border-stone-200 bg-white p-6 shadow-[0_1px_2px_rgba(28,25,23,0.04),0_8px_24px_-12px_rgba(28,25,23,0.12)]">
+          <div className="rv w2 rounded-[14px] border border-stone-200 bg-white p-6 shadow-[0_1px_2px_rgba(28,25,23,0.04),0_8px_24px_-12px_rgba(28,25,23,0.12)]">
             <div className="flex items-center gap-2 text-xs font-semibold" style={{ color: "#0F6E56" }}>
               <span className="pill-dot w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden="true" />
               Up to date

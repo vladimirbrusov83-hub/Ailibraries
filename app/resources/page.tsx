@@ -380,7 +380,7 @@ const resourceSections = [
         date: null,
         url: "https://zapier.com",
         description:
-          "No-code workflow automation connecting 6,000+ apps. Now includes AI actions and integrations. For library automation: connecting forms to spreadsheets, triggering emails, routing data between systems. Free tier for simple automations.",
+          "No-code workflow automation connecting 9,000+ apps. Now includes AI actions and integrations. For library automation: connecting forms to spreadsheets, triggering emails, routing data between systems. Free tier for simple automations.",
         tag: "Level 3",
         tagColor: "#854F0B",
         tagBg: "#FAEEDA",

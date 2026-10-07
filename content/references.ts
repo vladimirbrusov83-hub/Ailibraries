@@ -11,8 +11,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/acrl/standards/ai",
     },
     {
-      text: "Clarivate. (2024). *Pulse of the library 2024.*",
-      url: "https://doi.org/10.14322/pulse.of.the.library.2024",
+      text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
+      url: "https://clarivate.com/pulse-of-the-library/",
     },
     {
       text: "Dakan, R., & Feller, A. (2025). *AI fluency: Framework & foundations* [Online course]. Anthropic Academy.",
@@ -95,6 +95,10 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Ohio State University Libraries. (2026, March 20). *Fair use and artificial intelligence: 2026 update.*",
       url: "https://library.osu.edu/site/copyright/2026/03/20/fair-use-and-artificial-intelligence-2026-update/",
+    },
+    {
+      text: "International Coalition of Library Consortia. (2024, March 22). *ICOLC statement on AI in licensing.*",
+      url: "https://icolc.net/statements/icolc-statement-ai-licensing",
     },
   ],
 
@@ -186,7 +190,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://exlibrisgroup.com/products/alma-library-services-platform/",
     },
     {
-      text: "Harvard Library. (2024). *Harvard Library Collections Explorer.* Harvard University.",
+      text: "Harvard Library. (2025, September). *Collections Explorer* [Beta]. Harvard University.",
       url: "https://library.harvard.edu/services-tools/collections-explorer",
     },
     {
@@ -223,6 +227,10 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Knibbs, K. (2024, December 12). Harvard is releasing a massive free AI training dataset funded by OpenAI and Microsoft. *WIRED.*",
       url: "https://www.wired.com/story/harvard-ai-training-dataset-openai-microsoft/",
     },
+    {
+      text: "U.S. Department of Justice. (2026, April 20). Extension of compliance dates for nondiscrimination on the basis of disability; accessibility of web information and services of state and local government entities [Interim final rule]. *Federal Register.*",
+      url: "https://www.federalregister.gov/documents/2026/04/20/2026-07663/extension-of-compliance-dates-for-nondiscrimination-on-the-basis-of-disability-accessibility-of-web",
+    },
   ],
 
   10: [
@@ -247,7 +255,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       note: "Includes a downloadable transparency/efficiency/critical-thinking/privacy rubric.",
     },
     {
-      text: "Clarivate. (2025). *Pulse of the library 2025.*",
+      text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
       url: "https://clarivate.com/pulse-of-the-library/",
     },
     {
@@ -312,8 +320,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/acrl/standards/ai",
     },
     {
-      text: "Clarivate. (2024). *Pulse of the library 2024.*",
-      url: "https://doi.org/10.14322/pulse.of.the.library.2024",
+      text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
+      url: "https://clarivate.com/pulse-of-the-library/",
     },
     {
       text: "Clarivate. (2025). *Pulse of the library 2025.*",
@@ -389,7 +397,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://www.ala.org/core/",
     },
     {
-      text: "Clarivate. (2025). *Pulse of the library 2025.*",
+      text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
       url: "https://clarivate.com/pulse-of-the-library/",
     },
     {

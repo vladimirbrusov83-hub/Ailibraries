@@ -67,7 +67,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent"
+          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent"
           style={{ "--tw-ring-color": "#0F6E56" } as React.CSSProperties}
         />
       </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
           required
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
-          className="w-full px-4 py-4 rounded-xl border border-stone-200 text-base text-stone-900 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent bg-white"
+          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 text-base text-stone-900 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent bg-white"
           style={{ "--tw-ring-color": "#0F6E56" } as React.CSSProperties}
         >
           <option value="" disabled>Select a subject…</option>
@@ -102,7 +102,7 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Your message…"
-          className="w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent resize-none"
+          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent resize-none"
           style={{ "--tw-ring-color": "#0F6E56" } as React.CSSProperties}
         />
       </div>
@@ -116,7 +116,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full py-4 px-6 rounded-xl text-base font-semibold text-white transition-opacity disabled:opacity-60"
+        className="send-refined w-full py-4 px-6 rounded-xl text-base font-semibold text-white disabled:opacity-60"
         style={{ backgroundColor: "#0F6E56" }}
       >
         {status === "loading" ? "Sending…" : "Send message"}

@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-3">
               <span
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
+                className="logo-mark w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
                 style={{ backgroundColor: "#0F6E56" }}
                 aria-hidden="true"
               >
@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/level/foundations"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Level 1: Foundations
                 </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/level/applied"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Level 2: Applied
                 </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/level/advanced"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Level 3: Advanced
                 </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/curriculum"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Full Curriculum
                 </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   About
                 </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/resources"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Resources
                 </Link>
@@ -88,7 +88,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-sm text-stone-500 hover:text-stone-800 transition-colors"
+                  className="foot-link text-sm text-stone-500"
                 >
                   Contact
                 </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-stone-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+        <div className="foot-fine mt-10 pt-6 border-t border-stone-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
           <p className="text-xs text-stone-400">
             Aligned with{" "}
             <a
@@ -141,7 +141,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="mt-6 pt-5 border-t border-stone-100">
+        <div className="foot-fine mt-6 pt-5 border-t border-stone-100">
           <p className="text-xs text-stone-400 leading-relaxed max-w-3xl">
             This course was intentionally developed using an AI-assisted authoring process - the same kind of directed, human-led AI use it teaches. The author designed the framework and guided the content throughout. That process is itself an example of the{" "}
             <Link

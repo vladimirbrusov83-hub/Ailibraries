@@ -63,12 +63,13 @@ export default function ModuleCard({
 
   const cardContent = (
     <div
-      className={`card ${colors.border} ${colors.hoverBorder} hover:shadow-md h-full flex flex-col ${recommendedRing}`}
+      className={`card mc-refined ${colors.border} ${colors.hoverBorder} h-full flex flex-col ${recommendedRing}`}
+      style={{ "--lvl": colors.numText } as React.CSSProperties}
     >
       {/* Header row */}
       <div className="flex items-start gap-4 mb-4">
         <span
-          className="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold"
+          className="mc-num flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold"
           style={{ backgroundColor: colors.numBg, color: colors.numText }}
           aria-hidden="true"
         >
@@ -114,10 +115,10 @@ export default function ModuleCard({
           </span>
         ) : (
           <span
-            className="text-xs font-medium"
+            className="arrow-nudge text-xs font-medium"
             style={{ color: colors.numText }}
           >
-            Read module →
+            Read module <span>→</span>
           </span>
         )}
       </div>

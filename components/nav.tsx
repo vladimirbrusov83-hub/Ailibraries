@@ -16,7 +16,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-stone-200">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md backdrop-saturate-150 border-b border-stone-200/75">
       <nav
         className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between"
         aria-label="Main navigation"
@@ -27,7 +27,7 @@ export default function Nav() {
           className="flex items-center gap-2.5 font-semibold text-stone-900 hover:text-forest-DEFAULT"
         >
           <span
-            className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
+            className="logo-mark w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold"
             style={{ backgroundColor: "#0F6E56" }}
             aria-hidden="true"
           >
@@ -43,14 +43,13 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
-          {navLinks.slice(0, 2).map((link) => (
+          {navLinks.slice(0, 2).map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                pathname.startsWith(link.href)
-                  ? "text-stone-900 bg-stone-100"
-                  : "text-stone-600 hover:text-stone-900 hover:bg-stone-50"
+              aria-current={pathname.startsWith(link.href) ? "page" : undefined}
+              className={`nav-link nav-d${i + 1} px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                pathname.startsWith(link.href) ? "text-stone-900" : "text-stone-600"
               }`}
             >
               {link.label}
@@ -58,18 +57,17 @@ export default function Nav() {
           ))}
           <a
             href="/professional-development.html"
-            className="px-3 py-2 rounded-lg text-xs font-medium leading-tight text-center text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors"
+            className="nav-link nav-d3 px-3 py-2 rounded-lg text-xs font-medium leading-tight text-center text-stone-600 transition-colors"
           >
             Professional<br />Development
           </a>
-          {navLinks.slice(2).map((link) => (
+          {navLinks.slice(2).map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                pathname.startsWith(link.href)
-                  ? "text-stone-900 bg-stone-100"
-                  : "text-stone-600 hover:text-stone-900 hover:bg-stone-50"
+              aria-current={pathname.startsWith(link.href) ? "page" : undefined}
+              className={`nav-link nav-d${i + 4} px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                pathname.startsWith(link.href) ? "text-stone-900" : "text-stone-600"
               }`}
             >
               {link.label}
@@ -77,7 +75,7 @@ export default function Nav() {
           ))}
           <Link
             href="/level/foundations"
-            className="ml-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-colors"
+            className="nav-cta nav-d6 ml-2 px-4 py-2 rounded-lg text-sm font-medium text-white"
             style={{ backgroundColor: "#0F6E56" }}
           >
             Start Learning

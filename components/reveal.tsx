@@ -27,7 +27,7 @@ export default function Reveal() {
       items.forEach((el) => el.classList.add("in"));
       return;
     }
-    const io = new IntersectionObserver(
+    const io: IntersectionObserver = new IntersectionObserver(
       (entries) =>
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
@@ -39,7 +39,15 @@ export default function Reveal() {
       { threshold: 0, rootMargin: "0px 0px -12% 0px" }
     );
     items.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+    // Pick up blocks that mount later (search results, role filter, client widgets).
+    const mo = new MutationObserver(() =>
+      document.querySelectorAll<HTMLElement>(".rv:not(.in)").forEach((el) => io.observe(el))
+    );
+    mo.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      io.disconnect();
+      mo.disconnect();
+    };
   }, [pathname]);
 
   return null;

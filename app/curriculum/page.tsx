@@ -96,13 +96,13 @@ export default function CurriculumPage({
       />
       {/* Header */}
       <div className="max-w-2xl mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
+        <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-stone-900 mb-4">
           Full Curriculum
         </h1>
-        <p className="text-stone-600 leading-relaxed text-lg">
+        <p className="rv w2 text-stone-600 leading-relaxed text-lg">
           18 modules across three levels - from AI basics to building your own tools. Choose your path or work through every module in order.
         </p>
-        <p className="mt-3 text-sm font-medium text-stone-500">
+        <p className="rv w3 mt-3 text-sm font-medium text-stone-500">
           {modules.length} modules · ~{totalHours} hours of material · self-paced
         </p>
       </div>
@@ -110,7 +110,7 @@ export default function CurriculumPage({
       <CurriculumProgress slugs={publishedSlugs} />
 
       {/* Path selector callout */}
-      <div className="grid sm:grid-cols-2 gap-4 mb-10 p-6 rounded-xl bg-stone-50 border border-stone-200">
+      <div className="rv card-soft grid sm:grid-cols-2 gap-4 mb-10 p-6 rounded-xl bg-stone-50 border border-stone-200">
         <div>
           <h2 className="font-semibold text-stone-900 mb-1.5">
             Not sure where to start?
@@ -122,22 +122,22 @@ export default function CurriculumPage({
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <Link
             href="/level/foundations"
-            className="flex-1 text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-white"
+            className="btn-lift btn-green arrow-nudge flex-1 text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-white"
             style={{ backgroundColor: "#0F6E56" }}
           >
-            Start with Foundations →
+            Start with Foundations <span>→</span>
           </Link>
           <Link
             href="/module/what-is-ai-for-librarians"
-            className="flex-1 text-center px-4 py-2.5 rounded-lg text-sm font-medium border border-stone-300 text-stone-700 hover:border-stone-400 bg-white"
+            className="btn-lift btn-ghost arrow-nudge flex-1 text-center px-4 py-2.5 rounded-lg text-sm font-medium border border-stone-300 text-stone-700 hover:border-stone-400 bg-white"
           >
-            Jump to Module 01 →
+            Jump to Module 01 <span>→</span>
           </Link>
         </div>
       </div>
 
       {/* Role highlight toggle */}
-      <div className="mb-12">
+      <div className="rv mb-12">
         <p className="text-sm font-medium text-stone-700 mb-2">
           Highlight modules for your role
         </p>
@@ -151,7 +151,7 @@ export default function CurriculumPage({
                 href={opt.href}
                 scroll={false}
                 aria-current={active ? "true" : undefined}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`role-toggle px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   active
                     ? "text-white shadow-sm"
                     : "text-stone-600 hover:text-stone-900"
@@ -189,7 +189,7 @@ export default function CurriculumPage({
           <section key={levelKey} className="mb-16">
             {/* Level header */}
             <div
-              className="rounded-xl p-6 mb-7 border"
+              className="rv card-soft rounded-xl p-6 mb-7 border"
               style={{
                 backgroundColor: levelStyle.bg,
                 borderColor: levelStyle.border,
@@ -221,10 +221,10 @@ export default function CurriculumPage({
                   </p>
                   <Link
                     href={`/level/${levelKey}`}
-                    className="text-xs font-medium mt-0.5 inline-block transition-colors"
+                    className="arrow-nudge text-xs font-medium mt-0.5 inline-block transition-colors"
                     style={{ color: levelStyle.accent }}
                   >
-                    View level hub →
+                    View level hub <span>→</span>
                   </Link>
                 </div>
               </div>
@@ -232,8 +232,10 @@ export default function CurriculumPage({
 
             {/* Module grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {levelModules.map((m) => (
-                <ModuleCard key={m.slug} module={m} role={role} />
+              {levelModules.map((m, i) => (
+                <div key={m.slug} className={`rv w${(i % 3) + 2}`}>
+                  <ModuleCard module={m} role={role} />
+                </div>
               ))}
             </div>
           </section>
@@ -242,7 +244,7 @@ export default function CurriculumPage({
       </CurriculumSearch>
 
       {/* ACRL footer note */}
-      <div className="border-t border-stone-200 pt-8 text-center">
+      <div className="rv border-t border-stone-200 pt-8 text-center">
         <p className="text-sm text-stone-500">
           All modules are mapped to the{" "}
           <a

@@ -210,6 +210,8 @@ a:hover > .mc-refined::before { transform: scaleX(1); }
 .related-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--lvl); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease); }
 .related-card:hover { transform: translateY(-4px); box-shadow: var(--lift-h); border-color: color-mix(in srgb, var(--lvl) 35%, transparent) !important; }
 .related-card:hover::before { transform: scaleX(1); }
+.role-toggle { transition: color .2s, background-color .2s, transform .25s var(--ease), box-shadow .25s; }
+.role-toggle:not([aria-current]):hover { background-color: #fff; box-shadow: 0 1px 2px rgba(28,25,23,.06), 0 4px 10px -6px rgba(28,25,23,.2); transform: translateY(-1px); }
 .refs-card summary svg { transition: transform .3s var(--ease); }
 
 @media (prefers-reduced-motion: reduce) {

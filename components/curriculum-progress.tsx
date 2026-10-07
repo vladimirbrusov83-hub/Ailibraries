@@ -14,7 +14,7 @@ export default function CurriculumProgress({
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 
   return (
-    <div className="mb-8 rounded-xl border border-stone-200 bg-white p-5">
+    <div className="card-soft mb-8 rounded-xl border border-stone-200 bg-white p-5">
       <div className="flex items-baseline justify-between gap-3">
         <p className="text-sm font-semibold text-stone-900">Your progress</p>
         <p className="text-sm text-stone-500">

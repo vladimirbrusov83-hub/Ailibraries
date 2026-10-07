@@ -103,7 +103,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
         style={{ backgroundColor: config.bg, borderColor: config.border }}
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <div className="flex items-center gap-2 mb-3">
+          <div className="rv flex items-center gap-2 mb-3">
             <Link
               href="/curriculum"
               className="text-sm text-stone-500 hover:text-stone-700 transition-colors"
@@ -119,12 +119,12 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <div className="max-w-xl">
               <h1
-                className="text-3xl sm:text-4xl font-bold mb-3"
+                className="rv w2 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-balance mb-3"
                 style={{ color: config.accent }}
               >
                 {meta.label}
               </h1>
-              <p className="text-stone-700 leading-relaxed text-base">
+              <p className="rv w3 text-stone-700 leading-relaxed text-base">
                 {meta.description}
               </p>
             </div>
@@ -134,7 +134,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
         {/* Audience guidance */}
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-5 mb-10">
+        <div className="rv card-soft rounded-xl border border-stone-200 bg-stone-50 p-5 mb-10">
           <p className="text-sm font-semibold text-stone-700 mb-0.5">Who this level is for</p>
           <p className="text-sm text-stone-600">{config.audience}</p>
         </div>
@@ -143,7 +143,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
         {isAdvanced ? (
           /* Advanced - first-in-field, now fully available */
           <div>
-            <div className="rounded-xl border p-8 mb-8 text-center" style={{ borderColor: config.border, backgroundColor: config.bg }}>
+            <div className="rv card-soft rounded-xl border p-8 mb-8 text-center" style={{ borderColor: config.border, backgroundColor: config.bg }}>
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl"
                 style={{ backgroundColor: "#854F0B", color: "white" }}
@@ -160,30 +160,34 @@ export default function LevelPage({ params }: { params: { level: string } }) {
               {publishedModules[0] && (
                 <Link
                   href={`/module/${publishedModules[0].slug}`}
-                  className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-opacity hover:opacity-90"
-                  style={{ backgroundColor: "#854F0B" }}
+                  className="btn-level arrow-nudge inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                  style={{ backgroundColor: "#854F0B", "--c": "#854F0B" } as React.CSSProperties}
                 >
-                  Start Level 3 →
+                  Start Level 3 <span>→</span>
                 </Link>
               )}
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {levelModules.map((m) => (
-                <ModuleCard key={m.slug} module={m} />
+              {levelModules.map((m, i) => (
+                <div key={m.slug} className={`rv w${(i % 3) + 2}`}>
+                  <ModuleCard module={m} />
+                </div>
               ))}
             </div>
           </div>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {levelModules.map((m) => (
-              <ModuleCard key={m.slug} module={m} />
+            {levelModules.map((m, i) => (
+              <div key={m.slug} className={`rv w${(i % 3) + 2}`}>
+                <ModuleCard module={m} />
+              </div>
             ))}
           </div>
         )}
 
         {/* Navigation between levels */}
-        <div className="mt-14 pt-8 border-t border-stone-200 flex flex-col sm:flex-row justify-between gap-4">
+        <div className="rv mt-14 pt-8 border-t border-stone-200 flex flex-col sm:flex-row justify-between gap-4">
           {config.prerequisite && (
             <Link
               href={`/level/${config.prerequisite}`}

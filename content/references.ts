@@ -12,7 +12,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
-      url: "https://clarivate.com/pulse-of-the-library/",
+      url: "https://doi.org/10.14322/pulse.of.the.library.2026",
     },
     {
       text: "Dakan, R., & Feller, A. (2025). *AI fluency: Framework & foundations* [Online course]. Anthropic Academy.",
@@ -167,6 +167,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "Clarivate. (2026, July 30). *Students are sprinting ahead: What 500 students told us about AI in academic work.*",
       url: "https://about.proquest.com/en/blog/2026/students-dont-want-ai-to-think-for-them/",
     },
+    {
+      text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
+      url: "https://doi.org/10.14322/pulse.of.the.library.2026",
+      note: "Page 9 reports the student starting-point figures from the survey above, including that 1% ask a librarian.",
+    },
   ],
 
   8: [
@@ -260,7 +265,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
-      url: "https://clarivate.com/pulse-of-the-library/",
+      url: "https://doi.org/10.14322/pulse.of.the.library.2026",
     },
     {
       text: "Ithaka S+R. (2024–present). *Generative AI product tracker.*",
@@ -325,7 +330,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
-      url: "https://clarivate.com/pulse-of-the-library/",
+      url: "https://doi.org/10.14322/pulse.of.the.library.2026",
     },
     {
       text: "Clarivate. (2025). *Pulse of the library 2025.*",
@@ -408,7 +413,7 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
-      url: "https://clarivate.com/pulse-of-the-library/",
+      url: "https://doi.org/10.14322/pulse.of.the.library.2026",
     },
     {
       text: "Michalak, R., Dawes, T. A., & Wallace, A. (2026, May). Envisioning AI's role in libraries: Perspectives from an LIS student, a library director, and a university librarian. *College & Research Libraries News, 87*(5).",

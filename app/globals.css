@@ -215,8 +215,11 @@ select.field-refined { -webkit-appearance: none; appearance: none; padding-right
 .related-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--lvl); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease); }
 .related-card:hover { transform: translateY(-4px); box-shadow: var(--lift-h); border-color: color-mix(in srgb, var(--lvl) 35%, transparent) !important; }
 .related-card:hover::before { transform: scaleX(1); }
-.role-toggle { transition: color .2s, background-color .2s, transform .25s var(--ease), box-shadow .25s; }
-.role-toggle:not([aria-current]):hover { background-color: #fff; box-shadow: 0 1px 2px rgba(28,25,23,.06), 0 4px 10px -6px rgba(28,25,23,.2); transform: translateY(-1px); }
+.role-toggle { transition: color .3s var(--ease), background-color .2s; }
+.role-toggle:not([aria-current]):hover { background-color: rgba(255,255,255,.7); }
+.role-thumb { transition: transform .45s cubic-bezier(.3,1.25,.4,1), width .45s cubic-bezier(.3,1.25,.4,1), height .45s var(--ease), background-color .35s var(--ease), box-shadow .35s var(--ease); }
+.fade-in-soft { animation: fade-in-soft .5s var(--ease) both; }
+@keyframes fade-in-soft { from { opacity: 0; transform: translateY(-4px); } }
 .res-card { position: relative; overflow: hidden; border-radius: 14px; border-color: rgba(214,211,209,.7); box-shadow: var(--lift); transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
 .res-card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--lvl); transform: scaleY(0); transform-origin: top; transition: transform .45s var(--ease); }
 .res-card:hover { transform: translateY(-3px); box-shadow: var(--lift-h); border-color: color-mix(in srgb, var(--lvl) 30%, transparent); }
@@ -238,6 +241,7 @@ select.field-refined { -webkit-appearance: none; appearance: none; padding-right
   .nav-link, .nav-cta, .ann-shine::after, .pill-dot { animation: none; }
   .lift:hover, .btn-lift:hover, a:hover > .mc-refined, .foot-link:hover, .btn-soft:hover, .btn-complete:hover, .related-card:hover, .res-card:hover, .photo-soft:hover, .review-chip:hover { transform: none; }
   .update-dot-new { animation: none; }
+  .role-thumb { transition: none; }
 }
 
 @media print {

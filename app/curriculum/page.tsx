@@ -4,6 +4,7 @@ import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 import CurriculumSearch from "@/components/curriculum-search";
 import CurriculumProgress from "@/components/curriculum-progress";
+import RoleToggle from "@/components/role-toggle";
 import { isRoleFilter, roleMeta, type RoleFilter } from "@/lib/audience";
 
 export const metadata: Metadata = {
@@ -141,30 +142,15 @@ export default function CurriculumPage({
         <p className="text-sm font-medium text-stone-700 mb-2">
           Highlight modules for your role
         </p>
-        <div className="inline-flex flex-wrap gap-1 p-1 rounded-xl bg-stone-100 border border-stone-200">
-          {toggleOptions.map((opt) => {
-            const active = role === opt.value;
-            const activeColor = opt.value ? roleMeta[opt.value].color : "#0F6E56";
-            return (
-              <Link
-                key={opt.label}
-                href={opt.href}
-                scroll={false}
-                aria-current={active ? "true" : undefined}
-                className={`role-toggle px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  active
-                    ? "text-white shadow-sm"
-                    : "text-stone-600 hover:text-stone-900"
-                }`}
-                style={active ? { backgroundColor: activeColor } : undefined}
-              >
-                {opt.label}
-              </Link>
-            );
-          })}
-        </div>
+        <RoleToggle
+          active={role}
+          options={toggleOptions.map((opt) => ({
+            ...opt,
+            color: opt.value ? roleMeta[opt.value].color : "#0F6E56",
+          }))}
+        />
         {role && (
-          <p className="text-sm text-stone-500 mt-3">
+          <p key={role} className="fade-in-soft text-sm text-stone-500 mt-3">
             Highlighting {recommendedCount} module
             {recommendedCount === 1 ? "" : "s"} recommended for{" "}
             <span className="font-medium text-stone-700">

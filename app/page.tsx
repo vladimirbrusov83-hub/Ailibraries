@@ -252,7 +252,7 @@ export default function HomePage() {
             {audiencePaths.map((path, i) => (
               <div key={path.id} className={`rv ${i === 0 ? "w2" : "w3"}`}>
               <div
-                className="role-card lift group h-full border p-7"
+                className="role-card lift group relative h-full border p-7 cursor-pointer"
                 style={{
                   borderColor: path.borderColor,
                   backgroundColor: path.lightColor,
@@ -280,7 +280,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
                   <Link
                     href={`/curriculum?role=${path.id}`}
-                    className="arrow-nudge inline-flex items-center gap-1.5 text-sm font-semibold transition-colors"
+                    className="stretched-link arrow-nudge inline-flex items-center gap-1.5 text-sm font-semibold transition-colors"
                     style={{ color: path.color }}
                   >
                     See your recommended path
@@ -290,7 +290,7 @@ export default function HomePage() {
                   </Link>
                   <Link
                     href={`/module/${path.startModule}`}
-                    className="text-sm font-medium text-stone-500 hover:text-stone-800 transition-colors"
+                    className="relative z-[2] text-sm font-medium text-stone-500 hover:text-stone-800 transition-colors"
                   >
                     Start with Module 01
                   </Link>

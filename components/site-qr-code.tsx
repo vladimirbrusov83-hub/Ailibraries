@@ -5,7 +5,7 @@ const DISPLAY_URL = SITE_URL.replace(/^https?:\/\//, "");
 
 export default function SiteQrCode() {
   return (
-    <section className="sm:hidden mt-8 bg-stone-100 border border-stone-200 rounded-2xl p-8 text-center">
+    <section className="card-soft sm:hidden mt-8 bg-white border border-stone-200 rounded-2xl p-8 text-center">
       <h2 className="text-sm font-semibold text-stone-900 mb-1">Share this site</h2>
       <p className="text-xs text-stone-500 leading-relaxed mb-5">
         Point a camera at the code to open the curriculum.

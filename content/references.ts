@@ -163,6 +163,10 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://iala.libguides.com/alliance/ai",
       note: "Aggregates AI guidance and syllabus statements from Iowa community colleges, including Des Moines Area Community College and Kirkwood Community College.",
     },
+    {
+      text: "Clarivate. (2026, July 30). *Students are sprinting ahead: What 500 students told us about AI in academic work.*",
+      url: "https://about.proquest.com/en/blog/2026/students-dont-want-ai-to-think-for-them/",
+    },
   ],
 
   8: [
@@ -328,12 +332,18 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       url: "https://clarivate.com/pulse-of-the-library/",
     },
     {
-      text: "Lo, L. S. (2024). Evaluating AI literacy in academic libraries. *College & Research Libraries, 85*(5).",
+      text: "Lo, L. S. (2024). Evaluating AI literacy in academic libraries: A survey study with a focus on U.S. employees. *College & Research Libraries, 85*(5), 635–657.",
+      url: "https://crl.acrl.org/index.php/crl/article/view/26409",
       note: "Winner of the 2025 CALA Jing Liao Award for Best Research.",
     },
     {
       text: "California colleges spend millions on faulty AI systems. (2026, March). *CalMatters.*",
       url: "https://calmatters.org/education/higher-education/college-beat/2026/03/college-ai-chatbot/",
+    },
+    {
+      text: "U.S. Bureau of Labor Statistics. (2025). Librarians and library media specialists. In *Occupational outlook handbook.*",
+      url: "https://www.bls.gov/ooh/education-training-and-library/librarians.htm",
+      note: "Median annual wage $64,320 (May 2024).",
     },
   ],
 

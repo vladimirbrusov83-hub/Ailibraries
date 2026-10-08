@@ -77,26 +77,12 @@ export default function HomePage() {
             Aligned with ACRL AI Competencies (2025) &amp; ALA AI Guidance (2026)
           </div>
 
-          <h1 className="rv w2 text-[38px] leading-[1.08] sm:text-[3.75rem] sm:leading-[1.06] tracking-[-0.035em] text-balance font-bold text-stone-900 mb-4">
-            AI for Academic Libraries
+          <h1 className="rv w2 text-[32px] leading-[1.12] sm:text-[3.25rem] sm:leading-[1.08] tracking-[-0.035em] text-balance font-bold text-stone-900 mb-5 sm:mb-6">
+            Learn to use AI critically, responsibly, and practically in academic library work.
           </h1>
 
-          <p className="rv w2 text-base sm:text-[17px] font-semibold mb-5 sm:mb-[22px]" style={{ color: "#0F6E56" }}>
-            A practical AI learning portal for academic library professionals.
-          </p>
-
           <p className="rv w3 text-lg sm:text-xl text-stone-600 leading-relaxed text-pretty max-w-2xl mx-auto mb-9">
-            A structured learning path from AI literacy to building your own tools - mapped to ACRL AI Competencies (2025), aligned with ALA&apos;s AI Guidance (2026), and grounded in the 4D Framework from Anthropic&apos;s{" "}
-            <a
-              href="https://anthropic.skilljar.com/ai-fluency-framework-foundations"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-[3px] hover:opacity-80 transition-opacity"
-              style={{ color: "#0F6E56" }}
-            >
-              AI Fluency course
-            </a>
-            .
+            A free, self-paced curriculum covering AI literacy, research support, reference, metadata, automation, agentic AI, and AI-powered tool building.
           </p>
 
           <div className="rv w4 flex flex-col sm:flex-row gap-3 justify-center">
@@ -105,7 +91,7 @@ export default function HomePage() {
               className="btn-primary btn-lift btn-green text-white font-semibold px-6 py-3 rounded-xl text-base"
               style={{ backgroundColor: "#0F6E56" }}
             >
-              Start with Level 1: Foundations
+              Start Learning →
             </Link>
             <Link
               href="/curriculum"

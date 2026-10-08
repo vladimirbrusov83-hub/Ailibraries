@@ -82,7 +82,7 @@ export default function HomePage() {
           </h1>
 
           <p className="rv w2 text-base sm:text-[17px] font-semibold mb-5 sm:mb-[22px]" style={{ color: "#0F6E56" }}>
-            The leading AI knowledge portal for library professionals.
+            A practical AI learning portal for academic library professionals.
           </p>
 
           <p className="rv w3 text-lg sm:text-xl text-stone-600 leading-relaxed text-pretty max-w-2xl mx-auto mb-9">

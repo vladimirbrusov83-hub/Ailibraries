@@ -155,7 +155,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
                 Level 3 is here
               </h2>
               <p className="text-stone-600 text-sm max-w-md mx-auto mb-6">
-                These {publishedModules.length} modules cover advanced topics that are still emerging in library AI practice. Every one is published and ready to read.
+                These {publishedModules.length} modules cover advanced topics that are still emerging in library AI practice.
               </p>
               {publishedModules[0] && (
                 <Link

@@ -210,6 +210,10 @@ export default function AboutPage() {
           <strong className="text-stone-800">No vendor relationships.</strong>{" "}
           No affiliate links. No sponsored content. Tool mentions reflect genuine evaluation for library use - the same evaluation I&apos;d apply professionally.
         </p>
+        <p className="text-sm text-stone-600 leading-relaxed mt-3">
+          <strong className="text-stone-800">Independent project.</strong>{" "}
+          This curriculum is not affiliated with or endorsed by ACRL, ALA, ARL, or Anthropic. &quot;Aligned with&quot; and &quot;mapped to&quot; describe how I built the content against their published frameworks, not an approval from them.
+        </p>
       </div>
 
       {/* CTAs */}

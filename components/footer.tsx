@@ -131,7 +131,7 @@ export default function Footer() {
             >
               ARL Guiding Principles (2024)
             </a>
-            .
+            . An independent project, not affiliated with or endorsed by ACRL, ALA, ARL, or Anthropic.
           </p>
           <p className="text-xs text-stone-400">
             Content last updated{" "}

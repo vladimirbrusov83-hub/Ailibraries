@@ -146,13 +146,13 @@ export default function HomePage() {
             <div className="rv">
               <p className="text-[36px] leading-[42px] tracking-[-0.035em] tabular-nums font-bold text-stone-900"><span data-count="30" data-suf="+">30+</span></p>
               <p className="text-sm leading-[1.55] text-stone-500 mt-1.5 max-w-[36ch] mx-auto">
-                countries reached. An international resource, used in the United States, India, Egypt, Canada, United Kingdom, Kenya, United Arab Emirates, Kazakhstan, Bulgaria, and more.
+                countries reached. Read in the United States, India, Egypt, Canada, United Kingdom, Kenya, United Arab Emirates, Kazakhstan, Bulgaria, and more.
               </p>
             </div>
             <div className="rv w2 sm:border-x border-stone-200">
-              <p className="text-[36px] leading-[42px] tracking-[-0.035em] tabular-nums font-bold text-stone-900"><span data-count="1000" data-suf="+">1000+</span></p>
+              <p className="text-[36px] leading-[42px] tracking-[-0.035em] tabular-nums font-bold text-stone-900">Free</p>
               <p className="text-sm leading-[1.55] text-stone-500 mt-1.5 max-w-[36ch] mx-auto">
-                librarians have used this curriculum to date
+                and open. No sign-up, no paywall, all 18 modules.
               </p>
             </div>
             <div className="rv w3">

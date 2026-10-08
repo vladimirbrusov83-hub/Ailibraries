@@ -160,7 +160,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
               {publishedModules[0] && (
                 <Link
                   href={`/module/${publishedModules[0].slug}`}
-                  className="btn-level arrow-nudge inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                  className="btn-level arrow-nudge inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white"
                   style={{ backgroundColor: "#854F0B", "--c": "#854F0B" } as React.CSSProperties}
                 >
                   Start Level 3 <span>→</span>
@@ -191,7 +191,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           {config.prerequisite && (
             <Link
               href={`/level/${config.prerequisite}`}
-              className="flex items-center gap-2 text-sm text-stone-500 hover:text-stone-800 transition-colors group"
+              className="btn-lift btn-ghost group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium border border-stone-300 text-stone-700 hover:border-stone-400"
             >
               <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -202,8 +202,8 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           {config.next && (
             <Link
               href={`/level/${config.next}`}
-              className="flex items-center gap-2 text-sm font-medium transition-colors group ml-auto"
-              style={{ color: config.accent }}
+              className="btn-level group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white sm:ml-auto"
+              style={{ backgroundColor: config.accent, "--c": config.accent } as React.CSSProperties}
             >
               {levelMeta[config.next as Level].label}
               <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

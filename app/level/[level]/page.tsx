@@ -54,7 +54,7 @@ const levelConfig = {
     border: "#f0d4a0",
     who: "Both audiences. Technical comfort from Level 2 recommended.",
     audience:
-      "Advanced topics that are still emerging in library AI practice: workflow automation, agentic AI, vibe coding, and systems integration. Every module is available now.",
+      "Advanced topics that are still emerging in library AI practice: workflow automation, agentic AI, vibe coding, and systems integration.",
     prerequisite: "applied",
     next: null,
   },

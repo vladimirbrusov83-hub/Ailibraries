@@ -54,7 +54,7 @@ const levelConfig = {
     border: "#f0d4a0",
     who: "Both audiences. Technical comfort from Level 2 recommended.",
     audience:
-      "Level 3 is where no other library portal goes. These modules cover content that simply doesn't exist elsewhere in the library sector - and every one of them is available now.",
+      "Advanced topics that are still emerging in library AI practice: workflow automation, agentic AI, vibe coding, and systems integration. Every module is available now.",
     prerequisite: "applied",
     next: null,
   },
@@ -155,7 +155,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
                 Level 3 is here
               </h2>
               <p className="text-stone-600 text-sm max-w-md mx-auto mb-6">
-                These {publishedModules.length} modules cover content no other library portal teaches - and every one is published and ready to read.
+                These {publishedModules.length} modules cover advanced topics that are still emerging in library AI practice. Every one is published and ready to read.
               </p>
               {publishedModules[0] && (
                 <Link

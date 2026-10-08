@@ -195,7 +195,7 @@ export default function CurriculumPage({
                         className="text-xs font-medium px-2 py-0.5 rounded-md text-white"
                         style={{ backgroundColor: levelStyle.accent }}
                       >
-                        ★ First in field
+                        ★ Emerging topics
                       </span>
                     )}
                   </div>

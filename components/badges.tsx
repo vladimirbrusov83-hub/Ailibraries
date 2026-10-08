@@ -132,10 +132,10 @@ export function GapBadge() {
     <span
       className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium"
       style={{ backgroundColor: "#FAEEDA", color: "#854F0B" }}
-      title="No competing content exists for this topic in the library sector"
+      title="An emerging area in library AI practice"
     >
       <span aria-hidden="true">★</span>
-      <span>First in field</span>
+      <span>Emerging topic</span>
     </span>
   );
 }

@@ -1810,7 +1810,7 @@ If the library drafts the policy rather than waiting for IT or legal to draft it
     status: "published",
     isGap: false,
     description:
-      "The first library automation course designed for nonprogrammers. You'll learn to identify what's worth automating, build your first real automations using visual tools, and see concrete time savings in your actual workflow.",
+      "An introduction to library workflow automation for nonprogrammers. You'll learn to identify what's worth automating, build your first real automations using visual tools, and see concrete time savings in your actual workflow.",
     relatedModules: [
       "agentic-ai-what-it-means",
       "vibe-coding-for-librarians",
@@ -2041,7 +2041,7 @@ None of this requires that the library be running sophisticated agentic systems 
     status: "published",
     isGap: false,
     description:
-      "The first practitioner focused vibe coding curriculum for librarians. No programming required. You will describe what you want in plain language and watch it become a working tool. We will build real library tools together, and we will also reckon honestly with the risks.",
+      "A practitioner-focused introduction to vibe coding for librarians. No programming required. You will describe what you want in plain language and watch it become a working tool. We will build real library tools together, and we will also reckon honestly with the risks.",
     relatedModules: [
       "automating-repetitive-tasks",
       "agentic-ai-what-it-means",
@@ -2594,7 +2594,7 @@ export const levelMeta = {
     label: "Level 3: Advanced",
     shortLabel: "Advanced",
     description:
-      "Build, automate, and integrate: the modules no one else is teaching. Vibe coding, agentic AI, workflow automation, and systems integration.",
+      "Build, automate, and integrate: advanced topics that are still emerging in library AI practice. Vibe coding, agentic AI, workflow automation, and systems integration.",
     color: "amber",
     number: 3,
     slug: "advanced",

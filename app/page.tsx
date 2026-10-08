@@ -324,7 +324,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/level/foundations"
-              className="arrow-nudge flex-shrink-0 text-sm font-medium transition-colors"
+              className="btn-lift btn-ghost arrow-nudge flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium border border-stone-300 hover:border-stone-400"
               style={{ color: "#0F6E56" }}
             >
               All 5 modules <span>→</span>
@@ -371,7 +371,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/level/applied"
-              className="arrow-nudge flex-shrink-0 text-sm font-medium transition-colors"
+              className="btn-lift btn-ghost arrow-nudge flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium border border-stone-300 hover:border-stone-400"
               style={{ color: "#185FA5" }}
             >
               All 8 modules <span>→</span>
@@ -418,7 +418,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/level/advanced"
-              className="arrow-nudge flex-shrink-0 text-sm font-medium transition-colors"
+              className="btn-lift btn-ghost arrow-nudge flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium border border-stone-300 hover:border-stone-400"
               style={{ color: "#854F0B" }}
             >
               All 5 modules <span>→</span>

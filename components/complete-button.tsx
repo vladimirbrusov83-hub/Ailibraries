@@ -50,7 +50,7 @@ buttonStyle
         </span>
         {done ? "Completed" : "Mark this module complete"}
       </button>
-      <p className="text-xs text-stone-400">
+      <p className="text-xs text-stone-500">
         {done
           ? "Saved in this browser. Tap again to undo."
           : "Tracks your progress on this device - no account needed."}

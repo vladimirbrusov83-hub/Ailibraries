@@ -449,7 +449,7 @@ export default function ResourcesPage() {
                         {resource.tag}
                       </span>
                     </div>
-                    <p className="text-xs text-stone-400 mb-2">
+                    <p className="text-xs text-stone-500 mb-2">
                       {resource.org}
                       {resource.date && ` · ${resource.date}`}
                     </p>

@@ -74,8 +74,9 @@ function renderBody(text: string) {
       const inner = para.replace(/^> ?/gm, "");
       const segs = inner.split("\n- ");
       return (
-        <aside
+        <div
           key={i}
+          role="note"
           className="mb-6 rounded-lg border border-red-200 bg-red-50 px-5 py-4"
         >
           {segs[0] && (
@@ -92,7 +93,7 @@ function renderBody(text: string) {
               ))}
             </ul>
           )}
-        </aside>
+        </div>
       );
     }
     if (para.includes("\n- ")) {
@@ -143,11 +144,11 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <nav className="flex items-center gap-1.5 mb-8 text-sm" aria-label="Breadcrumb">
-          <Link href="/curriculum" className="text-stone-400 hover:text-stone-600 transition-colors">
+          <Link href="/curriculum" className="text-stone-500 hover:text-stone-600 transition-colors">
             Curriculum
           </Link>
           <span className="text-stone-300" aria-hidden="true">/</span>
-          <Link href={`/level/${mod.level}`} className="text-stone-400 hover:text-stone-600 transition-colors">
+          <Link href={`/level/${mod.level}`} className="text-stone-500 hover:text-stone-600 transition-colors">
             {meta.shortLabel}
           </Link>
           <span className="text-stone-300" aria-hidden="true">/</span>
@@ -213,7 +214,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
               <AcrlBadge key={c} competency={c} />
             ))}
           </div>
-          <p className="text-xs text-stone-400 mt-2">
+          <p className="text-xs text-stone-500 mt-2">
             Sub-competencies: {mod.acrlSubCompetencies.join(", ")}
           </p>
         </div>
@@ -259,11 +260,11 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(moduleJsonLd) }}
       />
       <nav className="flex items-center gap-1.5 mb-8 text-sm" aria-label="Breadcrumb">
-        <Link href="/curriculum" className="text-stone-400 hover:text-stone-600 transition-colors">
+        <Link href="/curriculum" className="text-stone-500 hover:text-stone-600 transition-colors">
           Curriculum
         </Link>
         <span className="text-stone-300" aria-hidden="true">/</span>
-        <Link href={`/level/${mod.level}`} className="text-stone-400 hover:text-stone-600 transition-colors">
+        <Link href={`/level/${mod.level}`} className="text-stone-500 hover:text-stone-600 transition-colors">
           {meta.shortLabel}
         </Link>
         <span className="text-stone-300" aria-hidden="true">/</span>
@@ -386,7 +387,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none select-none text-sm font-medium text-stone-600 hover:bg-stone-50 transition-colors">
                 <span>References</span>
                 <svg
-                  className="w-4 h-4 text-stone-400 transition-transform group-open:rotate-180"
+                  className="w-4 h-4 text-stone-500 transition-transform group-open:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -396,7 +397,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                 </svg>
               </summary>
               <div className="px-5 pb-5 pt-1 border-t border-stone-100">
-                <p className="text-xs text-stone-400 mb-4">APA 7th edition</p>
+                <p className="text-xs text-stone-500 mb-4">APA 7th edition</p>
                 <ol className="space-y-4">
                   {moduleReferences[mod.id].map((ref, i) => (
                     <li key={i} className="text-sm text-stone-600 leading-relaxed pl-6 -indent-6">
@@ -412,7 +413,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                         </a>
                       )}
                       {ref.note && (
-                        <span className="block mt-1 text-xs text-stone-400 italic pl-0 indent-0">{ref.note}</span>
+                        <span className="block mt-1 text-xs text-stone-500 italic pl-0 indent-0">{ref.note}</span>
                       )}
                     </li>
                   ))}
@@ -440,7 +441,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </span>
           ))}
         </div>
-        <p className="text-xs text-stone-400">
+        <p className="text-xs text-stone-500">
           Sub-competencies: {mod.acrlSubCompetencies.join(", ")} ·{" "}
           <a
             href="https://www.ala.org/acrl/standards/ai"
@@ -464,10 +465,10 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                 className="related-card block h-full p-4 bg-white border border-stone-200"
                 style={{ "--lvl": levelAccent[related.level] } as React.CSSProperties}
               >
-                <p className="text-xs text-stone-400 mb-1">Module {String(related.id).padStart(2, "0")}</p>
+                <p className="text-xs text-stone-500 mb-1">Module {String(related.id).padStart(2, "0")}</p>
                 <p className="text-sm font-medium text-stone-800 leading-snug">{related.title}</p>
                 {related.status === "coming-soon" && (
-                  <p className="text-xs text-stone-400 mt-1">Coming soon</p>
+                  <p className="text-xs text-stone-500 mt-1">Coming soon</p>
                 )}
               </Link>
               </div>
@@ -505,7 +506,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                 </svg>
               </span>
               <span className="min-w-0">
-                <span className="block text-xs font-medium text-stone-400">
+                <span className="block text-xs font-medium text-stone-500">
                   Previous · Module {String(prev.id).padStart(2, "0")}
                 </span>
                 <span className="block text-sm font-semibold text-stone-800 leading-snug">{prev.title}</span>

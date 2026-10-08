@@ -84,8 +84,11 @@ export default function RootLayout({
         />
       </head>
       <body className="flex flex-col min-h-screen">
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
         <Footer />
         <Reveal />
         <Analytics />

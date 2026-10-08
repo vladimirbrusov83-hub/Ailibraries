@@ -44,7 +44,7 @@ export default function ModuleToc({
 
   return (
     <nav aria-label="On this page" className="text-sm">
-      <p className="text-xs font-semibold uppercase tracking-wide text-stone-400 mb-3">
+      <p className="text-xs font-semibold uppercase tracking-wide text-stone-500 mb-3">
         On this page
       </p>
       <ul className="space-y-2 border-l border-stone-200">

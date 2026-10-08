@@ -106,11 +106,11 @@ export default function ModuleCard({
 
       {/* Footer */}
       <div className="flex items-center justify-between pt-3 border-t border-stone-100">
-        <span className="text-xs text-stone-400">
+        <span className="text-xs text-stone-500">
           {module.estimatedMinutes} min
         </span>
         {isLocked ? (
-          <span className="text-xs text-stone-400 font-medium">
+          <span className="text-xs text-stone-500 font-medium">
             {moduleLaunchDates[module.id] ? `Available ${moduleLaunchDates[module.id]}` : "Contact us →"}
           </span>
         ) : (

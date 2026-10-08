@@ -183,7 +183,7 @@ export default function AboutPage() {
         <p className="rv">
           Together, these frameworks connect practical AI skills with the professional values that should guide their use.
         </p>
-        <p className="rv text-sm text-stone-400 italic">
+        <p className="rv text-sm text-stone-500 italic">
           Modules and content are subject to change and ongoing updates as the AI landscape evolves.
         </p>
 

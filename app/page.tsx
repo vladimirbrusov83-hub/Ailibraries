@@ -113,7 +113,7 @@ export default function HomePage() {
             )}
           </div>
 
-          <p className="rv w4 text-xs text-stone-400 mt-[18px]">
+          <p className="rv w4 text-xs text-stone-500 mt-[18px]">
             Modules are subject to change as the field evolves.
           </p>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
                 <p className="text-sm text-stone-600 leading-relaxed mt-2.5">
                   of students start a research project in a general AI assistant such as ChatGPT, Claude, or Gemini. Just 10% start at the library website. <span className="font-semibold text-stone-900">1% ask a librarian.</span>
                 </p>
-                <p className="text-xs text-stone-400 mt-4 pt-3 border-t border-stone-100">
+                <p className="text-xs text-stone-500 mt-4 pt-3 border-t border-stone-100">
                   Clarivate user experience research, 2026
                 </p>
             </div>
@@ -183,11 +183,11 @@ export default function HomePage() {
 
             <div className="rv w3">
             <div className="ev-card lift h-full border bg-white p-6 pb-[22px]" style={{ "--c": "#185FA5" } as React.CSSProperties}>
-                <p className="text-[34px] leading-[40px] sm:text-[42px] sm:leading-[46px] tracking-[-0.04em] tabular-nums font-bold text-stone-900">3.2<span className="text-lg font-semibold text-stone-400"> / 5</span></p>
+                <p className="text-[34px] leading-[40px] sm:text-[42px] sm:leading-[46px] tracking-[-0.04em] tabular-nums font-bold text-stone-900">3.2<span className="text-lg font-semibold text-stone-500"> / 5</span></p>
                 <p className="text-sm text-stone-600 leading-relaxed mt-2.5">
                   Average librarian confidence in AI concepts and terminology - unchanged since 2025. A third of libraries are still at the exploration and evaluation stage.
                 </p>
-                <p className="text-xs text-stone-400 mt-4 pt-3 border-t border-stone-100">
+                <p className="text-xs text-stone-500 mt-4 pt-3 border-t border-stone-100">
                   Pulse of the Library 2026 (n = 1,876)
                 </p>
             </div>
@@ -199,7 +199,7 @@ export default function HomePage() {
                 <p className="text-sm text-stone-600 leading-relaxed mt-2.5">
                   of libraries report no institutional focus on AI literacy, and half of librarians are building these skills on their own.
                 </p>
-                <p className="text-xs text-stone-400 mt-4 pt-3 border-t border-stone-100">
+                <p className="text-xs text-stone-500 mt-4 pt-3 border-t border-stone-100">
                   Pulse of the Library 2026 (n = 1,876)
                 </p>
             </div>
@@ -257,7 +257,7 @@ export default function HomePage() {
                 <p className="text-sm text-stone-600 leading-relaxed mb-4">
                   {path.description}
                 </p>
-                <p className="text-xs text-stone-500 mb-5">
+                <p className="text-xs text-stone-600 mb-5">
                   <span className="font-semibold" style={{ color: path.color }}>
                     Your track:
                   </span>{" "}
@@ -276,7 +276,7 @@ export default function HomePage() {
                   </Link>
                   <Link
                     href={`/module/${path.startModule}`}
-                    className="relative z-[2] text-sm font-medium text-stone-500 hover:text-stone-800 transition-colors"
+                    className="relative z-[2] text-sm font-medium text-stone-600 hover:text-stone-800 transition-colors"
                   >
                     Start with Module 01
                   </Link>
@@ -288,7 +288,7 @@ export default function HomePage() {
 
           <p className="rv text-center text-sm leading-relaxed text-stone-500 mb-6 max-w-3xl mx-auto">
             Role shapes confidence. General librarians report the lowest confidence in AI of any role (3.14 out of 5), while systems librarians report the highest (3.59){" "}
-            <span className="text-stone-400">- Pulse of the Library 2026</span>. Both paths here start from the same foundations, so the gap is a starting point, not a ceiling.
+            <span className="text-stone-500">- Pulse of the Library 2026</span>. Both paths here start from the same foundations, so the gap is a starting point, not a ceiling.
           </p>
 
           <p className="rv text-center text-sm text-stone-500">

@@ -106,7 +106,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
           <div className="rv flex items-center gap-2 mb-3">
             <Link
               href="/curriculum"
-              className="text-sm text-stone-500 hover:text-stone-700 transition-colors"
+              className="text-sm text-stone-600 hover:text-stone-800 transition-colors"
             >
               Curriculum
             </Link>
@@ -140,6 +140,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
         </div>
 
         {/* Modules */}
+        <h2 className="sr-only">Modules in this level</h2>
         {isAdvanced ? (
           /* Advanced - first-in-field, now fully available */
           <div>

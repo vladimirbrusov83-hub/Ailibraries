@@ -35,7 +35,7 @@ export default function RecentUpdates() {
         style={{ borderColor: i === 0 ? "#0F6E56" : "#d6d3d1" }}
         aria-hidden="true"
       />
-      <p className="text-xs font-medium text-stone-400 tabular-nums">
+      <p className="text-xs font-medium text-stone-500 tabular-nums">
         <time dateTime={u.date}>{formatDate(u.date)}</time>
         {i === 0 && (
           <span className="ml-2 align-middle inline-block px-1.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide" style={{ backgroundColor: "#E1F5EE", color: "#0F6E56" }}>
@@ -88,7 +88,7 @@ export default function RecentUpdates() {
               <span className="pill-dot w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden="true" />
               Up to date
             </div>
-            <p className="mt-3 text-xs font-medium uppercase tracking-wide text-stone-400">Last content update</p>
+            <p className="mt-3 text-xs font-medium uppercase tracking-wide text-stone-500">Last content update</p>
             <p className="text-2xl sm:text-[28px] font-bold tracking-[-0.03em] text-stone-900 tabular-nums">
               {formatDate(latest.date)}
             </p>
@@ -96,7 +96,7 @@ export default function RecentUpdates() {
               <span className="font-semibold text-stone-800">{recent} of {published.length}</span> modules reviewed since {cutoffLabel}
             </p>
 
-            <p className="mt-5 pt-4 border-t border-stone-100 text-xs text-stone-400 leading-relaxed">
+            <p className="mt-5 pt-4 border-t border-stone-100 text-xs text-stone-500 leading-relaxed">
               Each module page also shows its review date under the title.
             </p>
           </div>

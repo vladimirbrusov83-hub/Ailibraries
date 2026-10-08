@@ -67,7 +67,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent"
+          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent"
           style={{ "--tw-ring-color": "#0F6E56" } as React.CSSProperties}
         />
       </div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Your message…"
-          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent resize-none"
+          className="field-refined w-full px-4 py-4 rounded-xl border border-stone-200 bg-white text-base text-stone-900 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-transparent resize-none"
           style={{ "--tw-ring-color": "#0F6E56" } as React.CSSProperties}
         />
       </div>

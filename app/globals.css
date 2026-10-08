@@ -279,3 +279,15 @@ html { scroll-behavior: smooth; }
 @media print {
   .js .rv { opacity: 1 !important; transform: none !important; }
 }
+
+/* Keyboard skip link: off-screen until focused */
+.skip-link {
+  position: fixed; top: 0.75rem; left: 0.75rem; z-index: 100;
+  transform: translateY(-200%);
+  background: #fff; color: #1c1917;
+  padding: 0.625rem 1rem; border-radius: 0.5rem;
+  font-size: 0.875rem; font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  outline: 2px solid #0F6E56; outline-offset: 2px;
+}
+.skip-link:focus { transform: none; }

@@ -31,9 +31,9 @@ export default function Footer() {
 
           {/* Curriculum links */}
           <div>
-            <h3 className="text-sm font-semibold text-stone-700 mb-3">
+            <h2 className="text-sm font-semibold text-stone-700 mb-3">
               Curriculum
-            </h3>
+            </h2>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Site links */}
           <div>
-            <h3 className="text-sm font-semibold text-stone-700 mb-3">Site</h3>
+            <h2 className="text-sm font-semibold text-stone-700 mb-3">Site</h2>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-fine mt-10 pt-6 border-t border-stone-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-          <p className="text-xs text-stone-400">
+          <p className="text-xs text-stone-500">
             Aligned with{" "}
             <a
               href="https://www.ala.org/acrl/standards/ai"
@@ -133,7 +133,7 @@ export default function Footer() {
             </a>
             . An independent project, not affiliated with or endorsed by ACRL, ALA, ARL, or Anthropic.
           </p>
-          <p className="text-xs text-stone-400">
+          <p className="text-xs text-stone-500">
             Content last updated{" "}
             <Link href="/#updates">{lastUpdated}</Link>
             {" · "}© 2026 Iuliia Brusova.{" "}
@@ -149,7 +149,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-fine mt-6 pt-5 border-t border-stone-100">
-          <p className="text-xs text-stone-400 leading-relaxed max-w-3xl">
+          <p className="text-xs text-stone-500 leading-relaxed max-w-3xl">
             This course was intentionally developed using an AI-assisted authoring process - the same kind of directed, human-led AI use it teaches. The author designed the framework and guided the content throughout. That process is itself an example of the{" "}
             <Link
               href="/module/what-is-ai-for-librarians"

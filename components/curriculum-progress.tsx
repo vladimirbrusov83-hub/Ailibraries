@@ -36,7 +36,7 @@ export default function CurriculumProgress({
         />
       </div>
       <div className="mt-2 flex items-center justify-between">
-        <p className="text-xs text-stone-400">
+        <p className="text-xs text-stone-500">
           {done === 0
             ? "Mark modules complete as you finish them - saved in this browser."
             : done === total
@@ -47,7 +47,7 @@ export default function CurriculumProgress({
           <button
             type="button"
             onClick={reset}
-            className="text-xs font-medium text-stone-400 underline underline-offset-2 hover:text-stone-600"
+            className="text-xs font-medium text-stone-500 underline underline-offset-2 hover:text-stone-600"
           >
             Reset
           </button>

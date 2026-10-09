@@ -107,7 +107,7 @@ const resourceSections = [
         date: "2025 preprint",
         url: "https://digitalrepository.unm.edu/ulls_fsp/213",
         description:
-          "Five components - Technical Knowledge, Ethical Awareness, Critical Thinking, Practical Use, and Societal Impact - across four progressive levels, with rubrics. ARL pairs this with the ACRL competencies as a professional baseline. Worth reading against this site's own three-level structure.",
+          "Five components - Technical Knowledge, Ethical Awareness, Critical Thinking, Practical Use, and Societal Impact - across four progressive levels, with a self-assessment rubric. ARL pairs this with the ACRL competencies as a professional baseline. Worth reading against this site's own three-level structure.",
         tag: "Framework",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",

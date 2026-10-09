@@ -34,6 +34,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "International Energy Agency. (2025). *Energy and AI.* IEA.",
       url: "https://www.iea.org/reports/energy-and-ai",
     },
+    {
+      text: "Lo, L. S. (2025). *AI literacy for all: A universal framework* [Preprint]. University of New Mexico Digital Repository.",
+      url: "https://digitalrepository.unm.edu/ulls_fsp/213",
+      note: "Preprint, not yet peer reviewed. Licensed CC BY-NC 4.0.",
+    },
   ],
 
   2: [
@@ -100,6 +105,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
       text: "International Coalition of Library Consortia. (2024, March 22). *ICOLC statement on AI in licensing.*",
       url: "https://icolc.net/statements/icolc-statement-ai-licensing",
     },
+    {
+      text: "Lo, L. S. (2025). *AI literacy for all: A universal framework* [Preprint]. University of New Mexico Digital Repository.",
+      url: "https://digitalrepository.unm.edu/ulls_fsp/213",
+      note: "Preprint, not yet peer reviewed. Licensed CC BY-NC 4.0.",
+    },
   ],
 
   5: [
@@ -122,6 +132,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Fox, V. (2025, June 11). AI refusal in libraries: A starter guide. *ACRLog.*",
       url: "https://acrlog.org/2025/06/11/ai-refusal-in-libraries-a-starter-guide/",
+    },
+    {
+      text: "Lo, L. S. (2025). *AI literacy for all: A universal framework* [Preprint]. University of New Mexico Digital Repository.",
+      url: "https://digitalrepository.unm.edu/ulls_fsp/213",
+      note: "Preprint, not yet peer reviewed. Licensed CC BY-NC 4.0.",
     },
   ],
 
@@ -418,6 +433,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Michalak, R., Dawes, T. A., & Wallace, A. (2026, May). Envisioning AI's role in libraries: Perspectives from an LIS student, a library director, and a university librarian. *College & Research Libraries News, 87*(5).",
       url: "https://crln.acrl.org/index.php/crlnews/article/view/27321",
+    },
+    {
+      text: "Lo, L. S. (2025). *AI literacy for all: A universal framework* [Preprint]. University of New Mexico Digital Repository.",
+      url: "https://digitalrepository.unm.edu/ulls_fsp/213",
+      note: "Preprint, not yet peer reviewed. Licensed CC BY-NC 4.0.",
     },
   ],
 

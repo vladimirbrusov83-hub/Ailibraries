@@ -6,7 +6,7 @@ import CurriculumSearch from "@/components/curriculum-search";
 import CurriculumProgress from "@/components/curriculum-progress";
 import RoleToggle from "@/components/role-toggle";
 import RoleMemory from "@/components/role-memory";
-import { isRoleFilter, roleMeta, type RoleFilter } from "@/lib/audience";
+import { isRoleFilter, pathModules, roleMeta, type RoleFilter } from "@/lib/audience";
 
 export const metadata: Metadata = {
   title: "Full Curriculum - 18 Modules Across 3 Levels",
@@ -76,9 +76,10 @@ export default function CurriculumPage({
   const role: RoleFilter | null = isRoleFilter(searchParams.role)
     ? searchParams.role
     : null;
-  const recommendedCount = role
-    ? modules.filter((m) => m.audience === role).length
-    : 0;
+  const otherRole: RoleFilter | null = role ? (role === "practicing" ? "digital" : "practicing") : null;
+  const trackCount = role ? pathModules(modules, role).length : 0;
+  const recommendedCount = role ? modules.filter((m) => m.audience === role).length : 0;
+  const mutedCount = otherRole ? modules.filter((m) => m.audience === otherRole).length : 0;
   const totalMinutes = modules
     .filter((m) => m.status === "published")
     .reduce((sum, m) => sum + m.estimatedMinutes, 0);
@@ -153,12 +154,12 @@ export default function CurriculumPage({
         />
         {role && (
           <p key={role} className="fade-in-soft text-sm text-stone-500 mt-3">
-            Highlighting {recommendedCount} module
-            {recommendedCount === 1 ? "" : "s"} recommended for{" "}
             <span className="font-medium text-stone-700">
-              {roleMeta[role].label}s
-            </span>
-            . Modules for all librarians stay relevant to you.
+              Your track: {trackCount} modules.
+            </span>{" "}
+            The {recommendedCount} written just for {roleMeta[role].label}s{" "}
+            {recommendedCount === 1 ? "is" : "are"} outlined; the {mutedCount} for{" "}
+            {otherRole && roleMeta[otherRole].label}s {mutedCount === 1 ? "is" : "are"} dimmed.
           </p>
         )}
       </div>

@@ -1,5 +1,5 @@
 /**
- * generate-icons.ts — renders the "AI" logo mark (the green square in the nav) to PNG files.
+ * generate-icons.ts — renders the logo mark ("AI" resting on an open book, the green square in the nav) to PNG files.
  *
  * Usage: npx tsx scripts/generate-icons.ts
  *
@@ -47,7 +47,9 @@ function html({ size, rounded, textScale }: Icon) {
     color: #fff; font: 700 ${Math.round(size * textScale)}px/1 Inter, system-ui, sans-serif;
     letter-spacing: -0.01em;
   }
-</style></head><body><div class="mark">AI</div></body></html>`;
+  .glyph { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+  .glyph svg { width: 1.6em; height: ${size > 96 ? "0.5em" : "0.42em"}; margin-top: 0.12em; }
+</style></head><body><div class="mark"><span class="glyph">AI<svg viewBox="0 0 104 ${size > 96 ? 32 : 26}" fill="none" stroke="#fff" stroke-width="${size > 96 ? 6.5 : 9}" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8c18-4 34-2 48 8 14-10 30-12 48-8"/>${size > 96 ? '<path d="M4 20c18-4 34-2 48 8 14-10 30-12 48-8" opacity=".55"/>' : ""}</svg></span></div></body></html>`;
 }
 
 async function main() {

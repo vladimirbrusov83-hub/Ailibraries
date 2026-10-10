@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoGlyph from "@/components/logo-glyph";
 import { siteUpdates } from "@/content/modules";
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -18,7 +19,7 @@ export default function Footer() {
                 style={{ backgroundColor: "#0F6E56" }}
                 aria-hidden="true"
               >
-                AI
+                <LogoGlyph />
               </span>
               <span className="font-semibold text-stone-900 text-sm">
                 AI for Academic Libraries

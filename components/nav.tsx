@@ -1,5 +1,6 @@
 "use client";
 
+import LogoGlyph from "@/components/logo-glyph";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -31,7 +32,7 @@ export default function Nav() {
             style={{ backgroundColor: "#0F6E56" }}
             aria-hidden="true"
           >
-            AI
+            <LogoGlyph />
           </span>
           <span className="hidden sm:block text-sm leading-tight">
             AI for Academic Libraries

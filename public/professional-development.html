@@ -99,6 +99,8 @@ button { font-family: inherit; }
   line-height: 1.25;
 }
 .nav-brand:hover { color: var(--forest); }
+.logo-glyph { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.logo-glyph svg { width: 1.6em; height: 0.42em; margin-top: 0.12em; }
 .logo-mark {
   width: 2rem; height: 2rem;
   border-radius: 0.5rem;
@@ -600,7 +602,7 @@ footer { border-top: 1px solid var(--stone-200); background: var(--stone-50); }
 <header class="site-header">
   <nav class="nav-inner" aria-label="Main navigation">
     <a class="nav-brand" href="https://ai-in-academic-libraries.vercel.app">
-      <span class="logo-mark" aria-hidden="true">AI</span>
+      <span class="logo-mark" aria-hidden="true"><span class="logo-glyph">AI<svg viewBox="0 0 104 26" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8c18-4 34-2 48 8 14-10 30-12 48-8"/></svg></span></span>
       <span class="brand-long">AI for Academic Libraries</span>
       <span class="brand-short">AI for Libraries</span>
     </a>
@@ -695,7 +697,7 @@ footer { border-top: 1px solid var(--stone-200); background: var(--stone-50); }
   <div class="foot-inner">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand"><span class="logo-mark" aria-hidden="true">AI</span>AI for Academic Libraries</div>
+        <div class="foot-brand"><span class="logo-mark" aria-hidden="true"><span class="logo-glyph">AI<svg viewBox="0 0 104 26" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8c18-4 34-2 48 8 14-10 30-12 48-8"/></svg></span></span>AI for Academic Libraries</div>
         <p class="foot-blurb">A learning portal aligned with the ACRL AI Competencies (2025) and ALA's AI Guidance (2026).</p>
       </div>
       <div class="foot-col">

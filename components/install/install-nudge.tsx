@@ -1,5 +1,6 @@
 "use client";
 
+import LogoGlyph from "@/components/logo-glyph";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -87,7 +88,7 @@ export default function InstallNudge({ phoneQr }: { phoneQr: Qr }) {
               style={{ backgroundColor: "#0F6E56" }}
               aria-hidden="true"
             >
-              AI
+              <LogoGlyph />
             </span>
             <div>
               <h2 id="install-card-title" className="text-base font-bold text-stone-900">

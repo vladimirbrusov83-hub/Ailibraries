@@ -1,5 +1,6 @@
 "use client";
 
+import LogoGlyph from "@/components/logo-glyph";
 import Link from "next/link";
 import { useState } from "react";
 import { roleMeta } from "@/lib/audience";
@@ -30,7 +31,7 @@ export default function AppHome({ index }: { index: ModuleSummary[] }) {
           style={{ backgroundColor: "#0F6E56" }}
           aria-hidden="true"
         >
-          AI
+          <LogoGlyph />
         </span>
         <h1 className="text-base font-semibold text-stone-900">AI for Academic Libraries</h1>
       </div>

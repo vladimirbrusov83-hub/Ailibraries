@@ -1,5 +1,6 @@
 "use client";
 
+import LogoGlyph from "@/components/logo-glyph";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -53,7 +54,7 @@ export default function AppShell({ index, qr, siteUrl }: { index: ModuleSummary[
             style={{ backgroundColor: "#0F6E56" }}
             aria-hidden="true"
           >
-            AI
+            <LogoGlyph />
           </span>
           <span className="text-sm leading-tight">AI for Academic Libraries</span>
         </Link>

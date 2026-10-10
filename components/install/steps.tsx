@@ -23,7 +23,13 @@ const L = ({ children }: { children: ReactNode }) => <strong className="font-sem
 
 function iosMenuGlyph(version: number | null) {
   // Safari 27 calls it the Page Menu button (three lines); Safari 26 the More button (⋯).
-  return version !== null && version >= 27 ? <Glyph name="ios-page-menu" /> : <Glyph name="ios-more" />;
+  if (version === null)
+    return (
+      <>
+        <Glyph name="ios-page-menu" /> or <Glyph name="ios-more" />
+      </>
+    );
+  return version >= 27 ? <Glyph name="ios-page-menu" /> : <Glyph name="ios-more" />;
 }
 
 export function getGuide(id: GuideId, iosVersion: number | null = null): Guide {

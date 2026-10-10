@@ -77,6 +77,17 @@ Status values: `"published"` | `"coming-soon"`
 
 **QR code:** `components/site-qr-code.tsx` builds the code from `SITE_URL` at build time (`lib/qr.ts`, `qrcode` package); no QR script ships to the browser.
 
+## App mode (installable site, Oct 2026)
+
+- **How it switches:** an inline script in `app/layout.tsx` (`HEAD_SCRIPT`) adds `html.app-mode` before first paint when the site is launched from a home screen or dock (`display-mode: standalone` or `navigator.standalone`). `lib/app-mode.ts` has the same test as `isAppMode()`. All app styles live in the "App mode" block at the end of `app/globals.css`, scoped to `html.app-mode`; browser tabs must look exactly as before.
+- **Two marker classes:** `.site-only` = hidden in the app (header, footer, home page marketing sections, breadcrumb). `.app-only` = hidden in browser tabs. **Any new home page section needs `site-only`**, or it will show up on the app's Home tab.
+- **App UI:** `components/app/` (tab bar + sidebar + More sheet in `app-shell.tsx`, Home tab cards, module top bar + contents sheet, resource chips). Laptop right rail is in the module page (`.module-rail`).
+- **Storage keys (this device only):** `ail-progress-v1` checkmarks (unchanged), `ail-role-v1` path, `ail-resume-v1` last module + section, `ail-visits-v1` visit count, `ail-install-nudge-v1` nudge dismissal.
+- **Install help:** `/install` page, "Install app" header link (lg+ only; at 768px it overflowed), phone card / laptop bar in `components/install/install-nudge.tsx`. **All step wording lives in `components/install/steps.tsx`** - re-check it when iOS, Chrome or Edge rename menus. Verified Oct 2026 against Apple/Google/Microsoft help; Edge on iPhone, Edge on Android and Samsung Internet came from third-party guides.
+- **No service worker:** not needed - Chrome fires its install prompt without one (checked Oct 2026). Don't add one without a reason.
+- **Professional Development is not part of the app** and has no install link.
+- **Analytics events:** none - Vercel custom events need the Pro plan; the account is on Hobby.
+
 ## Curriculum levels
 
 | Level | Tailwind token | Description |

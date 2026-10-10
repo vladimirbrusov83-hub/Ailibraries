@@ -86,6 +86,31 @@ export default function HomePage() {
       </section>
       )}
 
+      {/* ─── App announcement ──────────────────────────────────────────────── */}
+      <section className="site-only border-b border-[#b2e8d4] bg-[#E1F5EE]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p className="flex items-center gap-2.5 text-sm sm:text-base leading-snug text-stone-800">
+            <svg className="hidden sm:block h-5 w-5 flex-shrink-0 text-[#0F6E56]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.9} aria-hidden="true">
+              <rect x="6.5" y="2.5" width="11" height="19" rx="2.5" />
+              <path strokeLinecap="round" d="M10.5 18.5h3" />
+            </svg>
+            <span>
+              <span className="inline-block px-2 py-0.5 mr-2 rounded-full bg-[#0F6E56] text-white text-xs font-bold uppercase tracking-wide align-middle">
+                New
+              </span>
+              <span className="font-semibold">Now available as an app.</span> Add it to your phone&apos;s home screen or your
+              computer&apos;s dock.
+            </span>
+          </p>
+          <Link
+            href="/install"
+            className="flex-shrink-0 rounded-xl bg-[#0F6E56] px-5 py-2 text-sm font-bold text-white hover:bg-[#0c5f4a]"
+          >
+            Install the app →
+          </Link>
+        </div>
+      </section>
+
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}
       <section className="site-only hero-refined pt-16 pb-[72px] sm:pt-[104px] sm:pb-28 border-b border-stone-100">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">

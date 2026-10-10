@@ -6,7 +6,7 @@ import { COURSE_ANNOUNCED } from "@/lib/course";
 export const metadata: Metadata = {
   title: "The Course (Coming Soon)",
   description:
-    "A free, self-paced course edition of the AI for Academic Libraries curriculum: 18 modules with interactive visuals, 144 quiz questions, a final exam and a verifiable certificate. Coming soon.",
+    "A free, self-paced course edition of the AI for Academic Libraries curriculum: 18 modules with interactive visuals, three level quizzes and a verifiable certificate. Coming soon.",
 };
 
 const GRADIENT = "linear-gradient(135deg, #0F6E56 0%, #185FA5 55%, #854F0B 100%)";
@@ -19,21 +19,21 @@ const features = [
     color: "#0F6E56",
   },
   {
-    n: "144",
-    title: "Quiz questions with explained answers",
-    body: "Eight questions at the end of each module. Every answer comes with a short explanation, so a wrong choice still teaches you something.",
+    n: "3",
+    title: "Level quizzes, 15 questions each",
+    body: "One quiz for each level - Foundations, Applied, Advanced - covering every module in it. Pass with 12 of 15, and take them in any order.",
     color: "#185FA5",
   },
   {
-    n: "1",
-    title: "Final exam drawn from every module",
-    body: "Thirty questions drawn from a larger pool, with at least one from each module. Pass with 80% or more. If you miss, you can try again the next day.",
+    n: "3",
+    title: "Tries, with every answer explained",
+    body: "After each try you see every answer with a short explanation, so a wrong choice still teaches you something. Three tries per quiz, and three more the next day if you need them.",
     color: "#854F0B",
   },
   {
     n: "✓",
     title: "Certificate with a public verification link",
-    body: "Pass the final and you receive a certificate with its own link, so a supervisor or hiring committee can confirm it is real.",
+    body: "Pass all three level quizzes and you receive a certificate with its own link, so a supervisor or hiring committee can confirm it is real.",
     color: "#6d28d9",
   },
 ];
@@ -80,7 +80,7 @@ export default function CoursePage() {
             AI for Academic Libraries: The Course
           </h1>
           <p className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-8">
-            The full curriculum as a free, self-paced course - with quizzes, a final exam and a certificate you can show your library.
+            The full curriculum as a free, self-paced course - with three level quizzes and a certificate you can show your library.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <span
@@ -96,7 +96,7 @@ export default function CoursePage() {
               Tell me when it opens
             </Link>
           </div>
-          <p className="text-sm text-white/80 mt-5">Free. Sign in with email or Google.</p>
+          <p className="text-sm text-white/80 mt-5">Free. Sign in with your email.</p>
         </div>
       </section>
 
@@ -159,10 +159,10 @@ export default function CoursePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-8 text-center">How it will work</h2>
           <ol className="space-y-5">
             {[
-              ["Create a free account", "Sign in with email and password or with Google. Your progress is saved across devices."],
-              ["Work through the modules", "Read each module at your own pace and take its quiz when you are ready."],
-              ["Take the final exam", "Once you have passed every module quiz, the final exam unlocks."],
-              ["Get your certificate", "Pass the final and download a certificate with a public verification link."],
+              ["Create a free account", "Sign in with your email and a password. Your progress is saved across devices."],
+              ["Work through the modules", "Read each module at your own pace, level by level."],
+              ["Take the level quizzes", "One 15-question quiz per level, whenever you are ready. Every answer is explained."],
+              ["Get your certificate", "Pass all three level quizzes and download a certificate with a public verification link."],
             ].map(([title, body], i) => (
               <li key={title} className="flex gap-4">
                 <span

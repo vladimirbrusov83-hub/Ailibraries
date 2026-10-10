@@ -74,7 +74,7 @@ export default function HomePage() {
             <span className="inline-block px-2 py-0.5 mr-2 rounded-full bg-yellow-300 text-stone-900 text-xs font-bold uppercase tracking-wide align-middle">
               Coming soon
             </span>
-            <span className="font-semibold">The Course:</span> quizzes, a final exam and a verifiable certificate - free.
+            <span className="font-semibold">The Course:</span> three level quizzes and a verifiable certificate - free.
           </p>
           <Link
             href="/course"

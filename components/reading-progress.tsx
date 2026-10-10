@@ -29,7 +29,7 @@ export default function ReadingProgress({ accent }: { accent: string }) {
 
   return (
     <div
-      className="fixed top-0 left-0 z-50 h-0.5 sm:h-1 transition-[width] duration-75 ease-out"
+      className="reading-progress fixed top-0 left-0 z-50 h-0.5 sm:h-1 transition-[width] duration-75 ease-out"
       style={{ width: `${progress}%`, backgroundColor: accent }}
       role="progressbar"
       aria-label="Reading progress"

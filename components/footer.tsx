@@ -7,7 +7,7 @@ const lastUpdated = `${MONTHS[lm - 1]} ${ld}, ${ly}`;
 
 export default function Footer() {
   return (
-    <footer className="border-t border-stone-200 bg-stone-50 mt-16">
+    <footer className="site-only border-t border-stone-200 bg-stone-50 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {/* Brand */}

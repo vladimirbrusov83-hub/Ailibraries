@@ -16,7 +16,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md backdrop-saturate-150 border-b border-stone-200/75">
+    <header className="site-only sticky top-0 z-50 bg-white/90 backdrop-blur-md backdrop-saturate-150 border-b border-stone-200/75">
       <nav
         className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between"
         aria-label="Main navigation"
@@ -73,6 +73,15 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/install"
+            aria-current={pathname === "/install" ? "page" : undefined}
+            className={`hidden lg:inline-block nav-link nav-d6 px-3 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${
+              pathname === "/install" ? "text-stone-900" : "text-stone-600"
+            }`}
+          >
+            Install app
+          </Link>
           <Link
             href="/level/foundations"
             className="nav-cta nav-d6 ml-2 px-4 py-2 rounded-lg text-sm font-medium text-white"
@@ -165,6 +174,17 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/install"
+            className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+              pathname === "/install"
+                ? "text-stone-900 bg-stone-100"
+                : "text-stone-600 hover:text-stone-900 hover:bg-stone-50"
+            }`}
+            onClick={() => setOpen(false)}
+          >
+            Install app
+          </Link>
           <Link
             href="/level/foundations"
             className="block mt-2 px-3 py-2.5 rounded-lg text-sm font-medium text-white text-center"

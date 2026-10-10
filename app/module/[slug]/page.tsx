@@ -14,6 +14,8 @@ import ReadingProgress from "@/components/reading-progress";
 import ModuleToc from "@/components/module-toc";
 import CompleteButton from "@/components/complete-button";
 import ModuleActions from "@/components/module-actions";
+import ModuleAppBar from "@/components/app/module-app-bar";
+import ResumeTracker from "@/components/resume-tracker";
 import { slugify } from "@/lib/slugify";
 import type { Level } from "@/lib/types";
 
@@ -251,15 +253,56 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
     about: mod.acrlCompetencies.map((c) => ({ "@type": "DefinedTerm", name: acrlCompetencyMeta[c].label })),
   };
 
+  const neighbour = (id: number) => {
+    const m = modules.find((x) => x.id === id && x.status === "published");
+    return m ? { id: m.id, slug: m.slug, title: m.title, accent: levelAccent[m.level] } : null;
+  };
+
+  const acrlBox = (
+    <>
+      <h2 className="text-sm font-semibold text-stone-700 mb-3">ACRL AI Competencies covered</h2>
+      <div className="flex flex-wrap gap-2 mb-3">
+        {mod.acrlCompetencies.map((c) => (
+          <span key={c} className="px-3 py-1 rounded-md text-sm font-medium bg-white border border-stone-200 text-stone-700">
+            {acrlCompetencyMeta[c].label}
+          </span>
+        ))}
+      </div>
+      <p className="text-xs text-stone-500">
+        Sub-competencies: {mod.acrlSubCompetencies.join(", ")} ·{" "}
+        <a
+          href="https://www.ala.org/acrl/standards/ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-stone-600 transition-colors"
+        >
+          ACRL AI Competencies (2025)
+        </a>
+      </p>
+    </>
+  );
+
   return (
     <>
       <ReadingProgress accent={accent} />
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <ModuleAppBar
+        id={mod.id}
+        slug={mod.slug}
+        title={mod.title}
+        accent={accent}
+        pdfHref={pdfHref}
+        headings={headings}
+        prev={neighbour(mod.id - 1)}
+        next={neighbour(mod.id + 1)}
+      />
+      <ResumeTracker slug={mod.slug} headings={headings} />
+    <div className="module-layout">
+    <div className="module-main max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(moduleJsonLd) }}
       />
-      <nav className="flex items-center gap-1.5 mb-8 text-sm" aria-label="Breadcrumb">
+      <nav className="site-only flex items-center gap-1.5 mb-8 text-sm" aria-label="Breadcrumb">
         <Link href="/curriculum" className="text-stone-500 hover:text-stone-600 transition-colors">
           Curriculum
         </Link>
@@ -303,7 +346,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </span>
           )}
         </div>
-        <div className="rv w3 no-print flex flex-wrap items-center gap-3 mt-5">
+        <div className="site-only rv w3 no-print flex flex-wrap items-center gap-3 mt-5">
           <a
             href={pdfHref}
             download
@@ -423,7 +466,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           )}
         </article>
           {headings.length > 0 && (
-            <aside className="hidden xl:block absolute top-0 left-full ml-6 w-52 h-full">
+            <aside className="site-only hidden xl:block absolute top-0 left-full ml-6 w-52 h-full">
               <div className="sticky top-24">
                 <ModuleToc headings={headings} accent={accent} />
               </div>
@@ -432,30 +475,12 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="rv card-soft mt-12 p-5 rounded-xl bg-stone-50 border border-stone-200">
-        <h2 className="text-sm font-semibold text-stone-700 mb-3">ACRL AI Competencies covered</h2>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {mod.acrlCompetencies.map((c) => (
-            <span key={c} className="px-3 py-1 rounded-md text-sm font-medium bg-white border border-stone-200 text-stone-700">
-              {acrlCompetencyMeta[c].label}
-            </span>
-          ))}
-        </div>
-        <p className="text-xs text-stone-500">
-          Sub-competencies: {mod.acrlSubCompetencies.join(", ")} ·{" "}
-          <a
-            href="https://www.ala.org/acrl/standards/ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-stone-600 transition-colors"
-          >
-            ACRL AI Competencies (2025)
-          </a>
-        </p>
+      <div className="rail-moved rv card-soft mt-12 p-5 rounded-xl bg-stone-50 border border-stone-200">
+        {acrlBox}
       </div>
 
       {relatedModuleData.length > 0 && (
-        <div className="mt-10">
+        <div className="rail-moved mt-10">
           <h2 className="rv text-sm font-semibold text-stone-700 mb-4">Continue learning</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             {relatedModuleData.map((related, i) => (
@@ -538,6 +563,31 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           ) : null;
         })()}
       </nav>
+    </div>
+      <aside className="app-only module-rail no-print" aria-label="Module details">
+        <div className="module-rail-inner space-y-6">
+          {headings.length > 0 && <ModuleToc headings={headings} accent={accent} />}
+          <div className="p-4 rounded-xl bg-stone-50 border border-stone-200">{acrlBox}</div>
+          {relatedModuleData.length > 0 && (
+            <div>
+              <h2 className="text-sm font-semibold text-stone-700 mb-3">Continue learning</h2>
+              <div className="space-y-2">
+                {relatedModuleData.map((related) => (
+                  <Link
+                    key={related.slug}
+                    href={`/module/${related.slug}`}
+                    className="related-card block p-3 bg-white border border-stone-200"
+                    style={{ "--lvl": levelAccent[related.level] } as React.CSSProperties}
+                  >
+                    <p className="text-xs text-stone-500 mb-0.5">Module {String(related.id).padStart(2, "0")}</p>
+                    <p className="text-sm font-medium text-stone-800 leading-snug">{related.title}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </aside>
     </div>
     </>
   );

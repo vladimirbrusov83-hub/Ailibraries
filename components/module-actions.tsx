@@ -2,6 +2,26 @@
 
 import { useState } from "react";
 
+// Opens the device share sheet, or copies the link where there is none. Returns true when copied.
+export async function sharePage(title: string): Promise<boolean> {
+  const url = window.location.href;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, url });
+    } catch {
+      /* user cancelled — ignore */
+    }
+    return false;
+  }
+  try {
+    await navigator.clipboard.writeText(url);
+    return true;
+  } catch {
+    /* clipboard unavailable — ignore */
+    return false;
+  }
+}
+
 export default function ModuleActions({
   title,
   accent,
@@ -12,21 +32,9 @@ export default function ModuleActions({
   const [copied, setCopied] = useState(false);
 
   async function handleShare() {
-    const url = window.location.href;
-    if (navigator.share) {
-      try {
-        await navigator.share({ title, url });
-      } catch {
-        /* user cancelled — ignore */
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(url);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      } catch {
-        /* clipboard unavailable — ignore */
-      }
+    if (await sharePage(title)) {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     }
   }
 

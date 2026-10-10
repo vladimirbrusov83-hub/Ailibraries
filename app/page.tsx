@@ -4,6 +4,8 @@ import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 import ContactPanel from "@/components/contact-panel";
 import RecentUpdates from "@/components/recent-updates";
+import AppHome from "@/components/app/app-home";
+import { getModuleIndex } from "@/lib/module-index";
 import { COURSE_ANNOUNCED } from "@/lib/course";
 import { pathModules, formatModuleRanges, type RoleFilter } from "@/lib/audience";
 
@@ -59,10 +61,12 @@ const level3Modules = modules.filter((m) => m.level === "advanced").slice(0, 3);
 export default function HomePage() {
   return (
     <>
+      <AppHome index={getModuleIndex()} />
+
       {/* ─── Course announcement ───────────────────────────────────────────── */}
       {COURSE_ANNOUNCED && (
       <section
-        className="ann-shine text-white"
+        className="site-only ann-shine text-white"
         style={{ background: "linear-gradient(135deg, #0F6E56 0%, #185FA5 55%, #854F0B 100%)" }}
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
@@ -83,7 +87,7 @@ export default function HomePage() {
       )}
 
       {/* ─── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="hero-refined pt-16 pb-[72px] sm:pt-[104px] sm:pb-28 border-b border-stone-100">
+      <section className="site-only hero-refined pt-16 pb-[72px] sm:pt-[104px] sm:pb-28 border-b border-stone-100">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="rv hero-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-200 text-xs font-medium mb-6" style={{ color: "#0F6E56" }}>
             <span className="pill-dot w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden="true" />
@@ -139,7 +143,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Social proof bar ──────────────────────────────────────────────── */}
-      <section className="border-b border-stone-100 bg-gradient-to-b from-stone-50 to-[#fcfcfb]">
+      <section className="site-only border-b border-stone-100 bg-gradient-to-b from-stone-50 to-[#fcfcfb]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-9 sm:py-11">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 sm:gap-8 text-center">
             <div className="rv">
@@ -170,7 +174,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Why this exists: 2026 evidence ───────────────────────────────── */}
-      <section className="bg-white border-b border-stone-100">
+      <section className="site-only bg-white border-b border-stone-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
           <div className="rv text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-[-0.03em] text-stone-900 mb-3">
@@ -236,7 +240,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Choose your path ──────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24">
+      <section className="site-only py-[72px] sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="rv text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-[-0.03em] text-stone-900 mb-3">
@@ -318,7 +322,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Preview of Level 1 ────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24 bg-stone-50 border-y border-stone-100">
+      <section className="site-only py-[72px] sm:py-24 bg-stone-50 border-y border-stone-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="rv flex flex-col items-start sm:flex-row sm:items-end justify-between mb-9 gap-2.5 sm:gap-4">
             <div>
@@ -365,7 +369,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Preview of Level 2 ────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24">
+      <section className="site-only py-[72px] sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="rv flex flex-col items-start sm:flex-row sm:items-end justify-between mb-9 gap-2.5 sm:gap-4">
             <div>
@@ -412,7 +416,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Preview of Level 3 ────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24 bg-stone-50 border-y border-stone-100">
+      <section className="site-only py-[72px] sm:py-24 bg-stone-50 border-y border-stone-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="rv flex flex-col items-start sm:flex-row sm:items-end justify-between mb-9 gap-2.5 sm:gap-4">
             <div>
@@ -459,7 +463,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── About the author ──────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24 border-t border-stone-100 bg-white">
+      <section className="site-only py-[72px] sm:py-24 border-t border-stone-100 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="rv tri-rule text-2xl sm:text-[28px] sm:leading-[34px] font-bold tracking-[-0.03em] text-balance text-stone-900 mb-4">
             Taught by someone who actually works in a library
@@ -483,7 +487,7 @@ export default function HomePage() {
       <RecentUpdates />
 
       {/* ─── Contact CTA ─────────────────────────────────────────────────── */}
-      <section className="py-[72px] sm:py-24">
+      <section className="site-only py-[72px] sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <ContactPanel
             title="Contact Us"

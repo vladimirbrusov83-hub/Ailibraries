@@ -38,7 +38,7 @@ export default function RoleToggle({ options, active }: { options: Option[]; act
   const current = options.find((o) => o.value === selected) ?? options[0];
 
   return (
-    <div className="relative inline-flex flex-wrap gap-1 p-1 rounded-xl bg-stone-100 border border-stone-200">
+    <div className="role-toggle-group relative inline-flex flex-wrap gap-1 p-1 rounded-xl bg-stone-100 border border-stone-200">
       {box && (
         <span
           aria-hidden="true"
@@ -77,7 +77,8 @@ export default function RoleToggle({ options, active }: { options: Option[]; act
             }`}
             style={!box && isOn ? { backgroundColor: opt.color } : undefined}
           >
-            {opt.label}
+            <span className="site-only">{opt.label}</span>
+            <span className="app-only">{opt.value ? opt.label.split(" ")[0] : "All"}</span>
           </Link>
         );
       })}

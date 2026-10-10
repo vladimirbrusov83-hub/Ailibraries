@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResourceChips from "@/components/app/resource-chips";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -413,9 +414,11 @@ export default function ResourcesPage() {
         </p>
       </header>
 
+      <ResourceChips sections={resourceSections.map((s) => ({ id: s.id, title: s.title }))} />
+
       {/* Sections */}
       {resourceSections.map((section) => (
-        <section key={section.id} className="mb-14">
+        <section key={section.id} id={section.id} data-res-section className="mb-14">
           <div className="rv mb-6">
             <h2 className="eyebrow-line text-xl font-bold tracking-[-0.02em] text-stone-900 mb-1">
               {section.title}

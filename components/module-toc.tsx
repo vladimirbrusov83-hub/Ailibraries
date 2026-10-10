@@ -2,13 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-export default function ModuleToc({
-  headings,
-  accent,
-}: {
-  headings: { id: string; text: string }[];
-  accent: string;
-}) {
+// Tracks which section heading the reader is in, from the same scroll band the contents list uses.
+export function useActiveHeading(headings: { id: string }[]) {
   const [activeId, setActiveId] = useState<string>(headings[0]?.id ?? "");
 
   useEffect(() => {
@@ -30,6 +25,18 @@ export default function ModuleToc({
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [headings]);
+
+  return [activeId, setActiveId] as const;
+}
+
+export default function ModuleToc({
+  headings,
+  accent,
+}: {
+  headings: { id: string; text: string }[];
+  accent: string;
+}) {
+  const [activeId, setActiveId] = useActiveHeading(headings);
 
   function handleClick(e: React.MouseEvent, id: string) {
     e.preventDefault();

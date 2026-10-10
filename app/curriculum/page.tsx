@@ -102,7 +102,7 @@ export default function CurriculumPage({
         <h1 className="rv text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-stone-900 mb-4">
           Full Curriculum
         </h1>
-        <p className="rv w2 text-stone-600 leading-relaxed text-lg">
+        <p className="site-only rv w2 text-stone-600 leading-relaxed text-lg">
           18 modules across three levels - from AI basics to building your own tools. Choose your path or work through every module in order.
         </p>
         <p className="rv w3 mt-3 text-sm font-medium text-stone-500">
@@ -114,7 +114,7 @@ export default function CurriculumPage({
       <CurriculumProgress slugs={publishedSlugs} />
 
       {/* Path selector callout */}
-      <div className="rv card-soft grid sm:grid-cols-2 gap-4 mb-10 p-6 rounded-xl bg-stone-50 border border-stone-200">
+      <div className="site-only rv card-soft grid sm:grid-cols-2 gap-4 mb-10 p-6 rounded-xl bg-stone-50 border border-stone-200">
         <div>
           <h2 className="font-semibold text-stone-900 mb-1.5">
             Not sure where to start?
@@ -233,7 +233,7 @@ export default function CurriculumPage({
       </CurriculumSearch>
 
       {/* ACRL footer note */}
-      <div className="rv border-t border-stone-200 pt-8 text-center">
+      <div className="site-only rv border-t border-stone-200 pt-8 text-center">
         <p className="text-sm text-stone-500">
           All modules are mapped to the{" "}
           <a

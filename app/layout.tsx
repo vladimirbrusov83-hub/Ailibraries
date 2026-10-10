@@ -4,6 +4,15 @@ import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import { Analytics } from "@vercel/analytics/next";
 import Reveal from "@/components/reveal";
+import AppShell from "@/components/app/app-shell";
+import InstallNudge from "@/components/install/install-nudge";
+import { getModuleIndex } from "@/lib/module-index";
+import { qrSvgPath } from "@/lib/qr";
+
+// Runs before first paint: marks JS support, switches to the app layout when launched
+// from the home screen / dock (so the website layout never flashes), and holds on to the
+// browser's install prompt so our own Install button can trigger it later.
+const HEAD_SCRIPT = `(function(){var d=document.documentElement;d.classList.add('js');var app=false;try{app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true}catch(e){}if(app){d.classList.add('app-mode');var fit=function(){var m=document.querySelector('meta[name=viewport]');if(m&&m.content.indexOf('viewport-fit')<0)m.content+=', viewport-fit=cover'};fit();document.addEventListener('DOMContentLoaded',fit)}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();window.__ailInstall=e;window.dispatchEvent(new Event('ail-install-ready'))});window.addEventListener('appinstalled',function(){window.__ailInstall=null;window.dispatchEvent(new Event('ail-installed'))})})();`;
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-in-academic-libraries.vercel.app";
 
@@ -54,6 +63,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  appleWebApp: {
+    capable: true,
+    title: "AI Libraries",
+    statusBarStyle: "default",
+  },
   verification: {
     google: "2I08HilU8m23DiIAiGXFIJCc1FZIwbNxbpssA9y1ERg",
   },
@@ -69,7 +83,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: "document.documentElement.classList.add('js')",
+            __html: HEAD_SCRIPT,
           }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,9 +101,11 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+        <InstallNudge phoneQr={qrSvgPath(`${SITE_URL}/install`)} />
         <Nav />
         <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
         <Footer />
+        <AppShell index={getModuleIndex()} qr={qrSvgPath(SITE_URL)} siteUrl={SITE_URL} />
         <Reveal />
         <Analytics />
       </body>

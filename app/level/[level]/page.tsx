@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   const meta = levelMeta[level];
   return {
-    title: `${meta.label} - AI for Academic Libraries`,
+    title: meta.label,
     description: meta.description,
   };
 }

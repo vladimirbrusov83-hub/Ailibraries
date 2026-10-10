@@ -10,8 +10,8 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-in-academic-lib
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI in Academic Libraries",
-    template: "%s · AI in Academic Libraries",
+    default: "AI for Academic Libraries",
+    template: "%s · AI for Academic Libraries",
   },
   description:
     "AI literacy curriculum for academic library workers, mapped to ACRL AI Competencies (2025), aligned with ALA's AI Guidance (2026), and grounded in the 4D Framework from Anthropic's AI Fluency course.",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "AI in Academic Libraries",
-    title: "AI in Academic Libraries",
+    siteName: "AI for Academic Libraries",
+    title: "AI for Academic Libraries",
     description:
       "AI literacy curriculum for academic library workers, mapped to ACRL AI Competencies (2025), aligned with ALA's AI Guidance (2026), and grounded in the 4D Framework from Anthropic's AI Fluency course.",
     url: SITE_URL,
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI in Academic Libraries - curriculum for academic library workers",
+        alt: "AI for Academic Libraries - curriculum for academic library workers",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI in Academic Libraries",
+    title: "AI for Academic Libraries",
     description:
       "AI literacy curriculum for academic library workers, mapped to ACRL AI Competencies (2025) and aligned with ALA's AI Guidance (2026).",
     images: ["/og-image.png"],

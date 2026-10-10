@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About - AI for Academic Libraries",
+  title: "About",
   description:
     "About Yulia Brusova - library associate at St. Louis Community College, MLIS, and creator of this ACRL-aligned AI curriculum for library professionals.",
 };

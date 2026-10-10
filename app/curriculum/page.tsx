@@ -5,6 +5,7 @@ import ModuleCard from "@/components/module-card";
 import CurriculumSearch from "@/components/curriculum-search";
 import CurriculumProgress from "@/components/curriculum-progress";
 import RoleToggle from "@/components/role-toggle";
+import RoleMemory from "@/components/role-memory";
 import { isRoleFilter, roleMeta, type RoleFilter } from "@/lib/audience";
 
 export const metadata: Metadata = {
@@ -108,6 +109,7 @@ export default function CurriculumPage({
         </p>
       </div>
 
+      <RoleMemory role={role} />
       <CurriculumProgress slugs={publishedSlugs} />
 
       {/* Path selector callout */}

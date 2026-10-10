@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Resources - AI for Academic Libraries",
+  title: "Resources",
   description:
     "Curated resources for academic librarians learning AI - official frameworks, active communities, practical tools, and verified research. Updated regularly.",
 };

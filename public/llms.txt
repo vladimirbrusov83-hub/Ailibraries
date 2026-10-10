@@ -1,4 +1,4 @@
-# AI in Academic Libraries
+# AI for Academic Libraries
 > https://ai-in-academic-libraries.vercel.app
 
 An ACRL AI Competencies-aligned curriculum portal for academic library workers, created by Yulia Brusova — library associate at St. Louis Community College, MLIS (Valdosta State University, 2026). Practitioner-first content grounded in real library work.

@@ -69,6 +69,14 @@ Status values: `"published"` | `"coming-soon"`
 
 **Current publish status (July 2026):** All 18 modules published. Module order: 01–05 Foundations, 06–13 Applied (13 = "AI, labor & the library worker"), 14–18 Advanced. Module `id` drives the display number, prev/next navigation, and the `moduleReferences` / `moduleReviewDates` keys, so ids must stay contiguous (1–18) and unique. In-content cross-references use module numbers (e.g. "Module 15" for agentic AI) - update them if modules are renumbered.
 
+**Site name:** "AI for Academic Libraries" everywhere (titles, Open Graph, llms.txt). Page `metadata.title` is just the page name; the layout template appends " · AI for Academic Libraries". The domain stays `ai-in-academic-libraries`.
+
+**Role tracks:** a role's track = modules tagged for that role or `both` (`pathModules()` in `lib/audience.ts`). The home page "Your track" line is computed from it, so retagging a module updates it. The last role picked on /curriculum is remembered on the device (`ail-role-v1`, `lib/role-memory.ts`); a `?role=` link wins. Progress checkmarks stay in `ail-progress-v1` (`lib/progress.ts`).
+
+**Logo icons:** `npx tsx scripts/generate-icons.ts` renders the "AI" mark to `app/icon.png` (tab icon), `app/apple-icon.png` and `public/icons/*` (192, 512, maskable 512).
+
+**QR code:** `components/site-qr-code.tsx` builds the code from `SITE_URL` at build time (`lib/qr.ts`, `qrcode` package); no QR script ships to the browser.
+
 ## Curriculum levels
 
 | Level | Tailwind token | Description |

@@ -29,7 +29,7 @@ export async function generateMetadata({
   const mod = getModuleBySlug(params.slug);
   if (!mod) return {};
   return {
-    title: `${mod.title} - AI for Academic Libraries`,
+    title: mod.title,
     description: mod.description,
   };
 }

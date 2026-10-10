@@ -5,6 +5,7 @@ import ModuleCard from "@/components/module-card";
 import ContactPanel from "@/components/contact-panel";
 import RecentUpdates from "@/components/recent-updates";
 import { COURSE_ANNOUNCED } from "@/lib/course";
+import { pathModules, formatModuleRanges, type RoleFilter } from "@/lib/audience";
 
 export const metadata: Metadata = {
   title: "AI for Academic Libraries",
@@ -12,7 +13,16 @@ export const metadata: Metadata = {
     "A structured learning path from AI literacy to building your own tools - mapped to ACRL AI Competencies (2025), aligned with ALA's AI Guidance (2026), and grounded in the 4D Framework from Anthropic's AI Fluency course. Practitioner voice from a working community college librarian.",
 };
 
-const audiencePaths = [
+const audiencePaths: {
+  id: RoleFilter;
+  label: string;
+  subtitle: string;
+  description: string;
+  color: string;
+  lightColor: string;
+  borderColor: string;
+  startModule: string;
+}[] = [
   {
     id: "practicing",
     label: "Practicing Librarian",
@@ -23,7 +33,6 @@ const audiencePaths = [
     lightColor: "#f5f3ff",
     borderColor: "#ddd6fe",
     startModule: "what-is-ai-for-librarians",
-    modules: ["01", "02", "03", "04", "05", "06", "07", "10", "11", "12", "13"],
   },
   {
     id: "digital",
@@ -35,9 +44,13 @@ const audiencePaths = [
     lightColor: "#f0f9ff",
     borderColor: "#bae6fd",
     startModule: "what-is-ai-for-librarians",
-    modules: ["01", "02", "03", "04", "05", "08", "09", "10", "11", "12", "13"],
   },
 ];
+
+const trackIds: Record<RoleFilter, number[]> = {
+  practicing: pathModules(modules, "practicing").map((m) => m.id),
+  digital: pathModules(modules, "digital").map((m) => m.id),
+};
 
 const level1Modules = modules.filter((m) => m.level === "foundations").slice(0, 3);
 const level2Modules = modules.filter((m) => m.level === "applied").slice(0, 3);
@@ -261,7 +274,7 @@ export default function HomePage() {
                   <span className="font-semibold" style={{ color: path.color }}>
                     Your track:
                   </span>{" "}
-                  {path.modules.length} modules — {path.modules.join(", ")}
+                  {trackIds[path.id].length} modules — {formatModuleRanges(trackIds[path.id])}
                 </p>
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
                   <Link

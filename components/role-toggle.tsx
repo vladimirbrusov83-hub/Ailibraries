@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useLayoutEffect, useRef, useState, useTransition } from "react";
+import { isRoleFilter } from "@/lib/audience";
+import { saveRole } from "@/lib/role-memory";
 
 type Option = { value: string | null; href: string; label: string; color: string };
 
@@ -66,6 +68,7 @@ export default function RoleToggle({ options, active }: { options: Option[]; act
               if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
               e.preventDefault();
               if (isOn) return;
+              saveRole(isRoleFilter(opt.value) ? opt.value : "all");
               setSelected(opt.value);
               startTransition(() => router.push(opt.href, { scroll: false }));
             }}

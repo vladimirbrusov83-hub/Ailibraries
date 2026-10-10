@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generates public/og-image.png (1200×630) for AI in Academic Libraries.
+Generates public/og-image.png (1200×630) for AI for Academic Libraries.
 Run from project root: python3 scripts/generate-og-image.py
 """
 
@@ -43,7 +43,7 @@ draw.rectangle([0, 0, WIDTH, 6], fill=GREEN)
 
 # ── Fonts ────────────────────────────────────────────────────────────────────
 title_max_w = WIDTH - MARGIN_LEFT - MARGIN_RIGHT - 20
-f_title    = fit_font(GEORGIA_BOLD, "AI in Academic Libraries", title_max_w, 88)
+f_title    = fit_font(GEORGIA_BOLD, "AI for Academic Libraries", title_max_w, 88)
 f_subtitle = load(SANS,            36)
 f_tagline  = load(SANS,            24)
 f_byline   = load(SANS,            20)
@@ -52,7 +52,7 @@ f_byline   = load(SANS,            20)
 TOP_START = 6 + 80    # below accent line + 80px spacing
 
 # Title
-title_text = "AI in Academic Libraries"
+title_text = "AI for Academic Libraries"
 draw.text((MARGIN_LEFT, TOP_START), title_text, font=f_title, fill=GREEN)
 title_bbox   = draw.textbbox((MARGIN_LEFT, TOP_START), title_text, font=f_title)
 title_bottom = title_bbox[3]

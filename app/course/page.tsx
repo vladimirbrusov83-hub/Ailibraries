@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { COURSE_ANNOUNCED } from "@/lib/course";
 
 export const metadata: Metadata = {
-  title: "The Course (Coming Soon) - AI for Academic Libraries",
+  title: "The Course (Coming Soon)",
   description:
     "A free, self-paced course edition of the AI for Academic Libraries curriculum: 18 modules with interactive visuals, 144 quiz questions, a final exam and a verifiable certificate. Coming soon.",
 };

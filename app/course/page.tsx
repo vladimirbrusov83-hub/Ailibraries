@@ -20,8 +20,8 @@ const features = [
   },
   {
     n: "3",
-    title: "Level quizzes, 15 questions each",
-    body: "One quiz for each level - Foundations, Applied, Advanced - covering every module in it. Pass with 12 of 15, and take them in any order.",
+    title: "Level quizzes, 10 questions each",
+    body: "One quiz for each level - Foundations, Applied, Advanced - covering every module in it. Pass with 8 of 10, and take them in any order.",
     color: "#185FA5",
   },
   {
@@ -161,7 +161,7 @@ export default function CoursePage() {
             {[
               ["Create a free account", "Sign in with your email and a password. Your progress is saved across devices."],
               ["Work through the modules", "Read each module at your own pace, level by level."],
-              ["Take the level quizzes", "One 15-question quiz per level, whenever you are ready. Every answer is explained."],
+              ["Take the level quizzes", "One 10-question quiz per level, whenever you are ready. Every answer is explained."],
               ["Get your certificate", "Pass all three level quizzes and download a certificate with a public verification link."],
             ].map(([title, body], i) => (
               <li key={title} className="flex gap-4">

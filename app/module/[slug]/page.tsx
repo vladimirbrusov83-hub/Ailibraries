@@ -15,6 +15,8 @@ import ModuleToc from "@/components/module-toc";
 import CompleteButton from "@/components/complete-button";
 import ModuleActions from "@/components/module-actions";
 import ModuleAppBar from "@/components/app/module-app-bar";
+import ModuleQuiz from "@/components/module-quiz";
+import { moduleQuizzes } from "@/content/module-quizzes";
 import ResumeTracker from "@/components/resume-tracker";
 import { slugify } from "@/lib/slugify";
 import type { Level } from "@/lib/types";
@@ -501,6 +503,8 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       )}
+
+      {moduleQuizzes[mod.id] && <ModuleQuiz questions={moduleQuizzes[mod.id]} accent={accent} />}
 
       <CompleteButton slug={mod.slug} accent={accent} />
 

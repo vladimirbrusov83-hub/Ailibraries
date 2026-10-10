@@ -245,7 +245,8 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     },
     {
       text: "Institutional Data Initiative. (2025, June). *Institutional Books 1.0* [Data set]. Harvard Law School Library Innovation Lab.",
-      note: "983,004 volumes, 394 million pages, approximately 242 billion tokens, 254 languages. Released on Hugging Face.",
+      url: "https://huggingface.co/datasets/institutional/institutional-books-hl",
+      note: "983,004 volumes, about 386 million pages, approximately 242 billion tokens, 254 languages. Download requires a free Hugging Face account and agreeing to the dataset's terms.",
     },
     {
       text: "Knibbs, K. (2024, December 12). Harvard is releasing a massive free AI training dataset funded by OpenAI and Microsoft. *WIRED.*",
@@ -281,6 +282,11 @@ export const moduleReferences: Record<number, ModuleReference[]> = {
     {
       text: "Clarivate. (2026, September). *Pulse of the library 2026.*",
       url: "https://doi.org/10.14322/pulse.of.the.library.2026",
+    },
+    {
+      text: "Clarivate. (2026, March 31). *ProQuest Books frequently asked questions* [Updated].",
+      url: "https://pq-static-content.proquest.com/collateral/media2/documents/faqs-proquestbooksevolution.pdf",
+      note: "Vendor FAQ describing the end of direct title-by-title sales after June 30, 2026, continued access to owned Ebook Central titles, and perpetual purchasing through Rialto.",
     },
     {
       text: "Ithaka S+R. (2024–present). *Generative AI product tracker.*",
